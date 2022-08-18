@@ -8,7 +8,7 @@ function Card() {
       <Carousel.Item>
         <div className={styles.glass}>
           <div className={styles.header}>
-            <h1>Hi!</h1>
+            <h1>Hi!!</h1>
             <h3>I am Katie Yang</h3>
           </div>
           <div className={styles.bodyText}>
