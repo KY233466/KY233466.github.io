@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+.contentContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.sectionHeader {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 55px;
+    color: #2F76B5;;
+    margin-top: 15px;
+}
+
+.img {
+    width: 100%;
+    margin: 15px 0 30px 0;
+}
+
+.wideSection {
+    width: 100vw;
+    background-color: #F9F3D6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.GoalsImg {
+    width: 80%;
+}
+
+.noBtn{
+    background-color: transparent;
+    border: none;
+}
+
+.lol {
+    border: solid 2px;
+    width: 300px;
+    height: 300px;
+    background-color: pink;
+    opacity: 0;
+}
+
+.hmmml {
+    border: solid 2px;
+    width: 300px;
+    height: 300px;
+    background-color: pink;
+}
+
+.hmmm {
+    animation: fadeOut ease 8s;
+        -webkit-animation: fadeOut ease 8s;
+        -moz-animation: fadeOut ease 8s;
+        -o-animation: fadeOut ease 8s;
+        -ms-animation: fadeOut ease 8s;
+}
+
+.alert-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.alert-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.alert-exit {
+    opacity: 1;
+}
+
+.alert-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+}

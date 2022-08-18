@@ -1,0 +1,93 @@
+.container {
+    width: 80vw;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 45px 0 35px 0;
+}
+
+.title {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 55px;
+    margin-bottom: 10px;
+}
+
+.content {
+    text-align: left;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.icon {
+    height: 4vw;
+    margin-left: 5px;
+}
+
+.moreInfo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.moreInfo h5 {
+    color: black;
+    margin: 0;
+}
+
+.moreInfo div {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.subContent1 {
+    margin: 10px;
+    text-align: left;
+    flex: 1;
+}
+
+.subContent2 {
+    margin: 10px;
+    text-align: left;
+    flex: 2;
+}
+
+.subContent3 {
+    margin: 10px;
+    text-align: left;
+    flex: 3;
+}
+
+.btn {
+    background-color: #1D2232;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin: 20px 0;
+    margin-left: 30px;
+    height: 70px;
+}
+
+.btn div{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 24px;
+}

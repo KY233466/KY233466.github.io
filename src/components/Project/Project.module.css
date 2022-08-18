@@ -1,0 +1,37 @@
+.container {
+    margin-bottom: 10rem;
+    margin: 0.5% 1vw;
+    padding-bottom: 1.5rem;
+    width: 47%;
+}
+
+.container a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.window {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    border: 2px solid #4B4B4B;
+    border-radius: 30px;
+}
+
+.title {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 15px;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
