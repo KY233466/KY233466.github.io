@@ -55,3 +55,18 @@ body {
 .nav li.active {
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .nav {
+    background-color: #F9F3D6;
+    color: #282C4E;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 1.5rem 15px;
+  }
+
+  .nav ul {
+    gap: 1rem;
+  }
+}
