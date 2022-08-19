@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d3e0c67f.css",
-    "main.js": "/static/js/main.e636ba96.js",
+    "main.css": "/static/css/main.3c5cc29c.css",
+    "main.js": "/static/js/main.8f41bafb.js",
     "static/media/ZOOXMockups.png": "/static/media/ZOOXMockups.e350a2afb10948479b2a.png",
     "static/media/ZOOXMB2.png": "/static/media/ZOOXMB2.b7aea7faa2b8b940c4d2.png",
     "static/media/ZOOXMB1.png": "/static/media/ZOOXMB1.d952e869ac8fa0583297.png",
@@ -24,11 +24,11 @@
     "static/media/LinkedIn.png": "/static/media/LinkedIn.6425ef62b3ef24a3906c.png",
     "static/media/ZOOXW4.png": "/static/media/ZOOXW4.0d15503eaa9365138996.png",
     "index.html": "/index.html",
-    "main.d3e0c67f.css.map": "/static/css/main.d3e0c67f.css.map",
-    "main.e636ba96.js.map": "/static/js/main.e636ba96.js.map"
+    "main.3c5cc29c.css.map": "/static/css/main.3c5cc29c.css.map",
+    "main.8f41bafb.js.map": "/static/js/main.8f41bafb.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3e0c67f.css",
-    "static/js/main.e636ba96.js"
+    "static/css/main.3c5cc29c.css",
+    "static/js/main.8f41bafb.js"
   ]
 }
