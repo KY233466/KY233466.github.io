@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d02d8d79.css",
-    "main.js": "/static/js/main.57a944ac.js",
+    "main.css": "/static/css/main.456ca2b5.css",
+    "main.js": "/static/js/main.8dc6f3cf.js",
     "static/media/ZOOXMockups.png": "/static/media/ZOOXMockups.e350a2afb10948479b2a.png",
     "static/media/ZOOXMB2.png": "/static/media/ZOOXMB2.b7aea7faa2b8b940c4d2.png",
     "static/media/ZOOXMB1.png": "/static/media/ZOOXMB1.d952e869ac8fa0583297.png",
@@ -10,8 +10,8 @@
     "static/media/ZOOX.png": "/static/media/ZOOX.b0a4bccdf34b8dc86fe0.png",
     "static/media/JarneyDesign.png": "/static/media/JarneyDesign.d9a59484665312430d9d.png",
     "static/media/Goals&Solutions.png": "/static/media/Goals&Solutions.7163204d05fcd6da6058.png",
-    "static/media/Analysis2.png": "/static/media/Analysis2.d16a2a5d24c30f7c6810.png",
-    "static/media/Analysis_1.png": "/static/media/Analysis_1.c347815a50cbf77bf546.png",
+    "static/media/Analysis2.png": "/static/media/Analysis2.05a06c06145a8dbca33f.png",
+    "static/media/Analysis_1.png": "/static/media/Analysis_1.b4d68c59dcee06a3d463.png",
     "static/media/ZOOXFlow.png": "/static/media/ZOOXFlow.97eaca3fba0dceb1f570.png",
     "static/media/JarneyBefore.png": "/static/media/JarneyBefore.9a352564a95e0894bdc7.png",
     "static/media/purpleLines.jpg": "/static/media/purpleLines.7455fcdb0611b147d426.jpg",
@@ -24,11 +24,11 @@
     "static/media/LinkedIn.png": "/static/media/LinkedIn.6425ef62b3ef24a3906c.png",
     "static/media/ZOOXW4.png": "/static/media/ZOOXW4.0d15503eaa9365138996.png",
     "index.html": "/index.html",
-    "main.d02d8d79.css.map": "/static/css/main.d02d8d79.css.map",
-    "main.57a944ac.js.map": "/static/js/main.57a944ac.js.map"
+    "main.456ca2b5.css.map": "/static/css/main.456ca2b5.css.map",
+    "main.8dc6f3cf.js.map": "/static/js/main.8dc6f3cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.d02d8d79.css",
-    "static/js/main.57a944ac.js"
+    "static/css/main.456ca2b5.css",
+    "static/js/main.8dc6f3cf.js"
   ]
 }
