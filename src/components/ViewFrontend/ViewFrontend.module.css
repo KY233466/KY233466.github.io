@@ -4,9 +4,23 @@
     border-radius: 20px;
     padding: 10px 25px;
     text-decoration: none;
-    margin: 20px 0;
-    margin-left: 30px;
-    height: 70px;
+    margin-left: 20px;
+    margin-top: 10px;
     flex: 1;
     text-align: center;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn a:hover {
+    color: #F9F3D6 !important;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        margin-left: 0;
+        padding: 20px 25px;
+    }
 }

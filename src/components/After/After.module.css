@@ -47,3 +47,32 @@
     margin: 1rem;
     margin-left: 2%;
 }
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .img {
+        width: 100%;
+        margin: 1rem 0 0 0;
+    }
+
+    .explain {
+        align-items: center;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .summary {
+        font-size: 1.2rem;
+    }
+
+    .detail {
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+}

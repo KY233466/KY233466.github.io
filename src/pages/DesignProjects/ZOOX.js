@@ -9,17 +9,32 @@ import ZOOXW5 from "../../pic/ZOOXW5.png";
 import ZOOXMB1 from "../../pic/ZOOXMB1.png";
 import ZOOXMB2 from "../../pic/ZOOXMB2.png";
 import ZOOXMockups from "../../pic/ZOOXMockups.png";
+import Figma from "../../pic/Figma.png";
+import InCar from "../../pic/InCar.png"
+import Demo from "../../pic/Demo.mov"
+
+const Icons = [
+  {
+    images: Figma,
+    name: "Figma Icon",
+  },
+  {
+    images: InCar,
+    name: "In car display location",
+  },
+];
 
 const headerContent = [
   {
     title: "ZOOX Autonomous Vehicle In Car Display Design",
     detail:
-      "Support and enhance the ride experience with interior display. Macbook Pro 14’ size interior display locating at the side of the seats",
+      "Support and enhance the ride experience with interior display. Macbook Pro 14’ size interior display locating at the side of the seats. Focused on 'Safety', 'Error free', and 'Futuristic'.",
     projectType: "Hypothetical Class Project",
     myRole: "Project Owner",
     currentStatus: "Design phase done",
     Btn: false,
     BtnContent: null,
+    IconImage: Icons,
   },
 ];
 
@@ -37,24 +52,32 @@ export default function ZOOX() {
           currentStatus={value.currentStatus}
           Btn={value.Btn}
           BtnContent={value.BtnContent}
+          IconImage={value.IconImage}
         />
       ))}
       <div className={styles.contentContainer}>
         <div className={styles.sectionHeader}>Design Overview</div>
         <a
           className={styles.link}
-          href="https://www.figma.com/proto/DAga5UHVYJggB43ACJZthg/ZOOX-deliverable-3?page-id=0%3A1&node-id=2%3A266&starting-point-node-id=3%3A3&scaling=scale-down"
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.figma.com/proto/DAga5UHVYJggB43ACJZthg/ZOOX-deliverable-3?page-id=0%3A1&node-id=3%3A22&viewport=376%2C384%2C0.04&scaling=scale-down&starting-point-node-id=3%3A3"
         >
           View prototype in browser
         </a>
-        <div
+        <video
           style={{
             margin: "20px 0",
-            width: "50vw",
-            height: "30vw",
-            backgroundColor: "pink",
+            width: "60vw",
+            height: "36vw",
           }}
-        ></div>
+          controls="controls"
+          width="50vw"
+          height="30vw"
+          name="Prototype Demo"
+        >
+          <source src={Demo} />
+        </video>
       </div>
 
       <div className={styles.contentContainer1}>

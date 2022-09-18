@@ -5,10 +5,21 @@
     margin-top: 2rem;
 }
 
+.iconGroup {
+    display: flex;
+    justify-content: flex-end;
+    padding: 3rem;
+}
+
 .icon {
     height: 40px;
-    margin: 3rem 1rem;
-    position: relative;
-    top: 50px;
-    left: 80vw;
+    margin: 0rem 1rem;
+}
+
+@media (max-width: 768px) {
+    .iconGroup {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+    }
 }

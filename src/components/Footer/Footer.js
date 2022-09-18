@@ -6,7 +6,7 @@ import GitHub from "../../pic/Github.png";
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <div>
+      <div className={styles.iconGroup}>
         <a
           href="https://www.linkedin.com/in/katie-yang-2a863915b/"
           target="_blank"

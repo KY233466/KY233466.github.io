@@ -30,10 +30,10 @@ function Landing() {
           <br /> do you want to explore?
         </h3>
         <div className={styles.btnS}>
-          <Link className={styles.btn} to="/app">
+          <Link className={styles.btn} to="/main">
             <div>Front-end</div>
           </Link>
-          <Link className={styles.btn} to="/app/Design">
+          <Link className={styles.btn} to="/main/Design">
             <div>Design</div>
           </Link>
         </div>

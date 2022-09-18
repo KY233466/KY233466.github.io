@@ -6,7 +6,7 @@
 }
 
 .contentContainer {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,6 +33,45 @@
 .img {
     width: 100%;
     margin: 15px 0 30px 0;
+}
+
+.Annotation {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.Annotation div {
+    width: 100%;
+    height: auto;
+}
+
+.Annotation ul {
+    margin-top: 2rem;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 170%;
+    width: 35%;
+}
+
+.Annotation li {
+    margin-bottom: 7px;
+}
+
+.red {
+    color: #BB3535;
+}
+
+.green {
+    color: #77DC66;
+}
+
+.blue {
+    color: #3E76CA;
 }
 
 .wideSection {
@@ -95,4 +134,38 @@
     opacity: 0;
     transform: scale(0.9);
     transition: opacity 300ms, transform 300ms;
+}
+
+@media (max-width: 1000px) {
+    .Annotation {
+        display: column;
+        flex-wrap: wrap;
+    }
+
+    .Annotation img {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .Annotation ul {
+        margin-top: 15px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wideSection {
+        padding: 1rem 0;
+    }
+    .sectionHeader {
+        margin-top: 0;
+        font-size: 1.8rem;
+    }
+    .GoalsImg {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+    .contentContainer {
+        width: 100%;
+    }
 }

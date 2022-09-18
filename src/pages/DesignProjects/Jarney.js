@@ -8,6 +8,14 @@ import Analysis1 from "../../pic/Analysis_1.png";
 import Analysis2 from "../../pic/Analysis2.png";
 import Goals from "../../pic/Goals&Solutions.png";
 import ViewFrontend from "../../components/ViewFrontend/ViewFrontend";
+import Figma from "../../pic/Figma.png";
+
+const Icons = [
+  {
+    images: Figma,
+    name: "Figma Icon"
+  },
+];
 
 const headerContent = [
   {
@@ -20,7 +28,8 @@ const headerContent = [
       "The change in code (React based) is implemented in QA branch, but haven’t merge into Master",
     Btn: true,
     BtnContent: "View Frontend Implementation",
-    BtnLink: "/app/Jarney",
+    BtnLink: "/main/Jarney",
+    IconImage: Icons,
   },
 ];
 
@@ -35,19 +44,28 @@ const beforeContent = [
 
 const afterContent = [
   {
-    summary: "This is after",
+    summary: "Distinct separation of functionality, easy to see key information",
     detail:
-      "Selected Courses, Degree Requirements, and Degree Plan shares the same space when each of them contains a lot of information.",
+      "",
   },
 ];
 
 export default function Jarney() {
-  const pathName = "/app/Jarney";
-  const Errr = "hmm";
+  const pathName = "/main/Jarney";
+  const BtnContent = "View Frontend Implementation";
 
   const [showButton, setShowButton] = useState(true);
   const [showMessage, setShowMessage] = useState(false);
-  const [isShowingAlert, setShowingAlert] = useState(false);
+
+  function handleBtn() {
+    setShowMessage(true);
+    setShowButton(false);
+  }
+
+  function handleMessage() {
+    setShowMessage(false);
+    setShowButton(true);
+  }
 
   return (
     <div className={styles.container}>
@@ -63,18 +81,20 @@ export default function Jarney() {
           Btn={value.Btn}
           BtnContent={value.BtnContent}
           BtnLink={value.BtnLink}
+          IconImage={value.IconImage}
         />
       ))}
 
       <div className={styles.contentContainer}>
         <div className={styles.section}>
           <div className={styles.sectionHeader}>Result Overview</div>
-          <div>Hover to see change</div>
+          <div>Hover or Click to see change</div>
           {showButton && (
             <div className={styles.hmmm}>
               <button
                 className={styles.noBtn}
-                onMouseOver={() => setShowMessage(true)}
+                onClick={handleBtn}
+                onMouseOver={handleBtn}
               >
                 {beforeContent.map((value, index) => (
                   <Before
@@ -88,17 +108,22 @@ export default function Jarney() {
             </div>
           )}
 
-          <CSSTransition
+          {/* <CSSTransition
             in={showMessage}
             timeout={100}
             classNames={styles.alert}
             unmountOnExit
             onEnter={() => setShowButton(false)}
             onExited={() => setShowButton(true)}
-          >
+          > */}
+          {showMessage && (
             <button
               className={styles.noBtn}
-              onMouseOut={() => setShowMessage(false)}
+              onMouseOut={handleMessage}
+              onClick={handleMessage}
+              // onEnter={() => setShowButton(false)}
+              // unmountOnExit
+              // onExited={() => setShowButton(true)}
             >
               {afterContent.map((value, index) => (
                 <After
@@ -109,13 +134,52 @@ export default function Jarney() {
                 />
               ))}
             </button>
-          </CSSTransition>
+          )}
+          {/* </CSSTransition> */}
         </div>
 
         <div className={styles.section}>
           <div className={styles.sectionHeader}>Analysis</div>
-          <img className={styles.img} src={Analysis1} alt={Analysis1} />
-          <img className={styles.img} src={Analysis2} alt={Analysis2} />
+          <div className={styles.Annotation}>
+            <div>
+              <img className={styles.img} src={Analysis1} alt={Analysis1} />
+            </div>
+            <ul>
+              <li>Too much information on the left column</li>
+              <li>
+                <span className={styles.red}>Inefficient use of space</span>
+              </li>
+              <li>
+                <span className={styles.green}>
+                  Sections with similar logic should be grouped
+                </span>
+              </li>
+              <li>
+                <span className={styles.blue}>
+                  Functions in the left column doesn't follow work flow
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div className={styles.Annotation}>
+            <div>
+              <img className={styles.img} src={Analysis2} alt={Analysis2} />
+            </div>
+            <ul>
+              <li>
+                <span className={styles.red}>
+                  Course specifics should be more eye catching
+                </span>
+              </li>
+              <li>
+                <span className={styles.blue}>
+                  Individual classes isn't the focal point because of the pale
+                  background
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className={styles.wideSection}>
@@ -124,7 +188,7 @@ export default function Jarney() {
         </div>
       </div>
 
-      <ViewFrontend path={pathName} />
+      <ViewFrontend content={BtnContent} path={pathName} />
     </div>
   );
 }

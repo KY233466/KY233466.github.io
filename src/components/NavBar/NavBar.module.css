@@ -21,7 +21,6 @@ body {
 }
 
 .siteTitle {
-  font-size: 2rem;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 30px;
   font-style: italic;
@@ -58,15 +57,18 @@ body {
 
 @media (max-width: 768px) {
   .nav {
-    background-color: #F9F3D6;
-    color: #282C4E;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 1.5rem 15px;
+      background-color: #F9F3D6;
+      color: #282C4E;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      padding: 1.5rem 15px;
   }
 
   .nav ul {
     gap: 1rem;
+  }
+  .siteTitle {
+    font-size: 1rem;
   }
 }

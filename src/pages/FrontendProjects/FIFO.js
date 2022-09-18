@@ -1,6 +1,25 @@
 import React, { useState } from "react";
 import styles from "./Jarney.module.css";
 import ContentHeader from "../../components/ContentHeader/ContentHeader";
+import ReactIcon from "../../pic/React.png";
+import TypeScriptIcon from "../../pic/TypeScript.png";
+import ReduxIcon from "../../pic/ReduxIcon.png";
+
+
+const Icons = [
+  {
+    images: ReactIcon,
+    name: "React Icon",
+  },
+  {
+    images: TypeScriptIcon,
+    name: "React Icon",
+  },
+  {
+    images: ReduxIcon,
+    name: "React Icon",
+  },
+];
 
 const headerContent = [
   {
@@ -8,8 +27,10 @@ const headerContent = [
     detail: "A queue management solution for TA office hours. A freshly started project.",
     projectType: "Student Club",
     myRole: "Front-end Team Lead",
-    currentStatus: "Initial Commit made",
+    currentStatus: "Creating the pages while waiting for backend to be established",
     Btn: false,
+    Icon: true,
+    IconImage: Icons,
   },
 ];
 
@@ -27,6 +48,8 @@ export default function FIFO() {
           projectType={value.projectType}
           currentStatus={value.currentStatus}
           Btn={value.Btn}
+          Icon={value.Icon}
+          IconImage={value.IconImage}
         />
       ))}
       {/* <div className={styles.contentContainer}>

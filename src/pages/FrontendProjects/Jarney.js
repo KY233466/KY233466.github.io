@@ -9,10 +9,10 @@ const headerContent = [
     projectType: "Student Club",
     myRole: "Front-end Team Member, Project Owner",
     currentStatus:
-      "The change in code (React based) is implemented in QA branch, but haven’t merge into Master",
+      "The change in code (React based) is done implemented in the QA branch, but haven’t merge into Master",
     Btn: true,
     BtnContent: "View Redesign Process",
-    BtnLink: "/app/Design/Jarney",
+    BtnLink: "/main/Design/Jarney",
   },
 ];
 

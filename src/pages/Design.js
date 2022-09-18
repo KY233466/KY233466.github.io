@@ -4,27 +4,28 @@ import JarneyRedesign from "../pic/JarneyRedesign.png"
 import ZOOX from "../pic/ZOOX.png"
 import KALEA from "../pic/KALEA.png"
 import Hobbees from "../pic/Hobbees.png"
+import research from "../pic/Instagram.png"
 
 const content = [
   {
     title: "JARney Scheduler Page Redesign",
-    path: "/app/Design/Jarney",
+    path: "/main/Design/Jarney",
     content: JarneyRedesign,
   },
   {
     title: "ZOOX Autonomous Vehicle In Car Display",
-    path: "/app/Design/ZOOX",
+    path: "/main/Design/ZOOX",
     content: ZOOX,
   },
   {
     title: "Hobbees Hobbby Sharing APP Design",
-    path: "/app/Design/Hobbees",
+    path: "/main/Design/Hobbees",
     content: Hobbees,
   },
   {
-    title: "Instagram Activity Status Study",
-    path: "/app/Design/Jarney",
-    content: KALEA,
+    title: "Activity Status Study",
+    path: "/main/Design/ActivityStatus",
+    content: research,
   },
 ];
 

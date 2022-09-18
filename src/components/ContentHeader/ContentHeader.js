@@ -12,6 +12,8 @@ export default function ContentHeader({
   Btn,
   BtnContent,
   BtnLink,
+  Icon,
+  IconImage,
 }) {
 
   return (
@@ -19,20 +21,40 @@ export default function ContentHeader({
       <div className={styles.title}>{title}</div>
       <div className={styles.content}>
         <div>{detail}</div>
-        <img className={styles.icon} src={Figma} alt="Figma Logo" />
+        {IconImage ? (
+          <div className={styles.IconGroup}>
+            {IconImage?.map((value, index) => (
+              <img
+                index={value.name}
+                key={value.name}
+                className={styles.icon}
+                src={value.images}
+                alt={value.name}
+              />
+            ))}
+          </div>
+        ) : null}
       </div>
       <div className={styles.moreInfo}>
-        <div className={styles.subContent1}>
-          <h5>Project Type</h5>
-          <div>{projectType}</div>
-        </div>
-        <div className={styles.subContent2}>
-          <h5>My Role</h5>
-          <div>{myRole}</div>
-        </div>
-        <div className={styles.subContent3}>
-          <h5>Current Status</h5>
-          <div>{currentStatus}</div>
+        <div className={styles.subContentGroup}>
+          <div className={styles.subContent1}>
+            <h5>
+              <strong>Project Type</strong>
+            </h5>
+            <div>{projectType}</div>
+          </div>
+          <div className={styles.subContent2}>
+            <h5>
+              <strong>My Role</strong>
+            </h5>
+            <div>{myRole}</div>
+          </div>
+          <div className={styles.subContent3}>
+            <h5>
+              <strong>Current Status</strong>
+            </h5>
+            <div>{currentStatus}</div>
+          </div>
         </div>
         {Btn ? <ViewFrontend content={BtnContent} path={BtnLink} /> : null}
       </div>

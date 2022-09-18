@@ -6,12 +6,12 @@ import FIFO from "../pic/FIFOCover.png"
 const content = [
   {
     title: "JARney Scheduler Page Code",
-    path: "/app/Jarney",
+    path: "/main/Jarney",
     content: JarneyDesign,
   },
   {
     title: "FIFO Office Hour Queue",
-    path: "/app/FIFO",
+    path: "/main/FIFO",
     content: FIFO,
   },
 ];

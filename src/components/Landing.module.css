@@ -1,3 +1,7 @@
+body, html {
+    overflow-x: hidden;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -11,6 +15,9 @@
     align-items: center;
     justify-content: center;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .glass {
@@ -152,6 +159,7 @@ h5 {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
+    white-space: nowrap;
 }
 
 .btnS {
@@ -165,9 +173,19 @@ h5 {
     }
     .leftContainer {
         width: 100%;
+        min-height: auto;
+        align-items: center;
+    }
+    .attribution {
+        left: 0;
+        width: auto;
     }
 
     .rightContainer {
         width: 100%;
+    }
+    .rightContainer h3 {
+        font-size: 1.2rem;
+        line-height: 23px;
     }
 }

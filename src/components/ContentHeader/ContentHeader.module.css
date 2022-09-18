@@ -12,7 +12,7 @@
     font-style: normal;
     font-weight: 800;
     font-size: 30px;
-    line-height: 55px;
+    line-height: 40px;
     margin-bottom: 10px;
 }
 
@@ -31,8 +31,9 @@
 }
 
 .icon {
-    height: 4vw;
+    width: 15vw;
     margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 .moreInfo {
@@ -45,6 +46,12 @@
 .moreInfo h5 {
     color: black;
     margin: 0;
+    font-size: 1.2rem;
+    font-style: bold;
+    font-feature-settings: normal;
+    font-variant: bold;
+    font-weight: 100;
+    line-height: 30px;
 }
 
 .moreInfo div {
@@ -55,22 +62,27 @@
     line-height: 28px;
 }
 
+.subContentGroup {
+    display: flex;
+    flex-direction: row;
+}
+
 .subContent1 {
     margin: 10px;
     text-align: left;
-    flex: 1;
+    /* flex: 1; */
 }
 
 .subContent2 {
     margin: 10px;
     text-align: left;
-    flex: 2;
+    /* flex: 2; */
 }
 
 .subContent3 {
     margin: 10px;
     text-align: left;
-    flex: 3;
+    /* flex: 3; */
 }
 
 .btn {
@@ -90,4 +102,44 @@
     font-weight: 100;
     font-size: 15px;
     line-height: 24px;
+}
+
+.IconGroup {
+    display: flex;
+     flex-direction: row;
+     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 25px;
+    }
+    .content {
+        flex-wrap: wrap;
+    }
+    .icon {
+        width: 25%;
+        height: auto;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+    .moreInfo {
+        flex-wrap: wrap;
+    }
+    .subContentGroup {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .title {
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+    .IconGroup {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+    }
 }

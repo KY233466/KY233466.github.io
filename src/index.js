@@ -11,7 +11,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Landing/>} />
-        <Route path="/app/*" element={<App/>} />
+        <Route path="/main/*" element={<App/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
