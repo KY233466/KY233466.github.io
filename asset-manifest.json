@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc908ccc.css",
-    "main.js": "/static/js/main.c6d33ae7.js",
+    "main.css": "/static/css/main.19db5e97.css",
+    "main.js": "/static/js/main.e95088be.js",
     "static/media/Demo.mov": "/static/media/Demo.06cb9b5ab2332e0491bd.mov",
     "static/media/HDemo.mov": "/static/media/HDemo.714230cef5b8fd4029cc.mov",
     "static/media/ZOOXMockups.png": "/static/media/ZOOXMockups.e350a2afb10948479b2a.png",
@@ -24,6 +24,7 @@
     "static/media/React.png": "/static/media/React.e0923bd0107fdf679b89.png",
     "static/media/ZOOXW3.png": "/static/media/ZOOXW3.9cd8f0c339f3eae33af5.png",
     "static/media/FIFOCover.png": "/static/media/FIFOCover.98e5f99e87ed40efd9b5.png",
+    "static/media/Sass3.png": "/static/media/Sass3.197d6e8abbf84d291f82.png",
     "static/media/ReduxIcon.png": "/static/media/ReduxIcon.7d5f90d9c2af0f25a164.png",
     "static/media/ZOOXW5.png": "/static/media/ZOOXW5.ccba39bd360d241cc51b.png",
     "static/media/ZOOXW1.png": "/static/media/ZOOXW1.b8f18fa66f22a84e2ade.png",
@@ -31,11 +32,11 @@
     "static/media/ZOOXW4.png": "/static/media/ZOOXW4.0d15503eaa9365138996.png",
     "static/media/TypeScript.png": "/static/media/TypeScript.672a8420018324877316.png",
     "index.html": "/index.html",
-    "main.dc908ccc.css.map": "/static/css/main.dc908ccc.css.map",
-    "main.c6d33ae7.js.map": "/static/js/main.c6d33ae7.js.map"
+    "main.19db5e97.css.map": "/static/css/main.19db5e97.css.map",
+    "main.e95088be.js.map": "/static/js/main.e95088be.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc908ccc.css",
-    "static/js/main.c6d33ae7.js"
+    "static/css/main.19db5e97.css",
+    "static/js/main.e95088be.js"
   ]
 }
