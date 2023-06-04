@@ -14,10 +14,10 @@ import InCar from "../../pic/InCar.png"
 import Demo from "../../pic/Demo.mov"
 
 const Icons = [
-  {
-    images: Figma,
-    name: "Figma Icon",
-  },
+  // {
+  //   images: Figma,
+  //   name: "Figma Icon",
+  // },
   {
     images: InCar,
     name: "In car display location",

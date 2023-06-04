@@ -29,7 +29,7 @@ const headerContent = [
     Btn: true,
     BtnContent: "View Frontend Implementation",
     BtnLink: "/main/Jarney",
-    IconImage: Icons,
+    IconImage: null,
   },
 ];
 
