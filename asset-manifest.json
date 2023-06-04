@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c6709617.css",
-    "main.js": "/static/js/main.55cd1482.js",
+    "main.js": "/static/js/main.2d6eb945.js",
     "static/media/Demo.mov": "/static/media/Demo.06cb9b5ab2332e0491bd.mov",
     "static/media/HDemo.mov": "/static/media/HDemo.714230cef5b8fd4029cc.mov",
     "static/media/iterated.png": "/static/media/iterated.5cfee5e19230a831d45a.png",
@@ -29,8 +29,10 @@
     "static/media/JarneyBefore.png": "/static/media/JarneyBefore.9a352564a95e0894bdc7.png",
     "static/media/purpleLines.jpg": "/static/media/purpleLines.7455fcdb0611b147d426.jpg",
     "static/media/KALEA.png": "/static/media/KALEA.d8d390ef41756fa0f713.png",
+    "static/media/UpdatedWorkFlow.png": "/static/media/UpdatedWorkFlow.27ab8deacd2de64c4c95.png",
     "static/media/JarneyRedesign.png": "/static/media/JarneyRedesign.39e66034530e8830991d.png",
     "static/media/magneticBoard.jpg": "/static/media/magneticBoard.dc066ebaa7735a0bad40.jpg",
+    "static/media/ColorWorkFlow.png": "/static/media/ColorWorkFlow.cb9cba0657e6e9857bc8.png",
     "static/media/React.png": "/static/media/React.e0923bd0107fdf679b89.png",
     "static/media/ZOOXW3.png": "/static/media/ZOOXW3.9cd8f0c339f3eae33af5.png",
     "static/media/FIFOCover.png": "/static/media/FIFOCover.98e5f99e87ed40efd9b5.png",
@@ -42,10 +44,10 @@
     "static/media/TypeScript.png": "/static/media/TypeScript.672a8420018324877316.png",
     "index.html": "/index.html",
     "main.c6709617.css.map": "/static/css/main.c6709617.css.map",
-    "main.55cd1482.js.map": "/static/js/main.55cd1482.js.map"
+    "main.2d6eb945.js.map": "/static/js/main.2d6eb945.js.map"
   },
   "entrypoints": [
     "static/css/main.c6709617.css",
-    "static/js/main.55cd1482.js"
+    "static/js/main.2d6eb945.js"
   ]
 }
