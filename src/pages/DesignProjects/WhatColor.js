@@ -12,6 +12,8 @@ import Plan1 from "../../pic/plan1.png";
 import Plan2 from "../../pic/plan2.png";
 import Iterated from "../../pic/iterated.png";
 import threeD from "../../pic/3D.png";
+import ColorWorkFlow from "../../pic/ColorWorkFlow.png";
+import UpdatedWorkFlow from "../../pic/UpdatedWorkFlow.png";
 
 // const Icons = [
 //   {
@@ -72,6 +74,9 @@ export default function WhatColor() {
           <div style={{ width: "60%" }}>
             <div style={{ paddingBottom: "20px" }}>
               根据美国疾病预防控制中心，4岁的儿童的认知应该达到能够说出几种物品的颜色的程度
+              <a href="https://www.cdc.gov/ncbddd/actearly/milestones/milestones-4yr.html">
+                [1]
+              </a>
             </div>
             <ul>
               <li style={{ paddingBottom: "10px" }}>
@@ -208,10 +213,32 @@ export default function WhatColor() {
               考虑了人体工程学设计，结合了市场上常有的功能，使其便于携带
             </li>
             <li style={{ paddingBottom: "10px" }}>
+              考虑到大部分儿童都用右手书写，把手被放在了左侧，这样他们可以持设备和笔跑来跑去
+            </li>
+            <li style={{ paddingBottom: "10px" }}>
               增加了触摸屏和笔，用孩子绘画的天性增加娱乐感
+            </li>
+            <li style={{ paddingBottom: "10px" }}>
+              相近于儿童可能已经熟悉的平板和磁力绘画板
             </li>
           </ul>
         </div>
+        <div
+          style={{
+            fontWeight: "900",
+            fontSize: "25px",
+            color: "#2F76B5",
+            paddingTop: "10px",
+            paddingBottom: "10px",
+          }}
+        >
+          流程图
+        </div>
+        <img
+          src={ColorWorkFlow}
+          alt="Work Flow"
+          style={{ width: "100vw", paddingBottom: "15px" }}
+        />
         <div style={{ paddingTop: "20px" }}>
           后来想到，把颜色传感器放在玩具的背面更符合现代人的扫描物品的习惯。
         </div>
@@ -230,17 +257,13 @@ export default function WhatColor() {
           <img src={threeD} alt="iterated design" style={{ width: "30%" }} />
           <ul>
             <li style={{ paddingBottom: "10px" }}>
-              考虑到大部分儿童都用右手书写，把手被放在了左侧，这样他们可以持设备和笔跑来跑去
-            </li>
-            <li style={{ paddingBottom: "10px" }}>
-              确保产品的形状不像锤子，以避免被砸碎
-            </li>
-            <li style={{ paddingBottom: "10px" }}>
               放置在玩具底部的9V电池让该设备的平衡点靠近底部，让孩子们更容易把持住，避免砸伤
             </li>
             <li style={{ paddingBottom: "10px" }}>
               根据Kong的说法，用于握力任务的最佳手柄直径是用户手长的19.7%。手长为
-              10 厘米的 4 岁儿童的最佳直径为 1.97 厘米，所以左把手的直径不超过2厘米
+              10 厘米的 4 岁儿童的最佳直径为 1.97
+              厘米，所以左把手的直径不超过2厘米
+              <a href="https://doi.org/10.1016/j.ergon.2004.11.003">[3]</a>
             </li>
             <li style={{ paddingBottom: "10px" }}>
               确保任何一点的外壳厚度至少为 1.2 厘米
@@ -255,6 +278,7 @@ export default function WhatColor() {
             justifyContent: "center",
             alignItems: "center",
             paddingBottom: "30px",
+            paddingTop: "10px",
           }}
         >
           <img src={WhatColorImg} alt="What Color" style={{ width: "30%" }} />
@@ -278,6 +302,23 @@ export default function WhatColor() {
             </ul>
           </ul>
         </div>
+
+        <div
+          style={{
+            fontWeight: "900",
+            fontSize: "25px",
+            color: "#2F76B5",
+            paddingTop: "10px",
+          }}
+        >
+          更新后的流程图
+        </div>
+        <img
+          src={UpdatedWorkFlow}
+          alt="Work Flow"
+          style={{ width: "100vw", paddingBottom: "15px", paddingTop: "10px" }}
+        />
+
         <div className={styles.sectionHeader}>进一步的工作</div>
         <div>
           此原型设计受到硬件可实施性影响，因而有很多进步空间。基于此次的用户测试可以进行下一步的迭代设计。
@@ -285,6 +326,11 @@ export default function WhatColor() {
         <div>迭代设计仅考虑在有工业标准化的硬件时，该如何设计。</div>
         <div style={{ paddingBottom: "30px" }}>
           可考虑的路如：双手持平板式，单手扫描设备，孩子用智能手表拓展设备/软件...
+        </div>
+        <div style={{ fontSize: "20px", width: "60%" }}>
+          基于Improving Colour Patterns to Assist People with Colour Vision
+          Deficiency论文，在显示的颜色上加入图案，也可以帮助色盲儿童尝试理解颜色概念，与生活中物品的颜色
+          <a href="https://doi.org/10.1145/3491102.3502024">[2]</a>
         </div>
         <div className={styles.sectionHeader}>引用</div>
         <div style={{ width: "60%", textIndent: "-36px", paddingLeft: "36px" }}>
@@ -294,6 +340,16 @@ export default function WhatColor() {
             Control and Prevention.{" "}
             <a href="https://www.cdc.gov/ncbddd/actearly/milestones/milestones-4yr.html">
               https://www.cdc.gov/ncbddd/actearly/milestones/milestones-4yr.html
+            </a>
+          </div>
+          <div>
+            Connor Geddes, David R. Flatla, Garreth W. Tigwell, and Roshan L
+            Peiris. 2022. Improving Colour Patterns to Assist People with Colour
+            Vision Deficiency. In Proceedings of the 2022 CHI Conference on
+            Human Factors in Computing Systems (CHI '22). Association for
+            Computing Machinery, New York, NY, USA, Article 479, 1–17.{" "}
+            <a href="https://doi.org/10.1145/3491102.3502024">
+              https://doi.org/10.1145/3491102.3502024
             </a>
           </div>
           <div>

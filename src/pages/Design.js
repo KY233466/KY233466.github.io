@@ -25,7 +25,8 @@ const content = [
     content: Color,
   },
   {
-    title: "JARney Scheduler Page Redesign",
+    title:
+      "课程组合生成器重新设计 + 更改前端代码 JARney Scheduler Page Redesign",
     path: "/main/Design/Jarney",
     content: JarneyRedesign,
   },

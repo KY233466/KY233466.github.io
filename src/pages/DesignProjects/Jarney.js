@@ -19,9 +19,10 @@ const Icons = [
 
 const headerContent = [
   {
-    title: "JARney Scheduler Page Redesign",
+    title:
+      "课程组合生成器重新设计 + 更改前端代码 JARney Scheduler Page Redesign",
     detail:
-      "使关键信息更加吸引人。改变功能位置以使工作流更加合理 • 决定使用更高对比度的颜色来强调信息的层次结构。计划实现更好的空间利用效率。按照最新设计完成项目代码更改。Re-design the currently fully functioning scheduler. It is a website that helps Tufts students to plan out their degree requirements, degree plan, and semesterly schedule.",
+      "这是一个帮助塔夫茨大学(Tufts University)的学生们规划他们的学位要求、学位计划和学期时间表的网站。改变功能位置使工作流程更加合理，实现更好的空间利用效率。使用更高对比度的颜色来强调信息的层次结构，使关键信息更加瞩目。按照最新设计完成项目代码更改。Re-design the currently fully functioning scheduler. It is a website that helps Tufts students to plan out their degree requirements, degree plan, and semesterly schedule.",
     projectType: "Student Club",
     myRole: "Front-end Team Member, Project Owner",
     currentStatus:
