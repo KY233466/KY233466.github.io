@@ -21,7 +21,7 @@ const headerContent = [
   {
     title: "JARney Scheduler Page Redesign",
     detail:
-      "Re-design the currently fully functioning scheduler. It is a website that helps Tufts students to plan out their degree requirements, degree plan, and semesterly schedule.",
+      "使关键信息更加吸引人。改变功能位置以使工作流更加合理 • 决定使用更高对比度的颜色来强调信息的层次结构。计划实现更好的空间利用效率。按照最新设计完成项目代码更改。Re-design the currently fully functioning scheduler. It is a website that helps Tufts students to plan out their degree requirements, degree plan, and semesterly schedule.",
     projectType: "Student Club",
     myRole: "Front-end Team Member, Project Owner",
     currentStatus:
