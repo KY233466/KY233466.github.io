@@ -1,0 +1,56 @@
+{
+  "greeting": "Hello",
+  "text": "Thank you for visiting our website.",
+  "language": "Language",
+  "ZOOX": {
+    "HeaderContent": {
+      "title": "ZOOX Autonomous Vehicle In Car Display",
+      "detail": "The display is Macbook Pro 14-inch in size and is located on the side of the seat. Created mood boards and 24 high-fidelity pages. Wireframed and prototyped with animations and transitions. Created lock screen design to prevent accidental interactions because of the physical placement of the display. Designed a full set of safety instructions and protocols, including declaring emergencies and video chat with staff.",
+      "projectType": "Hypothetical Class Project",
+      "myRole": "Project Owner",
+      "currentStatus": "Design phase done",
+      "Btn": false,
+      "BtnContent": null,
+      "IconImage": {
+        "images": "../../pic/InCar.png",
+        "name": "In car display location"
+      }
+    }
+  },
+  "WhatColor": {
+    "HeaderContent": {
+      "title": "What Color: an Arduino based color detection toy",
+      "detail": "此产品鼓励4岁+的孩子通过寻找物品来学习颜色。在识别一个物品的颜色后，What Color的触摸屏上会显示此颜色的红黄蓝构成，然后孩子可以用这个颜色进行绘画。显示红黄蓝的构成不仅可以教孩子什么是红色、黄色、蓝色，而且对于已经熟知红黄蓝的孩子，可以教他们颜色混合和更进阶的颜色概念，如珊瑚色、青色。",
+      "projectType": "Class Project",
+      "myRole": "Project Owner",
+      "currentStatus": "User testing done",
+      "Btn": false,
+      "BtnContent": null,
+      "IconImage": null
+    }
+  },
+  "Jarney": {
+    "HeaderContent": {
+      "title": "JARney Scheduler Page Redesign",
+      "detail": "此产品鼓励4岁+的孩子通过寻找物品来学习颜色。在识别一个物品的颜色后，What Color的触摸屏上会显示此颜色的红黄蓝构成，然后孩子可以用这个颜色进行绘画。显示红黄蓝的构成不仅可以教孩子什么是红色、黄色、蓝色，而且对于已经熟知红黄蓝的孩子，可以教他们颜色混合和更进阶的颜色概念，如珊瑚色、青色。",
+      "projectType": "Class Project",
+      "myRole": "Project Owner",
+      "currentStatus": "User testing done",
+      "Btn": false,
+      "BtnContent": null,
+      "IconImage": null
+    }
+  },
+  "ActivityStatus": {
+    "HeaderContent": {
+      "title": "Activity Status Study",
+      "detail": "",
+      "projectType": "Class Project",
+      "myRole": "",
+      "currentStatus": "",
+      "Btn": false,
+      "BtnContent": null,
+      "IconImage": null
+    }
+  }
+}
