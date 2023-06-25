@@ -15,7 +15,6 @@ export default function ContentHeader({
   Icon,
   IconImage,
 }) {
-
   return (
     <div className={styles.container}>
       <div className={styles.title}>{title}</div>

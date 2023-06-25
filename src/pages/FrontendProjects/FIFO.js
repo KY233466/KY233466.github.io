@@ -5,7 +5,6 @@ import ReactIcon from "../../pic/React.png";
 import TypeScriptIcon from "../../pic/TypeScript.png";
 import ReduxIcon from "../../pic/ReduxIcon.png";
 
-
 const Icons = [
   {
     images: ReactIcon,
@@ -24,10 +23,12 @@ const Icons = [
 const headerContent = [
   {
     title: "FIFO Office Hour Queue",
-    detail: "A queue management solution for TA office hours. A freshly started project.",
+    detail:
+      "A queue management solution for TA office hours. A freshly started project.",
     projectType: "Student Club",
     myRole: "Front-end Team Lead",
-    currentStatus: "Creating the pages while waiting for backend to be established",
+    currentStatus:
+      "Creating the pages while waiting for backend to be established",
     Btn: false,
     Icon: true,
     IconImage: Icons,
@@ -35,7 +36,6 @@ const headerContent = [
 ];
 
 export default function FIFO() {
-
   return (
     <div className={styles.container}>
       {headerContent.map((value, index) => (

@@ -1,18 +1,18 @@
-import React from "react"
-import ReactDOM from "react-dom/client"
-import App from "./App"
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 import Landing from "./pages/Landing";
-import "./components/NavBar/NavBar.module.css"
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./components/NavBar/NavBar.module.css";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById("root"))
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
-        <Route exact path="/" element={<Landing/>} />
-        <Route path="/main/*" element={<App/>} />
+        <Route exact path="/" element={<Landing />} />
+        <Route path="/main/*" element={<App />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );

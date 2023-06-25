@@ -2,7 +2,6 @@ import styles from "./Footer.module.css";
 import LinkedIn from "../../pic/LinkedIn.png";
 import GitHub from "../../pic/Github.png";
 
-
 const Footer = () => {
   return (
     <div className={styles.container}>

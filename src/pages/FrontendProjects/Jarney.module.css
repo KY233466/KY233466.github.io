@@ -1,64 +1,64 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 7rem;
 }
 
 .contentContainer {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 3rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
 .sectionHeader {
-    font-family: 'Avenir';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 35px;
-    line-height: 55px;
-    color: #2F76B5;;
-    margin-top: 15px;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 55px;
+  color: #2f76b5;
+  margin-top: 15px;
 }
 
-.noBtn{
-    background-color: transparent;
-    border: none;
+.noBtn {
+  background-color: transparent;
+  border: none;
 }
 
 .myNode {
-    opacity: 1;
-    transition: opacity 200ms;
+  opacity: 1;
+  transition: opacity 200ms;
 }
 
 .alert-enter {
-    opacity: 0;
-    transform: scale(0.9);
+  opacity: 0;
+  transform: scale(0.9);
 }
 
 .alert-enter-active {
-    opacity: 1;
-    transform: translateX(0);
-    transition: opacity 300ms, transform 300ms;
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
 }
 
 .alert-exit {
-    opacity: 1;
+  opacity: 1;
 }
 
 .alert-exit-active {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 300ms, transform 300ms;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
 }
 
 @media (max-width: 768px) {
-    .sectionHeader {
-        font-size: 1.8rem;
-    }
-    .contentContainer {
-        width: 100%;
-    }
+  .sectionHeader {
+    font-size: 1.8rem;
+  }
+  .contentContainer {
+    width: 100%;
+  }
 }

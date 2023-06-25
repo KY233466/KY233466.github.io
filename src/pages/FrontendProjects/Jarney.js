@@ -17,7 +17,6 @@ const headerContent = [
 ];
 
 export default function Jarney() {
-
   return (
     <div className={styles.container}>
       {headerContent.map((value, index) => (

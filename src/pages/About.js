@@ -1,7 +1,7 @@
-import Project from "../components/Project/Project"
+import Project from "../components/Project/Project";
 import styles from "../components/FrontEnd.module.css";
 import JarneyDesign from "../pic/JarneyDesign.png";
-import FIFO from "../pic/FIFOCover.png"
+import FIFO from "../pic/FIFOCover.png";
 
 const content = [
   {

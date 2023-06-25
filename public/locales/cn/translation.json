@@ -1,0 +1,185 @@
+{
+  "text": "文字",
+  "language": "语言设置",
+  "ZOOX": {
+    "HeaderContent": {
+      "title": "ZOOX自动驾驶汽车车载显示",
+      "detail": "显示屏为Macbook Pro 14 英寸尺寸大小，位于座椅侧面。制作了情绪板和24个高保真页面，使用动画和过度进行线框图设计和原型制作。由于屏面物理位置的特殊性，设计了锁屏界面以防止手臂误触而发生意外操作。考虑到安全性对自动驾驶汽车至关重要，为其设计了一套完整的安全说明，包括紧急情况报告和与工作人员进行视频聊天。",
+      "projectType": "Hypothetical Class Project",
+      "myRole": "Project Owner",
+      "currentStatus": "Design phase done",
+      "Btn": false,
+      "BtnContent": null,
+      "IconImage": {
+        "images": "../../pic/InCar.png",
+        "name": "In car display location"
+      }
+    },
+    "DesignOverview": {
+      "title": "设计概览",
+      "detail": "在浏览器中查看原型"
+    },
+    "FunctionalRequirements": {
+      "title": "功能需求分析",
+      "analysis": {
+        "first": {
+          "cause": "乘客的安全至关重要，ZOOX作为一个初创公司为了口碑更要严加防范",
+          "solution": "需要有保证乘客安全的措施、以及事件发生之后如何处理的措施"
+        },
+        "second": {
+          "cause": "ZOOX是一项新颖技术与产品的提供者",
+          "solution": "需要给乘车秀肌肉，展示车辆是如何运行的"
+        },
+        "third": {
+          "cause": "ZOOX目前定位为无人驾驶打车服务提供者",
+          "solution": "需要有打车服务常有的功能，如更换目的地"
+        },
+        "fourth": {
+          "cause": "ZOOX车辆没有普通汽车的控制面板与方向盘",
+          "solution": "需要车内环境设置，如调节空调温度"
+        },
+        "fifth": {
+          "cause": "乘客的注意力不需要放在路上",
+          "solution": "可以提供娱乐设施来增加体验，如车载音响音乐播放"
+        },
+        "sixth": {
+          "cause": "座位为全包座位，屏幕在乘客身侧，可能会误触",
+          "solution": "需要防误触机制"
+        }
+      }
+    },
+    "InitialFeature": {
+      "title": "初始功能清单",
+      "list": {
+        "safety": {
+          "title": "安全类",
+          "content": {
+            "detail1": "行程开始前的安全说明",
+            "detail2": "行程开始前的安全说明紧急情况报告、工作人员进行视频连线"
+          }
+        },
+        "status": {
+          "title": "显示ZOOX的运行状态",
+          "content": {
+            "detail1": "显示车辆的计算机视觉都识别到了什么物体",
+            "detail2": "从车辆的角度，当前路段是什么样子"
+          }
+        },
+        "ride": {
+          "title": "打车服务有关功能",
+          "content": {
+            "detail1": "当前位置、剩余多少时间",
+            "detail2": "上车前乘客认证、更改目的地、取消本次旅程等"
+          }
+        },
+        "control": {
+          "title": "车内控制",
+          "content": {
+            "detail1": "调节空调温度、座椅等"
+          }
+        },
+        "entertainment": {
+          "title": "娱乐",
+          "detail1": "音乐播放"
+        },
+        "PreventAccidents": {
+          "title": "防误触机制",
+          "detail1": "屏保"
+        }
+      }
+    },
+    "FunctionChecklist": {
+      "title": "功能细分",
+      "analysis": {
+        "first": {
+          "cause": "行程开始前的安全说明",
+          "solution": "和乘客解释必要的安全功能，如何开启车门，ZOOX的设计巧思如何保证乘客安全等"
+        },
+        "second": {
+          "cause": "紧急情况报告",
+          "solution": "紧急情况下没有太多时间打字，需要有提前设定的模版，提供最可能出现的紧急情况的文字"
+        },
+        "third": {
+          "cause": "工作人员视频连线",
+          "solution": "可能连上了但是没有声音，或者乘客无法无法用声音沟通，也需要有提前设定的模版"
+        },
+        "fourth": {
+          "cause": "乘客需要看当前位置，并且好奇从车辆的角度看当前路段时什么样子的",
+          "solution": "在地图、车视角来回切换"
+        },
+        "fifth": {
+          "cause": "音乐播放、车内环境调节可能不会经常用到",
+          "solution": "可拉出的功能页面"
+        },
+        "sixth": {
+          "cause": "座位为全包座位，屏幕在乘客身侧，可能会误触",
+          "solution": "一段时间乘客没有操作之后会开启屏保。屏保上可显示基础信息，如旅程还剩多长时间、车速"
+        }
+      }
+    },
+    "Moodboard": {
+      "title": "情绪板",
+      "detail": "在下面两种情绪板中，最后选择了情绪板2。 其风格特征更与ZOOX先进官网相近，并且与友商的设计风格产生对比，更有识别性。",
+      "description1": "情绪板1. 明亮干净的视觉设计，给人一种智能、优雅、科技的感觉。多使用柔和的颜色与背景形成对比，以帮助显示信息。",
+      "description2": "情绪板2. 暗模式设计，有一种严肃的未来主义技术氛围。高饱和度颜色用作与背景的对比，以强调显示的内容信息。"
+    },
+    "Wireframes": {
+      "title": "线框图"
+    },
+    "Prototypes": {
+      "title": "原型图"
+    },
+    "Iteration": {
+      "title": "迭代",
+      "changes": {
+        "title": "更改的地方：",
+        "description": {
+          "text1": "在原型图中，屏保由从右到左的滑动来解除屏保状态。而从下到上的滑动更符合现代人开启手机或平板的动作，移除箭头还节省了左右空间。",
+          "text2": "精简了屏保上显示的信息，其实更加整洁",
+          "text3": "将可拉出的功能页面的每个功能由横排改为竖排，使拉出动画更为简洁",
+          "text4": "由需要横向滑动页面来切换地图与车视角，改为摁切换按钮，在需要更小的动作幅度之外，让乘客更明了的知道另外一个视角是什么"
+        }
+      },
+      "FinalResult": {
+        "title": "最终结果：",
+        "detail": "在浏览器中查看原型"
+      }
+    }
+  },
+  "WhatColor": {
+    "HeaderContent": {
+      "title": "What Color: 基于Arduino的颜色识别玩具",
+      "detail": "此产品鼓励4岁+的孩子通过寻找物品来学习颜色。在识别一个物品的颜色后，What Color的触摸屏上会显示此颜色的红黄蓝构成，然后孩子可以用这个颜色进行绘画。显示红黄蓝的构成不仅可以教孩子什么是红色、黄色、蓝色，而且对于已经熟知红黄蓝的孩子，可以教他们颜色混合和更进阶的颜色概念，如珊瑚色、青色。",
+      "projectType": "Class Project",
+      "myRole": "Project Owner",
+      "currentStatus": "User testing done",
+      "Btn": false,
+      "BtnContent": null,
+      "IconImage": null
+    }
+  },
+  "Jarney": {
+    "HeaderContent": {
+      "title": "课程组合生成器重新设计 + 更改前端代码 ",
+      "detail": "此产品鼓励4岁+的孩子通过寻找物品来学习颜色。在识别一个物品的颜色后，What Color的触摸屏上会显示此颜色的红黄蓝构成，然后孩子可以用这个颜色进行绘画。显示红黄蓝的构成不仅可以教孩子什么是红色、黄色、蓝色，而且对于已经熟知红黄蓝的孩子，可以教他们颜色混合和更进阶的颜色概念，如珊瑚色、青色。",
+      "projectType": "Class Project",
+      "myRole": "Project Owner",
+      "currentStatus": "User testing done",
+      "Btn": false,
+      "BtnContent": null,
+      "IconImage": null
+    }
+  },
+  "ActivityStatus": {
+    "HeaderContent": {
+      "title": "What Color: 基于Arduino的颜色识别玩具",
+      "detail": "此产品鼓励4岁+的孩子通过寻找物品来学习颜色。在识别一个物品的颜色后，What Color的触摸屏上会显示此颜色的红黄蓝构成，然后孩子可以用这个颜色进行绘画。显示红黄蓝的构成不仅可以教孩子什么是红色、黄色、蓝色，而且对于已经熟知红黄蓝的孩子，可以教他们颜色混合和更进阶的颜色概念，如珊瑚色、青色。",
+      "projectType": "Class Project",
+      "myRole": "Project Owner",
+      "currentStatus": "User testing done",
+      "Btn": false,
+      "BtnContent": null,
+      "IconImage": null
+    }
+  }
+}

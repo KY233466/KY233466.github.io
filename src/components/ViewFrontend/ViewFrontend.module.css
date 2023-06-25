@@ -1,26 +1,26 @@
 .btn {
-    background-color: #1D2232;
-    color: white;
-    border-radius: 20px;
-    padding: 10px 25px;
-    text-decoration: none;
-    margin-left: 20px;
-    margin-top: 10px;
-    flex: 1;
-    text-align: center;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #1d2232;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 25px;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-top: 10px;
+  flex: 1;
+  text-align: center;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn a:hover {
-    color: #F9F3D6 !important;
+  color: #f9f3d6 !important;
 }
 
 @media (max-width: 768px) {
-    .btn {
-        margin-left: 0;
-        padding: 20px 25px;
-    }
+  .btn {
+    margin-left: 0;
+    padding: 20px 25px;
+  }
 }

@@ -1,7 +1,7 @@
 import styles from "./Hobbees.module.css";
 import ContentHeader from "../../components/ContentHeader/ContentHeader";
 import Figma from "../../pic/Figma.png";
-import HDemo from "../../pic/HDemo.mov"
+import HDemo from "../../pic/HDemo.mov";
 
 const Icons = [
   {

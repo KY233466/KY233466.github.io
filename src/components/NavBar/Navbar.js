@@ -2,17 +2,16 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import styles from "./NavBar.module.css";
 
 export default function Navbar() {
-
   return (
     <nav className={styles.nav}>
-        <Link to="/" className={styles.siteTitle}>
-          Katie Yang
-        </Link>
-        <ul>
-          <CustomLink to="/main">Front-end</CustomLink>
-          <CustomLink to="/main/Design">UI/UX</CustomLink>
-          {/* <CustomLink to="/main/resume">Resume</CustomLink> */}
-        </ul>
+      <Link to="/" className={styles.siteTitle}>
+        Katie Yang
+      </Link>
+      <ul>
+        <CustomLink to="/main">Front-end</CustomLink>
+        <CustomLink to="/main/Design">UI/UX</CustomLink>
+        {/* <CustomLink to="/main/resume">Resume</CustomLink> */}
+      </ul>
     </nav>
   );
 }

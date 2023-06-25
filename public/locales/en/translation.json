@@ -1,0 +1,186 @@
+{
+  "greeting": "Hello",
+  "text": "Thank you for visiting our website.",
+  "language": "Language",
+  "ZOOX": {
+    "HeaderContent": {
+      "title": "ZOOX Autonomous Vehicle In Car Display",
+      "detail": "The display is Macbook Pro 14-inch in size and is located on the side of the seat. Created mood boards and 24 high-fidelity pages. Wireframed and prototyped with animations and transitions. Created lock screen design to prevent accidental interactions because of the physical placement of the display. Designed a full set of safety instructions and protocols, including declaring emergencies and video chat with staff.",
+      "projectType": "Hypothetical Class Project",
+      "myRole": "Project Owner",
+      "currentStatus": "Design phase done",
+      "Btn": false,
+      "BtnContent": null,
+      "IconImage": {
+        "images": "../../pic/InCar.png",
+        "name": "In car display location"
+      }
+    },
+    "DesignOverview": {
+      "title": "Design Overview",
+      "detail": "View Prototype in Browser"
+    },
+    "FunctionalRequirements": {
+      "title": "Need Analysis",
+      "analysis": {
+        "first": {
+          "cause": "Passengers' safety is paramount, and ZOOX as a start-up company must take strict precautions for their reputation",
+          "solution": "Measures to ensure the safety of passengers and how to deal with them after an incident is required."
+        },
+        "second": {
+          "cause": "ZOOX is a provider of novel technologies and products",
+          "solution": "Showcase the technology involved and how the vehicle works"
+        },
+        "third": {
+          "cause": "ZOOX is currently positioned as a driverless taxi service provider",
+          "solution": "It needs to have the usual features of taxi services, such as changing destinations"
+        },
+        "fourth": {
+          "cause": "As a fully autonomous vehicle, ZOOX do not have the control panel and steering wheel of ordinary cars",
+          "solution": "Require ways to adjust interior environment settings, such as internal temperature"
+        },
+        "fifth": {
+          "cause": "Passengers' attention does not need to be on the road",
+          "solution": "Entertainment can be provided to enhance the experience, such as in-car music player"
+        },
+        "sixth": {
+          "cause": "The screen is located at the side of passenger's seat, so it may be touched by mistake",
+          "solution": "Requires mechanism to prevent accidental changes"
+        }
+      }
+    },
+    "InitialFeature": {
+      "title": "Initial functional requirements checklist",
+      "list": {
+        "safety": {
+          "title": "Safety",
+          "content": {
+            "detail1": "Pre-ride safety instructions",
+            "detail2": "Declare emergencies, video call with safety advisor"
+          }
+        },
+        "status": {
+          "title": "Showcase ZOOX status",
+          "content": {
+            "detail1": "Showcase what is detected by Computer Vision",
+            "detail2": "Showcase how the road is like from the vehicle's perspective"
+          }
+        },
+        "ride": {
+          "title": "Ride related functionalities",
+          "content": {
+            "detail1": "Current location and time remaining",
+            "detail2": "Authenticate passenger, change destination, and cancel trip"
+          }
+        },
+        "control": {
+          "title": "In-car environment controls",
+          "content": {
+            "detail1": "Adjust temperature and seating"
+          }
+        },
+        "entertainment": {
+          "title": "Entertainment",
+          "detail1": "Music"
+        },
+        "PreventAccidents": {
+          "title": "Prevent accidental changes",
+          "detail1": "Lockscreen"
+        }
+      }
+    },
+    "FunctionChecklist": {
+      "title": "Deepen the requirements",
+      "analysis": {
+        "first": {
+          "cause": "行程开始前的安全说明",
+          "solution": "和乘客解释必要的安全功能，如何开启车门，ZOOX的设计巧思如何保证乘客安全等"
+        },
+        "second": {
+          "cause": "紧急情况报告",
+          "solution": "紧急情况下没有太多时间打字，需要有提前设定的模版，提供最可能出现的紧急情况的文字"
+        },
+        "third": {
+          "cause": "工作人员视频连线",
+          "solution": "可能连上了但是没有声音，或者乘客无法无法用声音沟通，也需要有提前设定的模版"
+        },
+        "fourth": {
+          "cause": "乘客需要看当前位置，并且好奇从车辆的角度看当前路段时什么样子的",
+          "solution": "在地图、车视角来回切换"
+        },
+        "fifth": {
+          "cause": "音乐播放、车内环境调节可能不会经常用到",
+          "solution": "可拉出的功能页面"
+        },
+        "sixth": {
+          "cause": "座位为全包座位，屏幕在乘客身侧，可能会误触",
+          "solution": "一段时间乘客没有操作之后会开启屏保。屏保上可显示基础信息，如旅程还剩多长时间、车速"
+        }
+      }
+    },
+    "Moodboard": {
+      "title": "Moodboard",
+      "detail": "在下面两种情绪板中，最后选择了情绪板2。 其风格特征更与ZOOX先进官网相近，并且与友商的设计风格产生对比，更有识别性。",
+      "description1": "Moodboard 1. Light mode design that gives out a smart soft technology feeling as well as elegance with the bright and clean visual design. Mostly uses pastel colors to work as contrast to the background to aid information display.",
+      "description2": "Moodboard 2. Dark mode design that gives out a serious futuristic, technological ambiance. High saturation colors are used as contrast to the background to put emphasis on the displayed information."
+    },
+    "Wireframes": {
+      "title": "Wireframes"
+    },
+    "Prototypes": {
+      "title": "Prototypes"
+    },
+    "Iteration": {
+      "title": "Iteration",
+      "changes": {
+        "title": "Changes: ",
+        "description": {
+          "text1": "Changed screensaver unlocking mechanism from swiping from right to left to from bottom to top, which is more in line with the motion of unlocking mobile phones or tablets. Removing the arrow also saves left and right spaces. ",
+          "text2": "Simplified the information displayed on the screensaver, making it cleaner",
+          "text3": "Changed the orientation of the expandable page from horizontal to vertical, making the pull-out animation more concise and intuitive",
+          "text4": "Instead of swiping the page sideways to switch between the map and the car's view, one can press the toggle button. Other than requiring a smaller range of motion, it allows the passenger to have a better idea about what the other option is."
+        }
+      },
+      "FinalResult": {
+        "title": "Final Result:",
+        "detail": "View Prototype in Browser"
+      }
+    }
+  },
+  "WhatColor": {
+    "HeaderContent": {
+      "title": "What Color: an Arduino based color detection toy",
+      "detail": "此产品鼓励4岁+的孩子通过寻找物品来学习颜色。在识别一个物品的颜色后，What Color的触摸屏上会显示此颜色的红黄蓝构成，然后孩子可以用这个颜色进行绘画。显示红黄蓝的构成不仅可以教孩子什么是红色、黄色、蓝色，而且对于已经熟知红黄蓝的孩子，可以教他们颜色混合和更进阶的颜色概念，如珊瑚色、青色。",
+      "projectType": "Class Project",
+      "myRole": "Project Owner",
+      "currentStatus": "User testing done",
+      "Btn": false,
+      "BtnContent": null,
+      "IconImage": null
+    }
+  },
+  "Jarney": {
+    "HeaderContent": {
+      "title": "JARney Scheduler Page Redesign",
+      "detail": "此产品鼓励4岁+的孩子通过寻找物品来学习颜色。在识别一个物品的颜色后，What Color的触摸屏上会显示此颜色的红黄蓝构成，然后孩子可以用这个颜色进行绘画。显示红黄蓝的构成不仅可以教孩子什么是红色、黄色、蓝色，而且对于已经熟知红黄蓝的孩子，可以教他们颜色混合和更进阶的颜色概念，如珊瑚色、青色。",
+      "projectType": "Class Project",
+      "myRole": "Project Owner",
+      "currentStatus": "User testing done",
+      "Btn": false,
+      "BtnContent": null,
+      "IconImage": null
+    }
+  },
+  "ActivityStatus": {
+    "HeaderContent": {
+      "title": "Activity Status Study",
+      "detail": "",
+      "projectType": "Class Project",
+      "myRole": "",
+      "currentStatus": "",
+      "Btn": false,
+      "BtnContent": null,
+      "IconImage": null
+    }
+  }
+}

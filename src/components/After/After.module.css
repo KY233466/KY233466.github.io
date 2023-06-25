@@ -1,78 +1,78 @@
 .container {
-    width: 80vw;
-    display: flex;
-    flex-direction: row;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
 }
 
 .explain {
-    margin-top: 0.3rem;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+  margin-top: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .title {
-    font-family: 'Avenir';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 49px;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 49px;
 
-    color: #BAD2E7;
+  color: #bad2e7;
 }
 
 .summary {
-    font-family: 'Avenir';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 23px;
-    line-height: 37px;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 37px;
 
-    color: #191F36;
+  color: #191f36;
 }
 
 .detail {
-    font-family: 'Avenir';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 34px;
-    margin-top: 10px;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 34px;
+  margin-top: 10px;
 
-    color: #191F36;
+  color: #191f36;
 }
 
 .img {
-    width: 68%;
-    margin: 1rem;
-    margin-left: 2%;
+  width: 68%;
+  margin: 1rem;
+  margin-left: 2%;
 }
 
 @media (max-width: 767px) {
-    .container {
-        flex-direction: column;
-        width: 100%;
-    }
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .img {
-        width: 100%;
-        margin: 1rem 0 0 0;
-    }
+  .img {
+    width: 100%;
+    margin: 1rem 0 0 0;
+  }
 
-    .explain {
-        align-items: center;
-    }
+  .explain {
+    align-items: center;
+  }
 
-    .title {
-        font-size: 2rem;
-    }
+  .title {
+    font-size: 2rem;
+  }
 
-    .summary {
-        font-size: 1.2rem;
-    }
+  .summary {
+    font-size: 1.2rem;
+  }
 
-    .detail {
-        font-size: 0.9rem;
-        font-weight: 300;
-    }
+  .detail {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
 }

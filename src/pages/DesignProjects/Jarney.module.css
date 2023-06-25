@@ -1,171 +1,171 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 7rem;
 }
 
 .contentContainer {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 3rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
 .section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .sectionHeader {
-    font-family: 'Avenir';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 35px;
-    line-height: 55px;
-    color: #2F76B5;;
-    margin-top: 15px;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 55px;
+  color: #2f76b5;
+  margin-top: 15px;
 }
 
 .img {
-    width: 100%;
-    margin: 15px 0 30px 0;
+  width: 100%;
+  margin: 15px 0 30px 0;
 }
 
 .Annotation {
-    display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-    margin-bottom: 10px;
-    height: auto;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  margin-bottom: 10px;
+  height: auto;
 }
 
 .Annotation div {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .Annotation ul {
-    margin-top: 2rem;
-    font-family: 'Avenir';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 170%;
-    width: 35%;
+  margin-top: 2rem;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 170%;
+  width: 35%;
 }
 
 .Annotation li {
-    margin-bottom: 7px;
+  margin-bottom: 7px;
 }
 
 .red {
-    color: #BB3535;
+  color: #bb3535;
 }
 
 .green {
-    color: #77DC66;
+  color: #77dc66;
 }
 
 .blue {
-    color: #3E76CA;
+  color: #3e76ca;
 }
 
 .wideSection {
-    width: 100vw;
-    background-color: #F9F3D6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem 0;
+  width: 100vw;
+  background-color: #f9f3d6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
 }
 
 .GoalsImg {
-    width: 80%;
+  width: 80%;
 }
 
-.noBtn{
-    background-color: transparent;
-    border: none;
+.noBtn {
+  background-color: transparent;
+  border: none;
 }
 
 .lol {
-    border: solid 2px;
-    width: 300px;
-    height: 300px;
-    background-color: pink;
-    opacity: 0;
+  border: solid 2px;
+  width: 300px;
+  height: 300px;
+  background-color: pink;
+  opacity: 0;
 }
 
 .hmmml {
-    border: solid 2px;
-    width: 300px;
-    height: 300px;
-    background-color: pink;
+  border: solid 2px;
+  width: 300px;
+  height: 300px;
+  background-color: pink;
 }
 
 .hmmm {
-    animation: fadeOut ease 8s;
-        -webkit-animation: fadeOut ease 8s;
-        -moz-animation: fadeOut ease 8s;
-        -o-animation: fadeOut ease 8s;
-        -ms-animation: fadeOut ease 8s;
+  animation: fadeOut ease 8s;
+  -webkit-animation: fadeOut ease 8s;
+  -moz-animation: fadeOut ease 8s;
+  -o-animation: fadeOut ease 8s;
+  -ms-animation: fadeOut ease 8s;
 }
 
 .alert-enter {
-    opacity: 0;
-    transform: scale(0.9);
+  opacity: 0;
+  transform: scale(0.9);
 }
 
 .alert-enter-active {
-    opacity: 1;
-    transform: translateX(0);
-    transition: opacity 300ms, transform 300ms;
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
 }
 
 .alert-exit {
-    opacity: 1;
+  opacity: 1;
 }
 
 .alert-exit-active {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 300ms, transform 300ms;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
 }
 
 @media (max-width: 1000px) {
-    .Annotation {
-        display: column;
-        flex-wrap: wrap;
-    }
+  .Annotation {
+    display: column;
+    flex-wrap: wrap;
+  }
 
-    .Annotation img {
-        width: 100%;
-        margin-bottom: 0px;
-    }
+  .Annotation img {
+    width: 100%;
+    margin-bottom: 0px;
+  }
 
-    .Annotation ul {
-        margin-top: 15px;
-        width: 100%;
-    }
+  .Annotation ul {
+    margin-top: 15px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
-    .wideSection {
-        padding: 1rem 0;
-    }
-    .sectionHeader {
-        margin-top: 0;
-        font-size: 1.8rem;
-    }
-    .GoalsImg {
-        width: 95%;
-        margin-bottom: 10px;
-    }
-    .contentContainer {
-        width: 100%;
-    }
+  .wideSection {
+    padding: 1rem 0;
+  }
+  .sectionHeader {
+    margin-top: 0;
+    font-size: 1.8rem;
+  }
+  .GoalsImg {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+  .contentContainer {
+    width: 100%;
+  }
 }

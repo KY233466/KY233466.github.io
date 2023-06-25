@@ -12,8 +12,8 @@ body {
 }
 
 .nav {
-  background-color: #F9F3D6;
-  color: #282C4E;
+  background-color: #f9f3d6;
+  color: #282c4e;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -36,7 +36,7 @@ body {
   list-style: none;
   display: flex;
   gap: 8rem;
-  font-family: 'Galvji';
+  font-family: "Galvji";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -48,7 +48,7 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  padding: .25rem;
+  padding: 0.25rem;
 }
 
 .nav li.active {
@@ -57,12 +57,12 @@ body {
 
 @media (max-width: 768px) {
   .nav {
-      background-color: #F9F3D6;
-      color: #282C4E;
-      display: flex;
-      justify-content: space-between;
-      align-items: stretch;
-      padding: 1.5rem 15px;
+    background-color: #f9f3d6;
+    color: #282c4e;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 1.5rem 15px;
   }
 
   .nav ul {

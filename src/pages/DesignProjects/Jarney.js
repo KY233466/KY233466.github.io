@@ -13,7 +13,7 @@ import Figma from "../../pic/Figma.png";
 const Icons = [
   {
     images: Figma,
-    name: "Figma Icon"
+    name: "Figma Icon",
   },
 ];
 
@@ -45,9 +45,9 @@ const beforeContent = [
 
 const afterContent = [
   {
-    summary: "Distinct separation of functionality, easy to see key information",
-    detail:
-      "",
+    summary:
+      "Distinct separation of functionality, easy to see key information",
+    detail: "",
   },
 ];
 
