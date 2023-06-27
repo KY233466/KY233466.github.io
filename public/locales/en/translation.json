@@ -1,7 +1,21 @@
 {
   "greeting": "Hello",
   "text": "Thank you for visiting our website.",
+  "name": "Katie Yang",
   "language": "Language",
+  "LandingPage": {
+    "message": "",
+    "actionables": {
+      "message": "Which side of me do you want to explore?",
+      "Frontend": "Front-end",
+      "Design": "UI/UX"
+    }
+  },
+  "HeaderContent": {
+    "ProjectType": "Project Type",
+    "MyRole": "My Role",
+    "CurrentStatus": "Current Status"
+  },
   "ZOOX": {
     "HeaderContent": {
       "title": "ZOOX Autonomous Vehicle In Car Display",
@@ -150,14 +164,84 @@
   "WhatColor": {
     "HeaderContent": {
       "title": "What Color: an Arduino based color detection toy",
-      "detail": "此产品鼓励4岁+的孩子通过寻找物品来学习颜色。在识别一个物品的颜色后，What Color的触摸屏上会显示此颜色的红黄蓝构成，然后孩子可以用这个颜色进行绘画。显示红黄蓝的构成不仅可以教孩子什么是红色、黄色、蓝色，而且对于已经熟知红黄蓝的孩子，可以教他们颜色混合和更进阶的颜色概念，如珊瑚色、青色。",
+      "detail": "This product encourages 4+ year olds to learn about colors with surrounding objects. After the color is detected by the sensor, its red, yellow and blue composition will be displayed on WhatColor's touchscreen, and the child can then draw with this color. Showing the RGB composition not only can teach children what red, yellow, and blue are, but also color mixing and more advanced color concepts such as coral and cyan for those that already know RGB.",
       "projectType": "Class Project",
       "myRole": "Project Owner",
       "currentStatus": "User testing done",
       "Btn": false,
       "BtnContent": null,
       "IconImage": null
-    }
+    },
+    "Intro": {
+      "title": "Introduction",
+      "message": "According to CDC, children at the age of 4 should reach the cognitive milestone of being able to name a few colors of items",
+      "detail1": "What Color受众：正在学习基础颜色（红，黄，蓝），或已经学过基础颜色，想要学习进阶颜色或色彩混合的四岁+小孩",
+      "detail2": "鼓励小孩在探索的时候去识别物体颜色，并用这个颜色进行绘画",
+      "detail3": "提升孩子对颜色组成的敏感度，接触色彩混合理论",
+      "detail4": "组成部分：颜色传感器 + 触摸屏 + Arduino + 3D打印外壳",
+      "compo": "3D printed shell"
+    },
+    "InitDesign": {
+      "title": "Initial Design Progress",
+      "need": {
+        "title": "Need analysis: ",
+        "message": "4 year olds should be able to name a few colors of items."
+      },
+      "task": {
+        "title": "Task analysis: ",
+        "message1": "Found toy with similar concept: magnetic drawing board. Performed task analysis with an online ",
+        "message2": "video",
+        "message3": " with children interacting and reviewing a board."
+      },
+      "discovery": {
+        "title": "Main takeaways: ",
+        "message1": "3 year-old child could lift a 710g item",
+        "message2": "pen with a diameter of 1.2cm could be easily utilized by 1 year- old in a grabbing hand position"
+      }
+    },
+    "IteratedDesign": {
+      "title": "Iterated Design",
+      "summary": {
+        "detail1": "考虑了人体工程学设计，结合了市场上常有的功能，使其便于携带",
+        "detail2": "考虑到大部分儿童都用右手书写，把手被放在了左侧，这样他们可以持设备和笔跑来跑去",
+        "detail3": "增加了触摸屏和笔，用孩子绘画的天性增加娱乐感",
+        "detail4": "相近于儿童可能已经熟悉的平板和磁力绘画板"
+      },
+      "FlowChart": "Workflow Chart",
+      "thoughts": {
+        "detail1": "Then thought about how putting the color sensor on the back of the product fits more closely with people's habit of scnaning objects with our phones or tablets.",
+        "detail2": "This change is reflected in 3D modeling."
+      },
+      "modeling": {
+        "title": "3D Modeling",
+        "message1": "The 9V battery is placed at the bottom of the product, so the balance point of this device would be more towards the bottom. This make it easier for children to hold and run around with it while avoiding affordance of smashing ",
+        "message2": "According to Kong, the optimal handle diameter for grip force tasks is 19.7% of the user's hand length. Therefore, the best diameter for a 4 year-old with hand length of 10 cm would be 1.97 cm",
+        "message3": "Made sure shell thickness at any point is at least 1.2 cm"
+      }
+    },
+    "FinalProduct": {
+      "title": "Final Product + Usability Testing",
+      "summary": {
+        "detail1": "The product's name is written at the top of the toy to indicate which orientation this device should be held",
+        "detail2": "The device weighs about 300g, which wouldn't cause musculoskeletal injury among young children",
+        "detail3": {
+          "title": "Conducted usability testing with a 4 year old female and a 8 year old female. To protect their privacy, videos wouldn't be shared.",
+          "detail1": "All of the participants took the pen out by poking at its top, rather than using the space at the right-side of the pen.",
+          "detail2": "The handle is placed on the left so it wouldn't hinge most child's writing (because right-handedness is the most common), but younger child seems to like grabbing it with their right hand, which could reverse the orientation."
+        }
+      },
+      "FlowChart": "Updated Workflow Chart"
+    },
+    "FutureWork": {
+      "title": "Future Work",
+      "summary": {
+        "detail1": "此原型设计受到硬件可实施性影响，因而有很多进步空间。基于此次的用户测试可以进行下一步的迭代设计。",
+        "detail2": "迭代设计仅考虑在有工业标准化的硬件时，该如何设计。",
+        "detail3": "可考虑的路如：双手持平板式，单手扫描设备，孩子用智能手表拓展设备/软件...",
+        "detail4": "基于Improving Colour Patterns to Assist People with Colour Vision Deficiency论文，在显示的颜色上加入图案，也可以帮助色盲儿童尝试理解颜色概念，与生活中物品的颜色"
+      }
+    },
+    "References": "References"
   },
   "Jarney": {
     "HeaderContent": {

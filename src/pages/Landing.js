@@ -16,6 +16,8 @@ function Landing() {
   const [locale, setLocale] = useState(i18n.language);
   i18n.on("languageChanged", (lng) => setLocale(i18n.language));
 
+  const Lpath = "LandingPage.";
+
   return (
     <LocaleContext.Provider value={{ locale, setLocale }}>
       <Suspense fallback={<Loading />}>
@@ -26,11 +28,19 @@ function Landing() {
             <Card />
             <div className={styles.attribution}>
               Photo by{" "}
-              <a href="https://unsplash.com/@ilgmyzin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://unsplash.com/@ilgmyzin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >
                 ilgmyzin
               </a>{" "}
               on{" "}
-              <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >
                 Unsplash
               </a>
             </div>
@@ -38,16 +48,13 @@ function Landing() {
 
           <div className={styles.rightContainer}>
             <img className={styles.profilePic} src={Me} alt="KY" />
-            <h3>
-              Which side of me
-              <br /> do you want to explore?
-            </h3>
+            <h3>{t(Lpath + "actionables.message")}</h3>
             <div className={styles.btnS}>
               <Link className={styles.btn} to="/main">
-                <div>Front-end</div>
+                <div>{t(Lpath + "actionables.Frontend")}</div>
               </Link>
               <Link className={styles.btn} to="/main/Design">
-                <div>Design</div>
+                <div>{t(Lpath + "actionables.Design")}</div>
               </Link>
             </div>
             <div>

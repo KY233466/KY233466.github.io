@@ -34,8 +34,6 @@ const headerContent = [
   {
     title:
       "ZOOX自动驾驶汽车车载显示 ZOOX Autonomous Vehicle In Car Display Design",
-    // detail:
-    //   "Support and enhance the ride experience with interior display. Macbook Pro 14’ size interior display locating at the side of the seats. Focused on 'Safety', 'Error free', and 'Futuristic'.",
     detail:
       "显示屏为Macbook Pro 14 英寸尺寸大小，位于座椅侧面。制作了情绪板和24个高保真页面，使用动画和过度进行线框图设计和原型制作。由于屏面物理位置的特殊性，设计了锁屏界面以防止手臂误触而发生意外操作。考虑到安全性对自动驾驶汽车至关重要，为其设计了一套完整的安全说明，包括紧急情况报告和与工作人员进行视频聊天。",
     projectType: "Hypothetical Class Project",

@@ -14,6 +14,7 @@ import Iterated from "../../pic/iterated.png";
 import threeD from "../../pic/3D.png";
 import ColorWorkFlow from "../../pic/ColorWorkFlow.png";
 import UpdatedWorkFlow from "../../pic/UpdatedWorkFlow.png";
+import { useTranslation } from "react-i18next";
 
 // const Icons = [
 //   {
@@ -36,25 +37,34 @@ const headerContent = [
   },
 ];
 
+const HCpath = "WhatColor.HeaderContent.";
+const Ipath = "WhatColor.Intro.";
+const InitDpath = "WhatColor.InitDesign.";
+const IDpath = "WhatColor.IteratedDesign.";
+const FPpath = "WhatColor.FinalProduct.";
+const FWpath = "WhatColor.FutureWork.";
+
 export default function WhatColor() {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.container}>
       {headerContent.map((value, index) => (
         <ContentHeader
           index={value.index}
-          key={value.title}
-          title={value.title}
-          detail={value.detail}
-          myRole={value.myRole}
-          projectType={value.projectType}
-          currentStatus={value.currentStatus}
-          Btn={value.Btn}
-          BtnContent={value.BtnContent}
+          key={t(HCpath + "title")}
+          title={t(HCpath + "title")}
+          detail={t(HCpath + "detail")}
+          myRole={t(HCpath + "myRole")}
+          projectType={t(HCpath + "projectType")}
+          currentStatus={t(HCpath + "currentStatus")}
+          Btn={t(HCpath + "Btn")}
+          BtnContent={t(HCpath + "BtnContent")}
           IconImage={value.IconImage}
         />
       ))}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>介绍</div>
+        <div className={styles.sectionHeader}>{t(Ipath + "title")}</div>
         <div
           style={{
             display: "flex",
@@ -73,25 +83,20 @@ export default function WhatColor() {
 
           <div style={{ width: "60%" }}>
             <div style={{ paddingBottom: "20px" }}>
-              根据美国疾病预防控制中心，4岁的儿童的认知应该达到能够说出几种物品的颜色的程度
-              <a href="https://www.cdc.gov/ncbddd/actearly/milestones/milestones-4yr.html">
+              {t(Ipath + "message")}
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.cdc.gov/ncbddd/actearly/milestones/milestones-4yr.html"
+              >
                 [1]
               </a>
             </div>
             <ul>
-              <li style={{ paddingBottom: "10px" }}>
-                What
-                Color受众：正在学习基础颜色（红，黄，蓝），或已经学过基础颜色，想要学习进阶颜色或色彩混合的四岁+小孩
-              </li>
-              <li style={{ paddingBottom: "10px" }}>
-                鼓励小孩在探索的时候去识别物体颜色，并用这个颜色进行绘画
-              </li>
-              <li style={{ paddingBottom: "10px" }}>
-                提升孩子对颜色组成的敏感度，接触色彩混合理论
-              </li>
-              <li style={{ paddingBottom: "10px" }}>
-                组成部分：颜色传感器 + 触摸屏 + Arduino + 3D打印外壳
-              </li>
+              <li style={{ paddingBottom: "10px" }}>{t(Ipath + "detail1")}</li>
+              <li style={{ paddingBottom: "10px" }}>{t(Ipath + "detail2")}</li>
+              <li style={{ paddingBottom: "10px" }}>{t(Ipath + "detail3")}</li>
+              <li style={{ paddingBottom: "10px" }}>{t(Ipath + "detail4")}</li>
             </ul>
             <div
               style={{
@@ -119,11 +124,11 @@ export default function WhatColor() {
                 style={{ width: "20%" }}
               />
               <AddIcon />
-              <div style={{ paddingLeft: "15px" }}>3D打印外壳</div>
+              <div style={{ paddingLeft: "15px" }}>{t(Ipath + "compo")}</div>
             </div>
           </div>
         </div>
-        <div className={styles.sectionHeader}>初步设计过程</div>
+        <div className={styles.sectionHeader}>{t(InitDpath + "title")}</div>
         <div
           style={{
             alignItems: "center",
@@ -133,13 +138,20 @@ export default function WhatColor() {
           }}
         >
           <div>
-            <strong>需求分析</strong>: 4岁的儿童的应该能够说出几种物品的颜色
+            <strong>{t(InitDpath + "need.title")}</strong>
+            {t(InitDpath + "need.message")}
           </div>
           <div>
-            <strong>任务分析</strong>:
-            找到类似玩具：磁力绘画板。在网上找到小孩玩、并且评估的
-            <a href="https://www.youtube.com/watch?v=PIvXDLdb_L4">视频</a>
-            。对视频内容以及反馈进行分析。
+            <strong>{t(InitDpath + "task.title")}</strong>
+            {t(InitDpath + "task.message1")}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.youtube.com/watch?v=PIvXDLdb_L4"
+            >
+              {t(InitDpath + "task.message2")}
+            </a>
+            {t(InitDpath + "task.message3")}
           </div>
           <div
             style={{
@@ -156,13 +168,13 @@ export default function WhatColor() {
               alt="mangetic board"
             />
             <div>
-              <div>主要收获: </div>
+              <div>{t(InitDpath + "discovery.title")}</div>
               <ul>
                 <li style={{ paddingBottom: "10px" }}>
-                  三岁小孩可以举起710g的物品
+                  {t(InitDpath + "discovery.message1")}
                 </li>
                 <li style={{ paddingBottom: "10px" }}>
-                  1岁小孩可以用手握住并使用直径为1.2cm的笔
+                  {t(InitDpath + "discovery.message2")}
                 </li>
               </ul>
             </div>
@@ -210,16 +222,16 @@ export default function WhatColor() {
           <img src={Iterated} alt="iterated design" style={{ width: "30%" }} />
           <ul>
             <li style={{ paddingBottom: "10px" }}>
-              考虑了人体工程学设计，结合了市场上常有的功能，使其便于携带
+              {t(IDpath + "summary.detail1")}
             </li>
             <li style={{ paddingBottom: "10px" }}>
-              考虑到大部分儿童都用右手书写，把手被放在了左侧，这样他们可以持设备和笔跑来跑去
+              {t(IDpath + "summary.detail2")}
             </li>
             <li style={{ paddingBottom: "10px" }}>
-              增加了触摸屏和笔，用孩子绘画的天性增加娱乐感
+              {t(IDpath + "summary.detail3")}
             </li>
             <li style={{ paddingBottom: "10px" }}>
-              相近于儿童可能已经熟悉的平板和磁力绘画板
+              {t(IDpath + "summary.detail4")}
             </li>
           </ul>
         </div>
@@ -232,7 +244,7 @@ export default function WhatColor() {
             paddingBottom: "10px",
           }}
         >
-          流程图
+          {t(IDpath + "FlowChart")}
         </div>
         <img
           src={ColorWorkFlow}
@@ -240,12 +252,14 @@ export default function WhatColor() {
           style={{ width: "100vw", paddingBottom: "15px" }}
         />
         <div style={{ paddingTop: "20px" }}>
-          后来想到，把颜色传感器放在玩具的背面更符合现代人的扫描物品的习惯。
+          {t(IDpath + "thoughts.detail1")}
         </div>
         <div style={{ paddingTop: "20px", paddingBottom: "30px" }}>
-          这一改变在3D建模里体现出来。
+          {t(IDpath + "thoughts.detail2")}
         </div>
-        <div className={styles.sectionHeader}>3D建模</div>
+        <div className={styles.sectionHeader}>
+          {t(IDpath + "modeling.title")}
+        </div>
         <div
           style={{
             display: "flex",
@@ -257,20 +271,24 @@ export default function WhatColor() {
           <img src={threeD} alt="iterated design" style={{ width: "30%" }} />
           <ul>
             <li style={{ paddingBottom: "10px" }}>
-              放置在玩具底部的9V电池让该设备的平衡点靠近底部，让孩子们更容易把持住，避免砸伤
+              {t(IDpath + "modeling.message1")}
             </li>
             <li style={{ paddingBottom: "10px" }}>
-              根据Kong的说法，用于握力任务的最佳手柄直径是用户手长的19.7%。手长为
-              10 厘米的 4 岁儿童的最佳直径为 1.97
-              厘米，所以左把手的直径不超过2厘米
-              <a href="https://doi.org/10.1016/j.ergon.2004.11.003">[3]</a>
+              {t(IDpath + "modeling.message2")}
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://doi.org/10.1016/j.ergon.2004.11.003"
+              >
+                [3]
+              </a>
             </li>
             <li style={{ paddingBottom: "10px" }}>
-              确保任何一点的外壳厚度至少为 1.2 厘米
+              {t(IDpath + "modeling.message3")}
             </li>
           </ul>
         </div>
-        <div className={styles.sectionHeader}>最终产品 + 用户测试</div>
+        <div className={styles.sectionHeader}>{t(FPpath + "title")}</div>
         <div
           style={{
             display: "flex",
@@ -284,20 +302,20 @@ export default function WhatColor() {
           <img src={WhatColorImg} alt="What Color" style={{ width: "30%" }} />
           <ul>
             <li style={{ paddingBottom: "10px" }}>
-              写玩具上方写上What Color以指示该设备应保持哪个方向
+              {t(FPpath + "summary.detail1")}
             </li>
             <li style={{ paddingBottom: "10px" }}>
-              该设备重约300g，不会对4岁孩子造成肌肉骨骼损伤
+              {t(FPpath + "summary.detail2")}
             </li>
             <li style={{ paddingBottom: "10px" }}>
-              与一位四岁女童和一位八岁女童进行用户测试。为了用户隐私，现不展示视频
+              {t(FPpath + "summary.detail3.title")}
             </li>
             <ul>
               <li style={{ paddingBottom: "10px" }}>
-                但所有被测似乎更喜欢通过戳笔的顶部来拿出它，而不是通过在右边预留的空隙
+                {t(FPpath + "summary.detail3.detail1")}
               </li>
               <li style={{ paddingBottom: "10px" }}>
-                把手在玩具左侧，但是我发现被测都喜欢用右手抓住把手。这样会旋转玩具的方向
+                {t(FPpath + "summary.detail3.detail2")}
               </li>
             </ul>
           </ul>
@@ -311,7 +329,7 @@ export default function WhatColor() {
             paddingTop: "10px",
           }}
         >
-          更新后的流程图
+          {t(FPpath + "FlowChart")}
         </div>
         <img
           src={UpdatedWorkFlow}
@@ -319,26 +337,33 @@ export default function WhatColor() {
           style={{ width: "100vw", paddingBottom: "15px", paddingTop: "10px" }}
         />
 
-        <div className={styles.sectionHeader}>进一步的工作</div>
-        <div>
-          此原型设计受到硬件可实施性影响，因而有很多进步空间。基于此次的用户测试可以进行下一步的迭代设计。
-        </div>
-        <div>迭代设计仅考虑在有工业标准化的硬件时，该如何设计。</div>
+        <div className={styles.sectionHeader}>{t(FWpath + "title")}</div>
+        <div>{t(FWpath + "summary.detail1")}</div>
+        <div>{t(FWpath + "summary.detail2")}</div>
         <div style={{ paddingBottom: "30px" }}>
-          可考虑的路如：双手持平板式，单手扫描设备，孩子用智能手表拓展设备/软件...
+          {t(FWpath + "summary.detail3")}
         </div>
         <div style={{ fontSize: "20px", width: "60%" }}>
-          基于Improving Colour Patterns to Assist People with Colour Vision
-          Deficiency论文，在显示的颜色上加入图案，也可以帮助色盲儿童尝试理解颜色概念，与生活中物品的颜色
-          <a href="https://doi.org/10.1145/3491102.3502024">[2]</a>
+          {t(FWpath + "summary.detail4")}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://doi.org/10.1145/3491102.3502024"
+          >
+            [2]
+          </a>
         </div>
-        <div className={styles.sectionHeader}>引用</div>
+        <div className={styles.sectionHeader}>{t("References")}</div>
         <div style={{ width: "60%", textIndent: "-36px", paddingLeft: "36px" }}>
           <div>
             Centers for Disease Control and Prevention. (2022, March 31).
             Important milestones: Your baby by Four Years. Centers for Disease
             Control and Prevention.{" "}
-            <a href="https://www.cdc.gov/ncbddd/actearly/milestones/milestones-4yr.html">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.cdc.gov/ncbddd/actearly/milestones/milestones-4yr.html"
+            >
               https://www.cdc.gov/ncbddd/actearly/milestones/milestones-4yr.html
             </a>
           </div>
@@ -348,7 +373,11 @@ export default function WhatColor() {
             Vision Deficiency. In Proceedings of the 2022 CHI Conference on
             Human Factors in Computing Systems (CHI '22). Association for
             Computing Machinery, New York, NY, USA, Article 479, 1–17.{" "}
-            <a href="https://doi.org/10.1145/3491102.3502024">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://doi.org/10.1145/3491102.3502024"
+            >
               https://doi.org/10.1145/3491102.3502024
             </a>
           </div>
@@ -356,7 +385,11 @@ export default function WhatColor() {
             Kong, & Lowe, B. D. (2005). Optimal cylindrical handle diameter for
             grip force tasks. International Journal of Industrial Ergonomics,
             35(6), 495–507.{" "}
-            <a href="https://doi.org/10.1016/j.ergon.2004.11.003">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://doi.org/10.1016/j.ergon.2004.11.003"
+            >
               https://doi.org/10.1016/j.ergon.2004.11.003
             </a>
           </div>

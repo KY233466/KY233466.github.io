@@ -1,6 +1,7 @@
 import styles from "./ContentHeader.module.css";
 import ViewFrontend from "../ViewFrontend/ViewFrontend";
 import Figma from "../../pic/Figma.png";
+import { useTranslation } from "react-i18next";
 
 export default function ContentHeader({
   title,
@@ -15,6 +16,8 @@ export default function ContentHeader({
   Icon,
   IconImage,
 }) {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.container}>
       <div className={styles.title}>{title}</div>
@@ -38,19 +41,19 @@ export default function ContentHeader({
         <div className={styles.subContentGroup}>
           <div className={styles.subContent1}>
             <h5>
-              <strong>Project Type</strong>
+              <strong>{t("HeaderContent.ProjectType")}</strong>
             </h5>
             <div>{projectType}</div>
           </div>
           <div className={styles.subContent2}>
             <h5>
-              <strong>My Role</strong>
+              <strong>{t("HeaderContent.MyRole")}</strong>
             </h5>
             <div>{myRole}</div>
           </div>
           <div className={styles.subContent3}>
             <h5>
-              <strong>Current Status</strong>
+              <strong>{t("HeaderContent.CurrentStatus")}</strong>
             </h5>
             <div>{currentStatus}</div>
           </div>
