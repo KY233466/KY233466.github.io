@@ -1,6 +1,21 @@
 {
   "text": "文字",
+  "name": "杨紫涵",
   "language": "语言设置",
+  "LandingPage": {
+    "message": "",
+    "attribution": "Photo by ilgmyzin on Unsplash",
+    "actionables": {
+      "message": "想看看我的那一面？",
+      "Frontend": "前端开发",
+      "Design": "交互设计"
+    }
+  },
+  "HeaderContent": {
+    "ProjectType": "项目类型",
+    "MyRole": "参与角色",
+    "CurrentStatus": "当前状态"
+  },
   "ZOOX": {
     "HeaderContent": {
       "title": "ZOOX自动驾驶汽车车载显示",
@@ -156,7 +171,77 @@
       "Btn": false,
       "BtnContent": null,
       "IconImage": null
-    }
+    },
+    "Intro": {
+      "title": "介绍",
+      "message": "根据美国疾病预防控制中心，4岁的儿童的认知应该达到能够说出几种物品的颜色的程度",
+      "detail1": "What Color受众：正在学习基础颜色（红，黄，蓝），或已经学过基础颜色，想要学习进阶颜色或色彩混合的四岁+小孩",
+      "detail2": "鼓励小孩在探索的时候去识别物体颜色，并用这个颜色进行绘画",
+      "detail3": "提升孩子对颜色组成的敏感度，接触色彩混合理论",
+      "detail4": "组成部分：颜色传感器 + 触摸屏 + Arduino + 3D打印外壳",
+      "compo": "3D打印外壳"
+    },
+    "InitDesign": {
+      "title": "初步设计过程",
+      "need": {
+        "title": "需求分析: ",
+        "message": "4岁的儿童的应该能够说出几种物品的颜色"
+      },
+      "task": {
+        "title": "任务分析: ",
+        "message1": "找到类似玩具：磁力绘画板。在网上找到小孩玩、并且评估的",
+        "message2": "视频",
+        "message3": "内容以及反馈进行分析。"
+      },
+      "discovery": {
+        "title": "主要收获: ",
+        "message1": "三岁小孩可以举起710g的物品",
+        "message2": "1岁小孩可以用手握住并使用直径为1.2cm的笔"
+      }
+    },
+    "IteratedDesign": {
+      "title": "迭代后的设计",
+      "summary": {
+        "detail1": "考虑了人体工程学设计，结合了市场上常有的功能，使其便于携带",
+        "detail2": "考虑到大部分儿童都用右手书写，把手被放在了左侧，这样他们可以持设备和笔跑来跑去",
+        "detail3": "增加了触摸屏和笔，用孩子绘画的天性增加娱乐感",
+        "detail4": "相近于儿童可能已经熟悉的平板和磁力绘画板"
+      },
+      "FlowChart": "流程图",
+      "thoughts": {
+        "detail1": "后来想到，把颜色传感器放在玩具的背面更符合现代人的扫描物品的习惯。",
+        "detail2": "这一改变在3D建模里体现出来。"
+      },
+      "modeling": {
+        "title": "3D建模",
+        "message1": "放置在玩具底部的9V电池让该设备的平衡点靠近底部，让孩子们更容易把持住，避免砸伤",
+        "message2": "根据Kong的说法，用于握力任务的最佳手柄直径是用户手长的19.7%。手长为 10 厘米的 4 岁儿童的最佳直径为 1.97 厘米，所以左把手的直径不超过2厘米",
+        "message3": "确保任何一点的外壳厚度至少为 1.2 厘米"
+      }
+    },
+    "FinalProduct": {
+      "title": "最终产品 + 用户测试",
+      "summary": {
+        "detail1": "写玩具上方写上What Color以指示该设备应保持哪个方向",
+        "detail2": "该设备重约300g，不会对4岁孩子造成肌肉骨骼损伤",
+        "detail3": {
+          "title": "与一位四岁女童和一位八岁女童进行用户测试。为了用户隐私，现不展示视频",
+          "detail1": "但所有被测似乎更喜欢通过戳笔的顶部来拿出它，而不是通过在右边预留的空隙",
+          "detail2": "把手在玩具左侧，但是我发现被测都喜欢用右手抓住把手。这样会旋转玩具的方向"
+        }
+      },
+      "FlowChart": "更新后的流程图"
+    },
+    "FutureWork": {
+      "title": "进一步的工作",
+      "summary": {
+        "detail1": "此原型设计受到硬件可实施性影响，因而有很多进步空间。基于此次的用户测试可以进行下一步的迭代设计。",
+        "detail2": "迭代设计仅考虑在有工业标准化的硬件时，该如何设计。",
+        "detail3": "可考虑的路如：双手持平板式，单手扫描设备，孩子用智能手表拓展设备/软件...",
+        "detail4": "基于Improving Colour Patterns to Assist People with Colour Vision Deficiency论文，在显示的颜色上加入图案，也可以帮助色盲儿童尝试理解颜色概念，与生活中物品的颜色"
+      }
+    },
+    "References": "引用"
   },
   "Jarney": {
     "HeaderContent": {
