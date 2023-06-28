@@ -1,5 +1,6 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import LanguageSelect from "../LanguageSelect"
 import styles from "./NavBar.module.css";
 
 export default function Navbar() {
@@ -16,6 +17,13 @@ export default function Navbar() {
         <CustomLink to="/main/Design">
           {t(Lpath + "actionables.Design")}
         </CustomLink>
+        <LanguageSelect
+          newStyle={{
+            top: "10px",
+            position: "block",
+            backgroundColor: "#1d2232",
+          }}
+        />
         {/* <CustomLink to="/main/resume">Resume</CustomLink> */}
       </ul>
     </nav>

@@ -16,7 +16,7 @@ body {
   color: #282c4e;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   padding: 1.5rem 5rem 1.3rem 3rem;
 }
 
@@ -35,7 +35,7 @@ body {
   margin: 0;
   list-style: none;
   display: flex;
-  gap: 8rem;
+  gap: 4rem;
   font-family: "Galvji";
   font-weight: 400;
   font-size: 16px;
@@ -66,8 +66,9 @@ body {
   }
 
   .nav ul {
-    gap: 1rem;
+    gap: 0.5rem;
   }
+  
   .siteTitle {
     font-size: 1rem;
   }

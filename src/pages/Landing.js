@@ -77,6 +77,7 @@ function Landing() {
             </div>
           </div>
         </div>
+        {/* <div style={{height: "100vh"}}>lol</div> */}
       </Suspense>
     </LocaleContext.Provider>
   );
