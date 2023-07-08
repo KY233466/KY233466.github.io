@@ -1,22 +1,56 @@
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Card.module.css";
+import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
+import Skeleton from "@mui/material/Skeleton";
 
 function Card() {
   const { t } = useTranslation();
   const LPIpath = "LandingPage.";
 
+  const loading = true;
+  const mounted = useRef(false);
+
+  useEffect(() => {
+    mounted.current = true;
+
+    return () => {
+      mounted.current = false;
+    };
+  }, []);
+
+  //   margin: 3rem 0rem 0rem 9rem;
+  // width: 70%;
+  // border-radius: 5px;
+  // -webkit-backdrop-filter: blur(6px);
+  // backdrop-filter: blur(6px);
+  // box-shadow: inset 0 0 0 300px rgba(255, 255, 255, 0.09);
+  // border-top: 2px solid rgba(225, 225, 225, 0.3);
+  // border-left: 2px solid rgba(225, 225, 225, 0.1);
+  // border-right: 1px solid rgba(225, 225, 225, 0.2);
+  // padding: 3rem;
+  // padding-bottom: 1rem;
+  // overflow-y: auto;
+  // box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  // transform: translate(-4rem, 0);
+
   return (
     <div>
       <div className={styles.glass1}>
-        <div className={styles.header}>
-          <h1>{t(LPIpath + "Intro.header1")}</h1>
-          <h3>{t(LPIpath + "Intro.header2")}</h3>
-        </div>
-        <div className={styles.bodyText}>
-          <h4>{t(LPIpath + "Intro.slogan")}</h4>
-        </div>
+        {loading ? (
+          <Skeleton variant="rounded" width={"100%"} height={"100%"} />
+        ) : (
+          <div>
+            <div className={styles.header}>
+              <h1>{t(LPIpath + "Intro.header1")}</h1>
+              <h3>{t(LPIpath + "Intro.header2")}</h3>
+            </div>
+            <div className={styles.bodyText}>
+              <h4>{t(LPIpath + "Intro.slogan")}</h4>
+            </div>
+          </div>
+        )}
       </div>
       <div className={styles.glass2}>
         <div className={styles.bodyText}>
