@@ -127,7 +127,7 @@ h5 {
 
 .rightContainer h3 {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 26px;
+  font-size: 18px;
   font-style: italic;
   font-variant: normal;
   font-weight: 700;
@@ -139,6 +139,13 @@ h5 {
 
 .profilePic {
   border-radius: 50%;
+  height: 15vw;
+  margin-top: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.profilePicNone {
+  display: None;
   height: 15vw;
   margin-top: 4rem;
   margin-bottom: 0.5rem;

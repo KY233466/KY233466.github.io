@@ -1,6 +1,6 @@
 .container {
   margin-bottom: 10rem;
-  margin: 0.5% 1rem;
+  margin: 0.5% 1%;
   padding-bottom: 1.5rem;
   width: 47%;
 }
@@ -19,6 +19,9 @@
   border-radius: 30px;
 }
 
+.windowNone {
+  display: None;
+}
 .title {
   font-family: "Avenir";
   font-style: normal;

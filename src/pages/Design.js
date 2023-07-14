@@ -8,7 +8,7 @@ import Hobbees from "../pic/Hobbees.png";
 import Color from "../pic/Color.png";
 import research from "../pic/Instagram.png";
 import { useTranslation } from "react-i18next";
-import Skeleton from "react-loading-skeleton";
+// import Skeleton from "react-loading-skeleton";
 // import WhatColor from "../pic/Instagram.png";
 
 const content = [

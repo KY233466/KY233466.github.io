@@ -14,6 +14,17 @@ export default function LanguageSelect({newStyle}) {
     }
   };
 
+  // a {
+  //   background-color: #FF0;
+  // }
+
+  // a:hover {
+  //     background-color: #AD310B;
+  //     -webkit-transition: background-color 1000ms linear;
+  //     -ms-transition: background-color 1000ms linear;
+  //     transition: background-color 1000ms linear;
+  // }
+
   return (
     <button
       title="Language Setting"

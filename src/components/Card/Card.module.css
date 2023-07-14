@@ -56,7 +56,7 @@
 
 h1 {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 64px;
+  font-size: 50px;
   /* font-size: 4rem; */
   font-style: italic;
   font-variant: normal;
@@ -83,7 +83,7 @@ h3 {
   flex-wrap: wrap;
   align-items: center;
   transform: translate(0, 15px);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .bodyText {
@@ -92,7 +92,7 @@ h3 {
 
 h4 {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   /* font-size: 1.5rem; */
   font-style: normal;
   font-variant: normal;
@@ -103,7 +103,7 @@ h4 {
 
 h5 {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   /* font-size: 1.2rem; */
   font-style: normal;
   font-variant: normal;

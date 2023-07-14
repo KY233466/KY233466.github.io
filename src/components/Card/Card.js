@@ -4,21 +4,12 @@ import styles from "./Card.module.css";
 import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import Skeleton from "@mui/material/Skeleton";
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 function Card() {
   const { t } = useTranslation();
   const LPIpath = "LandingPage.";
-
-  const loading = true;
-  const mounted = useRef(false);
-
-  useEffect(() => {
-    mounted.current = true;
-
-    return () => {
-      mounted.current = false;
-    };
-  }, []);
+  const matches = useMediaQuery('(min-width:860px)');
 
   //   margin: 3rem 0rem 0rem 9rem;
   // width: 70%;
@@ -38,31 +29,25 @@ function Card() {
   return (
     <div>
       <div className={styles.glass1}>
-        {loading ? (
-          <Skeleton variant="rounded" width={"100%"} height={"100%"} />
-        ) : (
-          <div>
-            <div className={styles.header}>
-              <h1>{t(LPIpath + "Intro.header1")}</h1>
-              <h3>{t(LPIpath + "Intro.header2")}</h3>
-            </div>
-            <div className={styles.bodyText}>
-              <h4>{t(LPIpath + "Intro.slogan")}</h4>
-            </div>
-          </div>
-        )}
+        <div className={styles.header}>
+          <h1>{t(LPIpath + "Intro.header1")}</h1>
+          <h3>{t(LPIpath + "Intro.header2")}</h3>
+        </div>
+        <div className={styles.bodyText}>
+          <h4>{t(LPIpath + "Intro.slogan")}</h4>
+        </div>
       </div>
-      <div className={styles.glass2}>
+      <div className={matches ? styles.glass2 : styles.glass2}>
         <div className={styles.bodyText}>
           <h5>{t(LPIpath + "Intro.message1")}</h5>
         </div>
       </div>
 
-      <div className={styles.glass3}>
+      {/* <div className={matches ? styles.glass3 : styles.glass2}>
         <div className={styles.bodyText}>
           <h5>{t(LPIpath + "Intro.message2")}</h5>
         </div>
-      </div>
+      </div> */}
     </div>
     // <Carousel className={styles.lol}>
     //   <Carousel.Item>
