@@ -27,9 +27,9 @@
     "HeaderContent": {
       "title": "ZOOX自动驾驶汽车车载显示",
       "detail": "显示屏为Macbook Pro 14 英寸尺寸大小，位于座椅侧面。制作了情绪板和24个高保真页面，使用动画和过度进行线框图设计和原型制作。由于屏面物理位置的特殊性，设计了锁屏界面以防止手臂误触而发生意外操作。考虑到安全性对自动驾驶汽车至关重要，为其设计了一套完整的安全说明，包括紧急情况报告和与工作人员进行视频聊天。",
-      "projectType": "Hypothetical Class Project",
-      "myRole": "Project Owner",
-      "currentStatus": "Design phase done",
+      "projectType": "课堂项目",
+      "myRole": "个人",
+      "currentStatus": "完成",
       "Btn": false,
       "BtnContent": null,
       "IconImage": {
@@ -172,9 +172,9 @@
     "HeaderContent": {
       "title": "What Color: 基于Arduino的颜色识别玩具",
       "detail": "此产品鼓励4岁+的孩子通过寻找物品来学习颜色。在识别一个物品的颜色后，What Color的触摸屏上会显示此颜色的红黄蓝构成，然后孩子可以用这个颜色进行绘画。显示红黄蓝的构成不仅可以教孩子什么是红色、黄色、蓝色，而且对于已经熟知红黄蓝的孩子，可以教他们颜色混合和更进阶的颜色概念，如珊瑚色、青色。",
-      "projectType": "Class Project",
-      "myRole": "Project Owner",
-      "currentStatus": "User testing done",
+      "projectType": "课堂项目",
+      "myRole": "个人",
+      "currentStatus": "用户测试结束",
       "Btn": false,
       "BtnContent": null,
       "IconImage": null
@@ -254,9 +254,9 @@
     "HeaderContent": {
       "title": "课程组合生成器重新设计 + 更改前端代码 ",
       "detail": "此产品鼓励4岁+的孩子通过寻找物品来学习颜色。在识别一个物品的颜色后，What Color的触摸屏上会显示此颜色的红黄蓝构成，然后孩子可以用这个颜色进行绘画。显示红黄蓝的构成不仅可以教孩子什么是红色、黄色、蓝色，而且对于已经熟知红黄蓝的孩子，可以教他们颜色混合和更进阶的颜色概念，如珊瑚色、青色。",
-      "projectType": "Class Project",
-      "myRole": "Project Owner",
-      "currentStatus": "User testing done",
+      "projectType": "课堂项目",
+      "myRole": "个人",
+      "currentStatus": "用户测试结束",
       "Btn": false,
       "BtnContent": null,
       "IconImage": null
@@ -264,11 +264,11 @@
   },
   "ActivityStatus": {
     "HeaderContent": {
-      "title": "What Color: 基于Arduino的颜色识别玩具",
-      "detail": "此产品鼓励4岁+的孩子通过寻找物品来学习颜色。在识别一个物品的颜色后，What Color的触摸屏上会显示此颜色的红黄蓝构成，然后孩子可以用这个颜色进行绘画。显示红黄蓝的构成不仅可以教孩子什么是红色、黄色、蓝色，而且对于已经熟知红黄蓝的孩子，可以教他们颜色混合和更进阶的颜色概念，如珊瑚色、青色。",
-      "projectType": "Class Project",
-      "myRole": "Project Owner",
-      "currentStatus": "User testing done",
+      "title": "用户线上活跃状态显示研究",
+      "detail": "在许多具有交流功能的社交媒体应用程序中，显示用户是否在线和最近在线时间的功能已成为标准。例如，WhatsApp因其“今天上午 9:03 最后上线”功能而闻名。在此文中，我们重点关注于Messenger和Instagram Direct的“活动状态”功能。具体来说，我们研究用户如何看待此功能以及与之相关的隐私因素。虽然之前的研究已经考察了用户如何看待“消息已读”功能涉及到的隐私因素以及 WhatsApp 中的上述功能，但是没有研究关注 Messenger 和 Instagram Direct。在我们的研究中，大多数用户将活动状态视为对其整体消息传递体验而言相对无关紧要的功能。有趣的是，用户对于这些信息的真正私密程度存在强烈分歧。在本文结尾处，我们提出这种分歧的原因和未来可研究的方向。",
+      "projectType": "课堂项目",
+      "myRole": "两人小队",
+      "currentStatus": "已完成",
       "Btn": false,
       "BtnContent": null,
       "IconImage": null
