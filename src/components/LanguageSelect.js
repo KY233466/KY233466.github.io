@@ -1,32 +1,20 @@
 import { useContext, useState } from "react";
 import LocaleContext from "./LocaleContext";
 import i18n from "../i18n";
-import InputLabel from "@mui/material/InputLabel";
 
 export default function LanguageSelect({newStyle}) {
   const { locale } = useContext(LocaleContext);
-  const [select, setSelect] = useState(locale === "en");
+  const [select, setSelect] = useState(locale === "en-US");
 
   const changeSelect = (choice) => {
-    setSelect(choice === "en");
+    setSelect(choice === "en-US");
     if (locale !== choice) {
       i18n.changeLanguage(choice);
     }
   };
 
-  // a {
-  //   background-color: #FF0;
-  // }
-
-  // a:hover {
-  //     background-color: #AD310B;
-  //     -webkit-transition: background-color 1000ms linear;
-  //     -ms-transition: background-color 1000ms linear;
-  //     transition: background-color 1000ms linear;
-  // }
-
   return (
-    <button
+    <div
       title="Language Setting"
       style={{
         padding: "8px",
@@ -44,7 +32,7 @@ export default function LanguageSelect({newStyle}) {
       }}
     >
       <button
-        onClick={(e) => changeSelect("en")}
+        onClick={(e) => changeSelect("en-US")}
         style={{
           margin: "0px 5px 0px 5px",
           padding: "8px 15px",
@@ -75,29 +63,6 @@ export default function LanguageSelect({newStyle}) {
       >
         中文
       </button>
-    </button>
-    // <Box
-    //   sx={{
-    //     minWidth: 120,
-    //     padding: "10px",
-    //     position: "absolute",
-    //     right: "30px",
-    //     top: "30px",
-    //   }}
-    // >
-    //   <FormControl fullWidth>
-    //     <Select
-    //       labelId="demo-simple-select-label"
-    //       id="demo-simple-select"
-    //       value={age}
-    //       label="Age"
-    //       onChange={handleChange}
-    //       style={{ backgroundColor: "white" }}
-    //     >
-    //       <MenuItem value={10}>English</MenuItem>
-    //       <MenuItem value={20}>中文</MenuItem>
-    //     </Select>
-    //   </FormControl>
-    // </Box>
+    </div>
   );
 }

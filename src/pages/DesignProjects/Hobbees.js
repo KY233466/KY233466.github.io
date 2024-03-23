@@ -10,7 +10,7 @@ const Icons = [
   },
 ];
 
-const headerContent = [
+const headerContent = 
   {
     title: "Hobbees Hobby Sharing APP Design",
     detail: "A casual skill share app based on hobbies",
@@ -20,26 +20,23 @@ const headerContent = [
     Btn: false,
     BtnContent: null,
     IconImage: Icons,
-  },
-];
+  };
 
 export default function Hobbees() {
   return (
     <div className={styles.container}>
-      {headerContent.map((value, index) => (
-        <ContentHeader
-          index={value.index}
-          key={value.title}
-          title={value.title}
-          detail={value.detail}
-          myRole={value.myRole}
-          projectType={value.projectType}
-          currentStatus={value.currentStatus}
-          Btn={value.Btn}
-          BtnContent={value.BtnContent}
-          IconImage={value.IconImage}
-        />
-      ))}
+      <ContentHeader
+        index={headerContent.index}
+        key={headerContent.title}
+        title={headerContent.title}
+        detail={headerContent.detail}
+        myRole={headerContent.myRole}
+        projectType={headerContent.projectType}
+        currentStatus={headerContent.currentStatus}
+        Btn={headerContent.Btn}
+        BtnContent={headerContent.BtnContent}
+        IconImage={headerContent.IconImage}
+      />
       <div className={styles.contentContainer}>
         <div className={styles.sectionHeader}>Design Overview</div>
         <a

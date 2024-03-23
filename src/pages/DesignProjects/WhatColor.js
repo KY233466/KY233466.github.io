@@ -16,27 +16,6 @@ import ColorWorkFlow from "../../pic/ColorWorkFlow.png";
 import UpdatedWorkFlow from "../../pic/UpdatedWorkFlow.png";
 import { useTranslation } from "react-i18next";
 
-// const Icons = [
-//   {
-//     images: null,
-//     name: "Figma Logo",
-//   },
-// ];
-
-const headerContent = [
-  {
-    title: "What Color: 基于Arduino的颜色识别玩具",
-    detail:
-      "此产品鼓励4岁+的孩子通过寻找物品来学习颜色。在识别一个物品的颜色后，What Color的触摸屏上会显示此颜色的红黄蓝构成，然后孩子可以用这个颜色进行绘画。显示红黄蓝的构成不仅可以教孩子什么是红色、黄色、蓝色，而且对于已经熟知红黄蓝的孩子，可以教他们颜色混合和更进阶的颜色概念，如珊瑚色、青色。",
-    projectType: "Class Project",
-    myRole: "Project owner",
-    currentStatus: "User testing done",
-    Btn: false,
-    BtnContent: null,
-    IconImage: null,
-  },
-];
-
 const HCpath = "WhatColor.HeaderContent.";
 const Ipath = "WhatColor.Intro.";
 const InitDpath = "WhatColor.InitDesign.";
@@ -49,20 +28,15 @@ export default function WhatColor() {
 
   return (
     <div className={styles.container}>
-      {headerContent.map((value, index) => (
-        <ContentHeader
-          index={value.index}
-          key={t(HCpath + "title")}
-          title={t(HCpath + "title")}
-          detail={t(HCpath + "detail")}
-          myRole={t(HCpath + "myRole")}
-          projectType={t(HCpath + "projectType")}
-          currentStatus={t(HCpath + "currentStatus")}
-          Btn={t(HCpath + "Btn")}
-          BtnContent={t(HCpath + "BtnContent")}
-          IconImage={value.IconImage}
-        />
-      ))}
+      <ContentHeader
+        key={t(HCpath + "title")}
+        title={t(HCpath + "title")}
+        detail={t(HCpath + "detail")}
+        myRole={t(HCpath + "myRole")}
+        projectType={t(HCpath + "projectType")}
+        currentStatus={t(HCpath + "currentStatus")}
+        Btn={false}
+      />
       <div className={styles.contentContainer}>
         <div className={styles.sectionHeader}>{t(Ipath + "title")}</div>
         <div

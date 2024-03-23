@@ -20,28 +20,9 @@ import { useTranslation } from "react-i18next";
 import NeedAnalysis from "../../components/NeedAnalysis";
 
 const Icons = [
-  // {
-  //   images: Figma,
-  //   name: "Figma Icon",
-  // },
   {
     images: InCar,
     name: "In car display location",
-  },
-];
-
-const headerContent = [
-  {
-    title:
-      "ZOOX自动驾驶汽车车载显示 ZOOX Autonomous Vehicle In Car Display Design",
-    detail:
-      "显示屏为Macbook Pro 14 英寸尺寸大小，位于座椅侧面。制作了情绪板和24个高保真页面，使用动画和过度进行线框图设计和原型制作。由于屏面物理位置的特殊性，设计了锁屏界面以防止手臂误触而发生意外操作。考虑到安全性对自动驾驶汽车至关重要，为其设计了一套完整的安全说明，包括紧急情况报告和与工作人员进行视频聊天。",
-    projectType: "Hypothetical Class Project",
-    myRole: "Project Owner",
-    currentStatus: "Design phase done",
-    Btn: false,
-    BtnContent: null,
-    IconImage: Icons,
   },
 ];
 
@@ -57,20 +38,16 @@ export default function ZOOX() {
 
   return (
     <div className={styles.container}>
-      {headerContent.map((value, index) => (
-        <ContentHeader
-          index={value.index}
-          key={t(HCpath + "title")}
-          title={t(HCpath + "title")}
-          detail={t(HCpath + "detail")}
-          myRole={t(HCpath + "myRole")}
-          projectType={t(HCpath + "projectType")}
-          currentStatus={t(HCpath + "currentStatus")}
-          Btn={t(HCpath + "Btn")}
-          BtnContent={t(HCpath + "BtnContent")}
-          IconImage={value.IconImage}
-        />
-      ))}
+      <ContentHeader
+        key={t(HCpath + "title")}
+        title={t(HCpath + "title")}
+        detail={t(HCpath + "detail")}
+        myRole={t(HCpath + "myRole")}
+        projectType={t(HCpath + "projectType")}
+        currentStatus={t(HCpath + "currentStatus")}
+        Btn={false}
+        IconImage={Icons}
+      />
       <div className={styles.contentContainer}>
         <div className={styles.sectionHeader}>{t(DOpath + "title")}</div>
         {/* <a
