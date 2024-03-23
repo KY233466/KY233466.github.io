@@ -114,34 +114,34 @@
       "title": "Deepen the requirements",
       "analysis": {
         "first": {
-          "cause": "行程开始前的安全说明",
-          "solution": "和乘客解释必要的安全功能，如何开启车门，ZOOX的设计巧思如何保证乘客安全等"
+          "cause": "The seat wraps around and is beside the passenger's shoulder, so there might be accidental touches",
+          "solution": "After a period of idleness, a lock screen would appear with basic information like time left till destination and car speed"
         },
         "second": {
-          "cause": "紧急情况报告",
-          "solution": "紧急情况下没有太多时间打字，需要有提前设定的模版，提供最可能出现的紧急情况的文字"
+          "cause": "Pre-ride safety instructions",
+          "solution": "Explain the safety functionalities, how to open the doors, and ways ZOOX ensure ride safety"
         },
         "third": {
-          "cause": "工作人员视频连线",
-          "solution": "可能连上了但是没有声音，或者乘客无法无法用声音沟通，也需要有提前设定的模版"
+          "cause": "Passengers need to know the current location and might be curious to see what the road is like from the ZOOX vehicle's view",
+          "solution": "Need to switch between Map View and Car View"
         },
         "fourth": {
-          "cause": "乘客需要看当前位置，并且好奇从车辆的角度看当前路段时什么样子的",
-          "solution": "在地图、车视角来回切换"
+          "cause": "Music play and in-door environment controls might not be used frequently",
+          "solution": "A pull-out page for these functions"
         },
         "fifth": {
-          "cause": "音乐播放、车内环境调节可能不会经常用到",
-          "solution": "可拉出的功能页面"
+          "cause": "Export emergencies",
+          "solution": "Lacks time for typing during emergencies, so needs pre-set templates  and options for most likely scenarios"
         },
         "sixth": {
-          "cause": "座位为全包座位，屏幕在乘客身侧，可能会误触",
-          "solution": "一段时间乘客没有操作之后会开启屏保。屏保上可显示基础信息，如旅程还剩多长时间、车速"
+          "cause": "Connect via video",
+          "solution": "Might be no video even after connecting or the passenger isn't able to speak, so pre-set templates should be set too"
         }
       }
     },
     "Moodboard": {
       "title": "Moodboard",
-      "detail": "在下面两种情绪板中，最后选择了情绪板2。 其风格特征更与ZOOX先进官网相近，并且与友商的设计风格产生对比，更有识别性。",
+      "detail": "Choose Moddboard 2 becuase it is closer too ZOOX official case and more distinguishable with other ride share companies",
       "description1": "Moodboard 1. Light mode design that gives out a smart soft technology feeling as well as elegance with the bright and clean visual design. Mostly uses pastel colors to work as contrast to the background to aid information display.",
       "description2": "Moodboard 2. Dark mode design that gives out a serious futuristic, technological ambiance. High saturation colors are used as contrast to the background to put emphasis on the displayed information."
     },
@@ -182,10 +182,10 @@
     "Intro": {
       "title": "Introduction",
       "message": "According to CDC, children at the age of 4 should reach the cognitive milestone of being able to name a few colors of items",
-      "detail1": "What Color受众：正在学习基础颜色（红，黄，蓝），或已经学过基础颜色，想要学习进阶颜色或色彩混合的四岁+小孩",
-      "detail2": "鼓励小孩在探索的时候去识别物体颜色，并用这个颜色进行绘画",
-      "detail3": "提升孩子对颜色组成的敏感度，接触色彩混合理论",
-      "detail4": "组成部分：颜色传感器 + 触摸屏 + Arduino + 3D打印外壳",
+      "detail1": "What Color is for 4+ children that are studying the basic colors (red, yellow, blue), or has already learned the basics and learn about color mixing",
+      "detail2": "Encourage children to scan object colors and draw with it when exploring",
+      "detail3": "Heighten children's sensitivity in different shades and learn about color mixing",
+      "detail4": "Composition: color sensors + touch screen + Arduino + 3d printed case",
       "compo": "3D printed shell"
     },
     "InitDesign": {
@@ -209,10 +209,10 @@
     "IteratedDesign": {
       "title": "Iterated Design",
       "summary": {
-        "detail1": "考虑了人体工程学设计，结合了市场上常有的功能，使其便于携带",
-        "detail2": "考虑到大部分儿童都用右手书写，把手被放在了左侧，这样他们可以持设备和笔跑来跑去",
-        "detail3": "增加了触摸屏和笔，用孩子绘画的天性增加娱乐感",
-        "detail4": "相近于儿童可能已经熟悉的平板和磁力绘画板"
+        "detail1": "Took in consideration of ergonomics to make it portable",
+        "detail2": "Handle is placed on the left to not be in the way during drawing, so they could hold the toy and pen to run around at the same time",
+        "detail3": "Added touch screen and pen for drawing entertainment",
+        "detail4": "Similar to tablets and magnetic drawing board that children are familiar with"
       },
       "FlowChart": "Workflow Chart",
       "thoughts": {
@@ -242,10 +242,10 @@
     "FutureWork": {
       "title": "Future Work",
       "summary": {
-        "detail1": "此原型设计受到硬件可实施性影响，因而有很多进步空间。基于此次的用户测试可以进行下一步的迭代设计。",
-        "detail2": "迭代设计仅考虑在有工业标准化的硬件时，该如何设计。",
-        "detail3": "可考虑的路如：双手持平板式，单手扫描设备，孩子用智能手表拓展设备/软件...",
-        "detail4": "基于Improving Colour Patterns to Assist People with Colour Vision Deficiency论文，在显示的颜色上加入图案，也可以帮助色盲儿童尝试理解颜色概念，与生活中物品的颜色"
+        "detail1": "This prototype is influenced by the constraint of available hardware, so there are lots of room for improvements based on user feedback",
+        "detail2": "Future iterations will only consider industrial level hardwares",
+        "detail3": "Possible routes: tablet to hold with two hands, single-hand scanning device, extend upon smart watches for children...",
+        "detail4": "Basic on the paper Improving Colour Patterns to Assist People with Colour Vision Deficiency, it could help color-blind children to understand colors and colors of every day objects"
       }
     },
     "References": "References"
@@ -265,10 +265,10 @@
   "ActivityStatus": {
     "HeaderContent": {
       "title": "Activity Status Study",
-      "detail": "In many social media apps with messaging capabilities, a feature to display users’ availability and recent activity has become standard. WhatsApp, for example, is well-known for its “last seen today at 9:03 AM” feature. In this paper, we focus on how this feature manifests in two other messaging services operated by Meta Platforms: Messenger and Instagram Direct, where it is known as the “activity status.” Specifically, we examine how users view this feature and the privacy factors related to it. While previous research has examined how users view the privacy factors of message read receipts and the aforementioned feature in WhatsApp, no studies have focused on Messenger and Instagram Direct. In our research, the majority of users viewed the activity status as a relatively insignificant feature to their overall messaging experience. Interestingly, however, users strongly disagreed on how private this information truly is. We close the paper by suggesting reasons for this privacy divide and directions for future work.",
+      "detail": "",
       "projectType": "Class Project",
-      "myRole": "Team member in a group of 2",
-      "currentStatus": "Completed",
+      "myRole": "",
+      "currentStatus": "",
       "Btn": false,
       "BtnContent": null,
       "IconImage": null
