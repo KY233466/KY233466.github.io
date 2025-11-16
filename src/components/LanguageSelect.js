@@ -1,13 +1,20 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import LocaleContext from "./LocaleContext";
 import i18n from "../i18n";
 
 export default function LanguageSelect({newStyle}) {
   const { locale } = useContext(LocaleContext);
-  const [select, setSelect] = useState(locale === "en");
+  const isEnglish = (locale || "").startsWith("en");
 
   const changeSelect = (choice) => {
-    setSelect(choice === "en");
+    // Persist choice so it is remembered on reload
+    try {
+      localStorage.setItem("i18nextLng", choice);
+    } catch (e) {
+      // ignore when localStorage is unavailable (SSR / privacy mode)
+    }
+
+    // Tell i18next to switch language if it changed
     if (locale !== choice) {
       i18n.changeLanguage(choice);
     }
@@ -40,7 +47,7 @@ export default function LanguageSelect({newStyle}) {
           border: "none",
           color: "white",
           cursor: "pointer",
-          ...(select
+          ...(isEnglish
             ? { backgroundColor: "#A88FD0", color: "black" }
             : { backgroundColor: "transparent", color: "white" }),
         }}
@@ -56,7 +63,7 @@ export default function LanguageSelect({newStyle}) {
           border: "none",
           color: "white",
           cursor: "pointer",
-          ...(!select
+          ...(!isEnglish
             ? { backgroundColor: "#A88FD0", color: "black" }
             : { backgroundColor: "transparent", color: "white" }),
         }}
