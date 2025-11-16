@@ -2,7 +2,7 @@
   "name": "react-navbar",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://KY233466.github.io/",
+  "homepage": "http://KY233466.github.io",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@emotion/react": "^11.11.0",
@@ -33,7 +33,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build:pages": "react-scripts build && rm -rf docs && mv build docs"
   },
   "eslintConfig": {
     "extends": [
