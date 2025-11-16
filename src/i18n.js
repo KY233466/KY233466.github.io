@@ -8,12 +8,20 @@ i18n
   .use(I18nextBrowserLanguageDetector)
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
-    fallbackLng: "en",
-    debug: true,
-
-    interpolation: {
-      escapeValue: false, // react already safes from xss
-    },
+        fallbackLng: "en",
+        supportedLngs: ["en", "cn"],
+        nonExplicitSupportedLngs: true, // <- key setting
+        load: "languageOnly",           // also helps: en-US → en
+        backend: {
+            loadPath: "/locales/{{lng}}/{{ns}}.json",
+        },
+        detection: {
+            order: ["querystring", "localStorage", "navigator", "htmlTag"],
+            caches: ["localStorage"],
+        },
+        interpolation: {
+          escapeValue: false, // react already safes from xss
+        },
   });
 
 export default i18n;
