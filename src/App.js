@@ -7,6 +7,10 @@ import Jarney from "./pages/DesignProjects/Jarney";
 import JarneyCode from "./pages/FrontendProjects/Jarney";
 import FIFO from "./pages/FrontendProjects/FIFO";
 import ZOOX from "./pages/DesignProjects/ZOOX";
+import ColorUnclasher from "./pages/FrontendProjects/ColorUnclasher";
+import Advising from "./pages/FrontendProjects/Advising";
+import Flashcard from "./pages/FrontendProjects/Flashcard";
+
 import Hobbees from "./pages/DesignProjects/Hobbees";
 import WhatColor from "./pages/DesignProjects/WhatColor";
 import ActivityStatus from "./pages/DesignProjects/ActivityStatus";
@@ -38,6 +42,9 @@ function App() {
             {/* <Route path="/Design/Hobbees" element={<Hobbees />} /> */}
             <Route path="/Design/ActivityStatus" element={<ActivityStatus />} />
             <Route path="/Jarney" element={<JarneyCode />} />
+            <Route path="/Advising" element={<Advising />} />
+            <Route path="/Flashcard" element={<Flashcard />} />
+            <Route path="/ColorUnclasher" element={<ColorUnclasher />} />
             <Route path="/FIFO" element={<FIFO />} />
           </Routes>
         </div>

@@ -11,6 +11,7 @@ import LanguageSelect from "../components/LanguageSelect";
 import { useTranslation } from "react-i18next";
 import LocaleContext from "../components/LocaleContext";
 import i18n from "../i18n";
+import ColorWheelPicker from "./lol.js";
 
 function Landing() {
   const { t } = useTranslation();

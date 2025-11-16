@@ -10,6 +10,7 @@ export default function ContentHeader({
   projectType,
   myRole,
   currentStatus,
+  currentStatusLink,
   Btn,
   BtnContent,
   BtnLink,
@@ -23,7 +24,7 @@ export default function ContentHeader({
       <div className={styles.title}>{title}</div>
       <div className={styles.content}>
         <div>{detail}</div>
-        {IconImage ? (
+        {IconImage && (
           <div className={styles.IconGroup}>
             {IconImage?.map((value, index) => (
               <img
@@ -35,7 +36,7 @@ export default function ContentHeader({
               />
             ))}
           </div>
-        ) : null}
+        )}
       </div>
       <div className={styles.moreInfo}>
         <div className={styles.subContentGroup}>
@@ -55,10 +56,28 @@ export default function ContentHeader({
             <h5>
               <strong>{t("HeaderContent.CurrentStatus")}</strong>
             </h5>
-            <div>{currentStatus}</div>
+            <div style={{display: "flex", gap: "8px", alignItems: "center"}}>
+              <span>{currentStatus}</span>
+            </div>
           </div>
+
+          { currentStatusLink && <div className={styles.subContent3}>
+            <h5>
+              <strong>Link</strong>
+            </h5>
+            <div style={{display: "flex", gap: "8px", alignItems: "center"}}>
+              <a
+                  href={currentStatusLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={styles.statusLink}
+              >
+                {currentStatusLink}
+              </a>
+            </div>
+          </div>}
         </div>
-        {Btn ? <ViewFrontend content={BtnContent} path={BtnLink} /> : null}
+        {Btn ? <ViewFrontend content={BtnContent} path={BtnLink}/> : null}
       </div>
     </div>
   );

@@ -2,8 +2,26 @@ import Project from "../components/Project/Project";
 import styles from "../components/FrontEnd.module.css";
 import JarneyDesign from "../pic/JarneyDesign.png";
 import FIFO from "../pic/FIFOCover.png";
+import ColorUnclasher from "../pic/ColorUnclasher.png";
+import Advising from "../pic/advisingCover.jpg";
+import Flashcard from "../pic/flashcardCover.jpg";
 
 const content = [
+  {
+    title: "🏆 AI Track Winner: AI Flashcard Maker (Adobe Express Add-ons Hackathon)",
+    path: "/main/Flashcard",
+    content: Flashcard,
+  },
+  {
+    title: "🏆 Tracker Winner: AI-Enhanced Academic Advising (JumboHack)",
+    path: "/main/Advising",
+    content: Advising,
+  },
+  {
+    title: "Google Summer of Code '24: Color Unclasher",
+    path: "/main/ColorUnclasher",
+    content: ColorUnclasher,
+  },
   {
     title: "JARney Scheduler Page Code",
     path: "/main/Jarney",

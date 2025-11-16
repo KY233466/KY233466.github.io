@@ -13,7 +13,10 @@
 }
 
 .window {
+  aspect-ratio: 2446 / 1326;
   width: 100%;
+  height: auto;
+  object-fit: cover;
   background-color: white;
   border: 2px solid #4b4b4b;
   border-radius: 30px;
