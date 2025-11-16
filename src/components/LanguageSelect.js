@@ -4,10 +4,10 @@ import i18n from "../i18n";
 
 export default function LanguageSelect({newStyle}) {
   const { locale } = useContext(LocaleContext);
-  const [select, setSelect] = useState(locale === "en-US");
+  const [select, setSelect] = useState(locale === "en");
 
   const changeSelect = (choice) => {
-    setSelect(choice === "en-US");
+    setSelect(choice === "en");
     if (locale !== choice) {
       i18n.changeLanguage(choice);
     }
@@ -32,7 +32,7 @@ export default function LanguageSelect({newStyle}) {
       }}
     >
       <button
-        onClick={(e) => changeSelect("en-US")}
+        onClick={(e) => changeSelect("en")}
         style={{
           margin: "0px 5px 0px 5px",
           padding: "8px 15px",
