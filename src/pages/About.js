@@ -5,8 +5,14 @@ import FIFO from "../pic/FIFOCover.png";
 import ColorUnclasher from "../pic/ColorUnclasher.png";
 import Advising from "../pic/advisingCover.jpg";
 import Flashcard from "../pic/flashcardCover.jpg";
+import LinkedInNotion from "../pic/LinkedInNotionPic.png";
 
 const content = [
+  {
+    title: "Save LinkedIn → Notion: Zero-Backend CRM Helper",
+    path: "/main/LinkedIn-to-Notion",
+    content: LinkedInNotion,
+  },
   {
     title: "🏆 AI Track Winner: AI Flashcard Maker (Adobe Express Add-ons Hackathon)",
     path: "/main/Flashcard",

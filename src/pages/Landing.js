@@ -73,7 +73,7 @@ function Landing() {
           </div>
           <div>
             <a
-              href="https://www.linkedin.com/in/katie-yang-2a863915b/"
+              href="https://www.linkedin.com/in/katie-yang-ky/"
               target="_blank"
               rel="noreferrer"
               title="LinkedIn"

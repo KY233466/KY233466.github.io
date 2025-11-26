@@ -7,7 +7,7 @@ const Footer = () => {
     <div className={styles.container}>
       <div className={styles.iconGroup}>
         <a
-          href="https://www.linkedin.com/in/katie-yang-2a863915b/"
+          href="https://www.linkedin.com/in/katie-yang-ky/"
           target="_blank"
           rel="noreferrer"
           title="LinkedIn"

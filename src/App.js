@@ -10,6 +10,7 @@ import ZOOX from "./pages/DesignProjects/ZOOX";
 import ColorUnclasher from "./pages/FrontendProjects/ColorUnclasher";
 import Advising from "./pages/FrontendProjects/Advising";
 import Flashcard from "./pages/FrontendProjects/Flashcard";
+import LinkedInNotion from './pages/FrontendProjects/LinkedInNotion';
 
 import Hobbees from "./pages/DesignProjects/Hobbees";
 import WhatColor from "./pages/DesignProjects/WhatColor";
@@ -46,6 +47,7 @@ function App() {
             <Route path="/Flashcard" element={<Flashcard />} />
             <Route path="/ColorUnclasher" element={<ColorUnclasher />} />
             <Route path="/FIFO" element={<FIFO />} />
+            <Route path="/LinkedIn-to-Notion" element={<LinkedInNotion />} />
           </Routes>
         </div>
         <Footer />
