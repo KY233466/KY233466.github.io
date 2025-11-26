@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.961190f7.css",
-    "main.js": "/static/js/main.993b668a.js",
+    "main.js": "/static/js/main.bcdd5971.js",
     "static/media/Demo.mov": "/static/media/Demo.06cb9b5ab2332e0491bd.mov",
     "static/media/HDemo.mov": "/static/media/HDemo.714230cef5b8fd4029cc.mov",
     "static/media/iterated.png": "/static/media/iterated.5cfee5e19230a831d45a.png",
@@ -11,6 +11,7 @@
     "static/media/Home Page.png": "/static/media/Home Page.0d8f9f83b49b986586fb.png",
     "static/media/ZOOXMockups.png": "/static/media/ZOOXMockups.e350a2afb10948479b2a.png",
     "static/media/Color.png": "/static/media/Color.4ef7ce7da0aa4f058658.png",
+    "static/media/LinkedInNotionPic.png": "/static/media/LinkedInNotionPic.90121a07b128c5de135b.png",
     "static/media/ZOOXMB1.png": "/static/media/ZOOXMB1.5df302ee7d06ca743216.png",
     "static/media/3D.png": "/static/media/3D.a984e2d27555b9a63c23.png",
     "static/media/ZOOXMB2.png": "/static/media/ZOOXMB2.110c3c1bcbc7860b67eb.png",
@@ -53,10 +54,10 @@
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.961190f7.css.map": "/static/css/main.961190f7.css.map",
-    "main.993b668a.js.map": "/static/js/main.993b668a.js.map"
+    "main.bcdd5971.js.map": "/static/js/main.bcdd5971.js.map"
   },
   "entrypoints": [
     "static/css/main.961190f7.css",
-    "static/js/main.993b668a.js"
+    "static/js/main.bcdd5971.js"
   ]
 }
