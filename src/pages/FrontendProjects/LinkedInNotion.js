@@ -22,10 +22,11 @@ const headerContent = {
         "A Chrome extension that scrapes LinkedIn profiles and saves them directly into my Notion CRM with one click. No backend server or third-party data storage!",
     projectType: "Solo Project • Chrome Extension • Personal Tool",
     myRole: "Designer & Full-Stack Extension Developer",
-    currentStatus: "Submitted for review",
+    currentStatus: "Published in Chrome Web Store",
     Btn: false,
     Icon: true,
     IconImage: Icons,
+    currentStatusLink: 'https://chromewebstore.google.com/detail/save-linkedin-%E2%86%92-notion/hbbaojnhbljohjcnldhekfioonfkjchf?authuser=0&hl=en'
 };
 
 export default function LinkedInNotion() {
