@@ -13,8 +13,8 @@ export default function Navbar() {
         {t("name")}
       </Link>
       <ul>
-        <CustomLink to="/main">{t(Lpath + "actionables.Frontend")}</CustomLink>
-        <CustomLink to="/main/Design">
+        <CustomLink to="/SDE">{t(Lpath + "actionables.Frontend")}</CustomLink>
+        <CustomLink to="/Design">
           {t(Lpath + "actionables.Design")}
         </CustomLink>
         <LanguageSelect

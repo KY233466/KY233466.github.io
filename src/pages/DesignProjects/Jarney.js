@@ -29,7 +29,7 @@ const headerContent = [
       "The change in code (React based) is implemented in QA branch, but haven’t merge into Master",
     Btn: true,
     BtnContent: "View Frontend Implementation",
-    BtnLink: "/main/Jarney",
+    BtnLink: "/Jarney",
     IconImage: null,
   },
 ];
@@ -52,7 +52,7 @@ const afterContent = [
 ];
 
 export default function Jarney() {
-  const pathName = "/main/Jarney";
+  const pathName = "/Jarney";
   const BtnContent = "View Frontend Implementation";
 
   const [showButton, setShowButton] = useState(true);

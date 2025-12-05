@@ -12,7 +12,7 @@ const headerContent = [
       "The change in code (React based) is done implemented in the QA branch, but haven’t merge into Master",
     Btn: true,
     BtnContent: "View Redesign Process",
-    BtnLink: "/main/Design/Jarney",
+    BtnLink: "/Design/Jarney",
   },
 ];
 

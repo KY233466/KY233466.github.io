@@ -11,7 +11,7 @@ root.render(
     <HashRouter>
       <Routes>
         <Route exact path="/" element={<Landing />} />
-        <Route path="/main/*" element={<App />} />
+        <Route path="/*" element={<App />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>

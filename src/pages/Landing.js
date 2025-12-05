@@ -64,10 +64,10 @@ function Landing() {
           />
           <h3>{t(Lpath + "actionables.message")}</h3>
           <div className={styles.btnS}>
-            <Link className={styles.btn} to="/main">
+            <Link className={styles.btn} to="/SDE">
               <div>{t(Lpath + "actionables.Frontend")}</div>
             </Link>
-            <Link className={styles.btn} to="/main/Design">
+            <Link className={styles.btn} to="/Design">
               <div>{t(Lpath + "actionables.Design")}</div>
             </Link>
           </div>

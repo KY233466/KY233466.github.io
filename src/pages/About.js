@@ -10,33 +10,28 @@ import LinkedInNotion from "../pic/LinkedInNotionPic.png";
 const content = [
   {
     title: "Save LinkedIn → Notion: Zero-Backend CRM Helper",
-    path: "/main/LinkedIn-to-Notion",
+    path: "/LinkedIn-to-Notion",
     content: LinkedInNotion,
   },
   {
     title: "🏆 AI Track Winner: AI Flashcard Maker (Adobe Express Add-ons Hackathon)",
-    path: "/main/Flashcard",
+    path: "/Flashcard",
     content: Flashcard,
   },
   {
     title: "🏆 Tracker Winner: AI-Enhanced Academic Advising (JumboHack)",
-    path: "/main/Advising",
+    path: "/Advising",
     content: Advising,
   },
   {
     title: "Google Summer of Code '24: Color Unclasher",
-    path: "/main/ColorUnclasher",
+    path: "/ColorUnclasher",
     content: ColorUnclasher,
   },
   {
     title: "JARney Scheduler Page Code",
-    path: "/main/Jarney",
+    path: "/Jarney",
     content: JarneyDesign,
-  },
-  {
-    title: "FIFO Office Hour Queue",
-    path: "/main/FIFO",
-    content: FIFO,
   },
 ];
 

@@ -14,17 +14,17 @@ import { useTranslation } from "react-i18next";
 const content = [
   {
     title: "ZOOX",
-    path: "/main/Design/ZOOX",
+    path: "/Design/ZOOX",
     content: ZOOX,
   },
   {
     title: "WhatColor",
-    path: "/main/Design/WhatColor",
+    path: "/Design/WhatColor",
     content: Color,
   },
   {
     title: "Jarney",
-    path: "/main/Design/Jarney",
+    path: "/Design/Jarney",
     content: JarneyRedesign,
   },
   // {
@@ -34,7 +34,7 @@ const content = [
   // },
   {
     title: "ActivityStatus",
-    path: "/main/Design/ActivityStatus",
+    path: "/Design/ActivityStatus",
     content: research,
   },
 ];

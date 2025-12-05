@@ -34,9 +34,9 @@ function App() {
         <Navbar />
         <div className="container">
           <Routes>
-            <Route path="/" element={<About />} />
+            <Route path="/SDE" element={<About />} />
             <Route path="/Design" element={<Design />} />
-            <Route path="/resume" element={<Resume />} />
+            {/*<Route path="/resume" element={<Resume />} />*/}
             <Route path="/Design/Jarney" element={<Jarney />} />
             <Route path="/Design/ZOOX" element={<ZOOX />} />
             <Route path="/Design/WhatColor" element={<WhatColor />} />
