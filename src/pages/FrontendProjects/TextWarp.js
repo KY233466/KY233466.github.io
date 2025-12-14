@@ -18,7 +18,7 @@ const headerContent = {
     "Adobe Express Add-On Hackathon → Selected by Adobe Fund for Design",
   myRole: "Frontend Engineer · Graphics Engineering",
   currentStatus:
-    "Working add-on: Hackathon entrant that didn't place but earned Adobe Fund for Design backing.",
+    "Submitted for Review: earned Adobe Fund for Design backing.",
   Btn: false,
   Icon: true,
   IconImage: Icons,
