@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.961190f7.css",
-    "main.js": "/static/js/main.28062072.js",
+    "main.css": "/static/css/main.7af855bb.css",
+    "main.js": "/static/js/main.cf6b61ae.js",
     "static/media/Demo.mov": "/static/media/Demo.06cb9b5ab2332e0491bd.mov",
     "static/media/HDemo.mov": "/static/media/HDemo.714230cef5b8fd4029cc.mov",
     "static/media/iterated.png": "/static/media/iterated.5cfee5e19230a831d45a.png",
@@ -17,8 +17,6 @@
     "static/media/ZOOXMB2.png": "/static/media/ZOOXMB2.110c3c1bcbc7860b67eb.png",
     "static/media/me.jpg": "/static/media/me.62e3f4ec0ea9f8b2b465.jpg",
     "static/media/ZOOX.png": "/static/media/ZOOX.d85f67aca71ca4d83da6.png",
-    "static/media/Hobbees.png": "/static/media/Hobbees.7cb78fd1d675003c0571.png",
-    "static/media/JarneyDesign.png": "/static/media/JarneyDesign.a01f7d528685acd59a3c.png",
     "static/media/colorSensor.png": "/static/media/colorSensor.5bd7fcc694cba935749f.png",
     "static/media/InCar.png": "/static/media/InCar.63d3d35b8dd92001033d.png",
     "static/media/Analysis2.png": "/static/media/Analysis2.68ca61b794d2679291cb.png",
@@ -32,8 +30,6 @@
     "static/media/plan1.png": "/static/media/plan1.c8fb01ee6ace9f78517c.png",
     "static/media/Instagram.png": "/static/media/Instagram.d3c4c0133850f05997f6.png",
     "static/media/screen.png": "/static/media/screen.32a6a3319ca461b2c2fb.png",
-    "static/media/purpleLines.jpg": "/static/media/purpleLines.7455fcdb0611b147d426.jpg",
-    "static/media/KALEA.png": "/static/media/KALEA.df0a286c2219ca21e744.png",
     "static/media/magneticBoard.jpg": "/static/media/magneticBoard.de2379e4fcca8cb207ac.jpg",
     "static/media/JarneyRedesign.png": "/static/media/JarneyRedesign.9d865f84c1e8a97b3123.png",
     "static/media/advisingCover.jpg": "/static/media/advisingCover.c7bc62bfcca31589292d.jpg",
@@ -42,7 +38,6 @@
     "static/media/React.png": "/static/media/React.9c864f617815b79878fd.png",
     "static/media/ColorWorkFlow.png": "/static/media/ColorWorkFlow.e3ee82f65902de9fcb6e.png",
     "static/media/flashcardCover.jpg": "/static/media/flashcardCover.ecc49a4292e494014a1d.jpg",
-    "static/media/FIFOCover.png": "/static/media/FIFOCover.98e5f99e87ed40efd9b5.png",
     "static/media/ReduxIcon.png": "/static/media/ReduxIcon.1015b043e2d9c31de05b.png",
     "static/media/ZOOXW1.png": "/static/media/ZOOXW1.06f4754119ed6bd6b903.png",
     "static/media/ZOOXW3.png": "/static/media/ZOOXW3.a044c713fff8f23285a9.png",
@@ -53,11 +48,11 @@
     "static/media/ZOOXW4.png": "/static/media/ZOOXW4.3f5e97cb9508c47e4892.png",
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.961190f7.css.map": "/static/css/main.961190f7.css.map",
-    "main.28062072.js.map": "/static/js/main.28062072.js.map"
+    "main.7af855bb.css.map": "/static/css/main.7af855bb.css.map",
+    "main.cf6b61ae.js.map": "/static/js/main.cf6b61ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.961190f7.css",
-    "static/js/main.28062072.js"
+    "static/css/main.7af855bb.css",
+    "static/js/main.cf6b61ae.js"
   ]
 }

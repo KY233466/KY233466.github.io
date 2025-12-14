@@ -1,11 +1,10 @@
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import NavBarToggle from "./NavBarToggle";
 import styles from "./NavBar.module.css";
 
 export default function Navbar() {
   const { t } = useTranslation();
-  const Lpath = "LandingPage.";
 
   return (
     <header className={styles.wrapper}>

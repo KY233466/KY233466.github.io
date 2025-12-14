@@ -1,14 +1,11 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import Skeleton from "@mui/material/Skeleton";
 import Me from "../../pic/me.jpg";
 import LinkedIn from "../../pic/LinkedIn.png";
 import styles from "./IntroCard.module.css";
 import GitHub from "../../pic/GitHub.png";
-import LanguageSelect from "../LanguageSelect";
 import { useTranslation } from "react-i18next";
 import LocaleContext from "../LocaleContext";
-import NavBarToggle from "../NavBar/NavBarToggle";
 import i18n from "../../i18n";
 
 function IntroCard() {
