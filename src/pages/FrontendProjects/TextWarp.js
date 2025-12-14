@@ -1,7 +1,8 @@
-import styles from "./ColorUnclasher.module.css";
 import ContentHeader from "../../components/ContentHeader/ContentHeader";
 import JavaScriptIcon from "../../pic/js.png";
 import LinkedInIcon from "../../pic/LinkedIn.png";
+
+import styles from "./ColorUnclasher.module.css";
 
 const Icons = [
   {
@@ -67,7 +68,8 @@ export default function TextWarp() {
       {/* Team */}
       <div className={styles.contentContainer}>
         <div className={styles.sectionHeader}>Who Built This</div>
-        <div className={styles.teamSection}>
+        <div className={styles.teamVideoWrap}>
+          <div className={styles.teamSection}>
           {teamMembers.map((group) => (
             <div key={group.role}>
               <div className={styles.teamRole}>{group.role}</div>
@@ -93,6 +95,17 @@ export default function TextWarp() {
               </div>
             </div>
           ))}
+          </div>
+
+          <div className={styles.videoWrapper}>
+            <iframe
+              src="https://www.youtube.com/embed/FQbu3I5IbPA"
+              title="TextWarp Demo Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
         </div>
       </div>
 
