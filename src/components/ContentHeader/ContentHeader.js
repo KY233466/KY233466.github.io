@@ -46,12 +46,13 @@ export default function ContentHeader({
             </h5>
             <div>{projectType}</div>
           </div>
-          <div className={styles.subContent2}>
-            <h5>
-              <strong>{t("HeaderContent.MyRole")}</strong>
-            </h5>
-            <div>{myRole}</div>
-          </div>
+          {myRole &&           
+            <div className={styles.subContent2}>
+              <h5>
+                <strong>{t("HeaderContent.MyRole")}</strong>
+              </h5>
+              <div>{myRole}</div>
+            </div>}
           <div className={styles.subContent3}>
             <h5>
               <strong>{t("HeaderContent.CurrentStatus")}</strong>
