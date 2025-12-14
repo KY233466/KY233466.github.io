@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./Project.module.css";
 import { Link } from "react-router-dom";
 import Skeleton from "@mui/material/Skeleton";
+import Meta from "../Meta/meta";
 
 const Project = ({ title, path, content, timeframe, tags = [] }) => {
   const [loaded, setLoaded] = useState(false);
@@ -25,18 +26,7 @@ const Project = ({ title, path, content, timeframe, tags = [] }) => {
         </div>
 
         <div className={styles.title}>{title}</div>
-        <div className={styles.meta}>
-          {timeframe && <span className={styles.timeframe}>{timeframe}</span>}
-          {tags?.length ? (
-            <div className={styles.tags}>
-              {tags.map((tag) => (
-                <span key={`${title}-${tag}`} className={styles.tag}>
-                  {tag}
-                </span>
-              ))}
-            </div>
-          ) : null}
-        </div>
+        <Meta timeframe={timeframe} tags={tags} title={title} />
         </Link>
     </div>
   );

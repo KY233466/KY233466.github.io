@@ -26,24 +26,15 @@ const headerContent = {
     Btn: false,
     Icon: true,
     IconImage: Icons,
-    currentStatusLink: 'https://chromewebstore.google.com/detail/save-linkedin-%E2%86%92-notion/hbbaojnhbljohjcnldhekfioonfkjchf?authuser=0&hl=en'
+    currentStatusLink: 'https://chromewebstore.google.com/detail/save-linkedin-%E2%86%92-notion/hbbaojnhbljohjcnldhekfioonfkjchf?authuser=0&hl=en',
+    timeframe: "Nov 2025 · Personal Tool",
+    tags: ["React", "Chrome Extension", "Notion API"],
 };
 
 export default function LinkedInNotion() {
     return (
         <div className={styles.container}>
-            <ContentHeader
-                key={headerContent.title}
-                title={headerContent.title}
-                detail={headerContent.detail}
-                myRole={headerContent.myRole}
-                projectType={headerContent.projectType}
-                currentStatus={headerContent.currentStatus}
-                currentStatusLink={headerContent.currentStatusLink}
-                Btn={headerContent.Btn}
-                Icon={headerContent.Icon}
-                IconImage={headerContent.IconImage}
-            />
+            <ContentHeader content={headerContent}/>
 
             {/* Privacy Policy */}
             <div className={styles.contentContainer}>

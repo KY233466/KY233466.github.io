@@ -1,22 +1,19 @@
 import styles from "./ContentHeader.module.css";
-import ViewFrontend from "../ViewFrontend/ViewFrontend";
-import Figma from "../../pic/Figma.png";
+// import ViewFrontend from "../ViewFrontend/ViewFrontend";
+// import Figma from "../../pic/Figma.png";
+import Meta from "../Meta/meta";
 import { useTranslation } from "react-i18next";
 
-export default function ContentHeader({
-  title,
-  index,
+export default function ContentHeader({content}) {
+  const {title,
   detail,
   projectType,
   myRole,
   currentStatus,
   currentStatusLink,
-  Btn,
-  BtnContent,
-  BtnLink,
-  Icon,
   IconImage,
-}) {
+  timeframe,
+  tags = []} = content;
   const { t } = useTranslation();
 
   return (
@@ -28,8 +25,7 @@ export default function ContentHeader({
           <div className={styles.IconGroup}>
             {IconImage?.map((value, index) => (
               <img
-                index={value.name}
-                key={value.name}
+                key={index}
                 className={styles.icon}
                 src={value.images}
                 alt={value.name}
@@ -78,8 +74,8 @@ export default function ContentHeader({
             </div>
           </div>}
         </div>
-        {Btn ? <ViewFrontend content={BtnContent} path={BtnLink}/> : null}
       </div>
+      <Meta timeframe={timeframe} tags={tags} title={title} />
     </div>
   );
 }

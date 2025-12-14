@@ -19,20 +19,7 @@ const headerContent = [
 export default function Jarney() {
   return (
     <div className={styles.container}>
-      {headerContent.map((value, index) => (
-        <ContentHeader
-          index={value.index}
-          key={value.title}
-          title={value.title}
-          detail={value.detail}
-          myRole={value.myRole}
-          projectType={value.projectType}
-          currentStatus={value.currentStatus}
-          Btn={value.Btn}
-          BtnContent={value.BtnContent}
-          BtnLink={value.BtnLink}
-        />
-      ))}
+      <ContentHeader content={headerContent}/>
       {/* <div className={styles.contentContainer}>
         <div className={styles.sectionHeader}>Result Overview</div>
         <div>Hover to see change</div>

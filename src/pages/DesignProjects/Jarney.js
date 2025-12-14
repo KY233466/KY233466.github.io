@@ -17,8 +17,7 @@ const Icons = [
   },
 ];
 
-const headerContent = [
-  {
+const headerContent = {
     title:
       "JARney Scheduler Page Redesign",
     detail:
@@ -28,8 +27,7 @@ const headerContent = [
     currentStatus:
       "The change in code (React based) is implemented in QA branch, but haven’t merge into Master",
     IconImage: null,
-  },
-];
+  };
 
 const beforeContent = [
   {
@@ -67,19 +65,7 @@ export default function Jarney() {
 
   return (
     <div className={styles.container}>
-      {headerContent.map((value, index) => (
-        <ContentHeader
-          index={value.index}
-          key={value.title}
-          title={value.title}
-          detail={value.detail}
-          myRole={value.myRole}
-          projectType={value.projectType}
-          currentStatus={value.currentStatus}
-          BtnLink={value.BtnLink}
-          IconImage={value.IconImage}
-        />
-      ))}
+      <ContentHeader content={headerContent} />
 
       <div className={styles.contentContainer}>
         <div className={styles.section}>

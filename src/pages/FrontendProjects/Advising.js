@@ -31,23 +31,14 @@ const headerContent = {
   Icon: true,
   IconImage: Icons,
   Link: "https://devpost.com/software/tuftsadvisor",
+  timeframe: "March 2025 - June 2025 · JumboHack",
+  tags: ["GenAI", "React", "Azure", "Python", "JavaScript", "Flask", "MongoDB Atlas", "OAuth 2.0"],
 };
 
 export default function Advising() {
   return (
     <div className={styles.container}>
-      <ContentHeader
-        key={headerContent.title}
-        title={headerContent.title}
-        detail={headerContent.detail}
-        myRole={headerContent.myRole}
-        projectType={headerContent.projectType}
-        currentStatus={headerContent.currentStatus}
-        currentStatusLink={headerContent.Link}
-        Btn={headerContent.Btn}
-        Icon={headerContent.Icon}
-        IconImage={headerContent.IconImage}
-      />
+      <ContentHeader content={headerContent}/>
 
       {/* Inspiration */}
       <div className={styles.contentContainer}>

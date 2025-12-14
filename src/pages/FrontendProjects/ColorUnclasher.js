@@ -37,18 +37,7 @@ const headerContent = {
 export default function ColorUnclasher() {
   return (
     <div className={styles.container}>
-      <ContentHeader
-        key={headerContent.title}
-        title={headerContent.title}
-        detail={headerContent.detail}
-        myRole={headerContent.myRole}
-        projectType={headerContent.projectType}
-        currentStatus={headerContent.currentStatus}
-        currentStatusLink={headerContent.Link}
-        Btn={headerContent.Btn}
-        Icon={headerContent.Icon}
-        IconImage={headerContent.IconImage}
-      />
+      <ContentHeader content={headerContent}/>
 
       {/* Overview */}
       <div className={styles.contentContainer}>

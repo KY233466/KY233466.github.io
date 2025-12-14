@@ -1,0 +1,25 @@
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.timeframe {
+  font-size: 0.9rem;
+  color: var(--muted-ink);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.2rem 0.8rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}

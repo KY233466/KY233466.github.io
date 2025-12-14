@@ -3,6 +3,7 @@ import styles from "./F&D.module.css";
 import ColorUnclasher from "../pic/ColorUnclasher.png";
 import Advising from "../pic/advisingCover.jpg";
 import Flashcard from "../pic/flashcardCover.jpg";
+import TextWarp from "../pic/TextWarp.png";
 import LinkedInNotion from "../pic/LinkedInNotionPic.png";
 import IntroCard from "../components/IntroCard/IntroCard";
 
@@ -20,6 +21,13 @@ const content = [
     content: Flashcard,
     timeframe: "July 2025 - Present · Adobe Express Add-ons Hackathon (3,345 participants)",
     tags: ["GenAI", "React", "Python", "JavaScript", "Flask", "Google Cloud", "Babel"],
+  },
+  {
+    title: "💡 TextWarp: Creative Text Effects for Adobe Express",
+    path: "/TextWarp",
+    content: TextWarp,
+    timeframe: "July 2025 · Selected by Adobe Fund for Design",
+    tags: ["JavaScript", "opentype.js", "warp.js"],
   },
   {
     title: "🏆 Tracker Winner: AI-Enhanced Academic Advising",

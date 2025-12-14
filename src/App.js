@@ -9,6 +9,7 @@ import ZOOX from "./pages/DesignProjects/ZOOX";
 import ColorUnclasher from "./pages/FrontendProjects/ColorUnclasher";
 import Advising from "./pages/FrontendProjects/Advising";
 import Flashcard from "./pages/FrontendProjects/Flashcard";
+import TextWarp from "./pages/FrontendProjects/TextWarp";
 import LinkedInNotion from './pages/FrontendProjects/LinkedInNotion';
 
 import WhatColor from "./pages/DesignProjects/WhatColor";
@@ -40,6 +41,7 @@ function App() {
             <Route path="/Jarney" element={<JarneyCode />} />
             <Route path="/Advising" element={<Advising />} />
             <Route path="/Flashcard" element={<Flashcard />} />
+            <Route path="/TextWarp" element={<TextWarp />} />
             <Route path="/ColorUnclasher" element={<ColorUnclasher />} />
             <Route path="/FIFO" element={<FIFO />} />
             <Route path="/LinkedIn-to-Notion" element={<LinkedInNotion />} />

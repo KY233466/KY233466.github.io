@@ -27,23 +27,14 @@ const headerContent = {
   Icon: true,
   IconImage: Icons,
   currentStatusLink: "https://devpost.com/software/ai-flashcard-maker",
+  timeframe: "July 2025 - Present",
+  tags: ["GenAI", "React", "Python", "JavaScript", "Flask", "Google Cloud", "Babel"],
 };
 
 export default function Flashcard() {
   return (
       <div className={styles.container}>
-        <ContentHeader
-            key={headerContent.title}
-            title={headerContent.title}
-            detail={headerContent.detail}
-            myRole={headerContent.myRole}
-            projectType={headerContent.projectType}
-            currentStatus={headerContent.currentStatus}
-            currentStatusLink={headerContent.currentStatusLink}
-            Btn={headerContent.Btn}
-            Icon={headerContent.Icon}
-            IconImage={headerContent.IconImage}
-        />
+        <ContentHeader content={headerContent}/>
 
         {/* Inspiration */}
         <div className={styles.contentContainer}>

@@ -108,6 +108,57 @@
   border-radius: 6px;
 }
 
+.teamSection {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  justify-content: flex-start;
+}
+
+.teamRole {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 10px;;
+}
+
+.teamList {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.teamMember {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 0.65rem 0.85rem;
+  border-radius: 16px;
+  background: rgba(17, 19, 34, 0.04);
+}
+
+.teamName {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(15, 23, 52, 0.12);
+}
+
+.socialIcon {
+  width: 16px;
+  height: 16px;
+}
+
 @media (max-width: 768px) {
   .columns {
     flex-direction: column;

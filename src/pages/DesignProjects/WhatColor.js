@@ -26,17 +26,17 @@ const FWpath = "WhatColor.FutureWork.";
 export default function WhatColor() {
   const { t } = useTranslation();
 
+    const headerContent = {
+      title: t(HCpath + "title"),
+      detail: t(HCpath + "detail"),
+      projectType: t(HCpath + "projectType"),
+      myRole: t(HCpath + "myRole"),
+      currentStatus: t(HCpath + "currentStatus"),
+    };
+
   return (
     <div className={styles.container}>
-      <ContentHeader
-        key={t(HCpath + "title")}
-        title={t(HCpath + "title")}
-        detail={t(HCpath + "detail")}
-        myRole={t(HCpath + "myRole")}
-        projectType={t(HCpath + "projectType")}
-        currentStatus={t(HCpath + "currentStatus")}
-        Btn={false}
-      />
+      <ContentHeader content={headerContent} />
       <div className={styles.contentContainer}>
         <div className={styles.sectionHeader}>{t(Ipath + "title")}</div>
         <div
