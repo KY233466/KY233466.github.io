@@ -4,6 +4,7 @@ import ColorUnclasher from "../pic/ColorUnclasher.png";
 import Advising from "../pic/advisingCover.jpg";
 import Flashcard from "../pic/flashcardCover.jpg";
 import LinkedInNotion from "../pic/LinkedInNotionPic.png";
+import IntroCard from "../components/IntroCard/IntroCard";
 
 const content = [
   {
@@ -39,6 +40,8 @@ const content = [
 export default function About() {
   return (
     <div className={styles.container}>
+      <IntroCard/>
+
       <header className={styles.pageIntro}>
         <h2 className={styles.introTitle}>Shaping resilient, human-centered tools.</h2>
         <p className={styles.introBody}>

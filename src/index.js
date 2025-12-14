@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import Landing from "./pages/Landing";
 import "./styles/global.css";
 import { HashRouter, Route, Routes } from "react-router-dom";
 
@@ -10,7 +9,6 @@ root.render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
-        <Route exact path="/" element={<Landing />} />
         <Route path="/*" element={<App />} />
       </Routes>
     </HashRouter>

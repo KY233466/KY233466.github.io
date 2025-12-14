@@ -1,4 +1,4 @@
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import styles from "./NavBar.module.css";
 
@@ -9,7 +9,7 @@ export default function NavBarToggle() {
   return (
     <div>
         <ul className={styles.links}>
-        <CustomLink to="/SDE">
+        <CustomLink to="/">
             {t(Lpath + "actionables.Frontend")}
         </CustomLink>
         <CustomLink to="/Design">
@@ -21,8 +21,13 @@ export default function NavBarToggle() {
 }
 
 function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+  const location = useLocation();
+  const pathname = location.pathname;
+
+  const isActive =
+    to === "/"
+      ? !pathname.startsWith("/Design")
+      : pathname.startsWith(to);
 
   return (
     <li className={isActive ? styles.active : ""}>
