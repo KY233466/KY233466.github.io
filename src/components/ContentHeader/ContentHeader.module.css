@@ -1,145 +1,89 @@
 .container {
-  width: 80vw;
-  align-items: left;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 45px 0 35px 0;
+  gap: 1.5rem;
+  padding: clamp(2rem, 4vw, 2.75rem);
+  margin: 2rem 0 3rem;
+  border-radius: 36px;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
 }
 
 .title {
-  font-family: "Avenir";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 30px;
-  line-height: 40px;
-  margin-bottom: 10px;
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
 }
 
 .content {
-  text-align: left;
-  font-family: "Avenir";
-  font-style: normal;
-  font-weight: 100;
-  font-size: 17px;
-  line-height: 28px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 100%;
   justify-content: space-between;
-}
-
-.icon {
-  width: 15vw;
-  margin-left: 5px;
-  margin-bottom: 5px;
-}
-
-.moreInfo {
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
-  width: 100%;
-}
-
-.moreInfo h5 {
-  color: black;
-  margin: 0;
-  font-size: 1.2rem;
-  font-style: bold;
-  font-feature-settings: normal;
-  font-variant: bold;
-  font-weight: 100;
-  line-height: 30px;
-}
-
-.moreInfo div {
-  font-family: "Avenir";
-  font-style: normal;
-  font-weight: 100;
-  font-size: 17px;
-  line-height: 28px;
-}
-
-.subContentGroup {
-  display: flex;
-  flex-direction: row;
-}
-
-.subContent1 {
-  margin: 10px;
-  text-align: left;
-  /* flex: 1; */
-}
-
-.subContent2 {
-  margin: 10px;
-  text-align: left;
-  /* flex: 2; */
-}
-
-.subContent3 {
-  margin: 10px;
-  text-align: left;
-  /* flex: 3; */
-}
-
-.btn {
-  background-color: #1d2232;
-  color: white;
-  border-radius: 20px;
-  padding: 10px 25px;
-  text-decoration: none;
-  margin: 20px 0;
-  margin-left: 30px;
-  height: 70px;
-}
-
-.btn div {
-  font-family: "Avenir";
-  font-style: normal;
-  font-weight: 100;
-  font-size: 15px;
-  line-height: 24px;
+  gap: 2rem;
+  font-size: 1rem;
+  color: var(--muted-ink);
+  line-height: 1.7;
+  flex-wrap: wrap;
 }
 
 .IconGroup {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.icon {
+  width: 80px;
+  height: auto;
+}
+
+.moreInfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+}
+
+.subContentGroup {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.moreInfo h5 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted-ink);
+}
+
+.moreInfo div {
+  font-size: 1rem;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.statusLink {
+  color: var(--accent);
+  font-weight: 600;
+  word-break: break-all;
 }
 
 @media (max-width: 768px) {
   .container {
-    margin-top: 25px;
+    padding: 1.75rem;
   }
-  .content {
-    flex-wrap: wrap;
-  }
-  .icon {
-    width: 25%;
-    height: auto;
-    margin-top: 10px;
-    margin-left: 0px;
-    margin-right: 20px;
-  }
-  .moreInfo {
-    flex-wrap: wrap;
-  }
-  .subContentGroup {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+
   .title {
-    font-size: 1.5rem;
-    line-height: 35px;
+    font-size: 1.9rem;
   }
+
   .IconGroup {
-    flex-direction: row;
-    flex-wrap: wrap;
     width: 100%;
-    height: auto;
-    justify-content: flex-start;
   }
 }

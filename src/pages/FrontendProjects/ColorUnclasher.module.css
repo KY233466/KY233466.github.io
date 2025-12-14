@@ -1,182 +1,119 @@
 .container {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 7rem;
+  gap: 2.5rem;
+  margin-bottom: 6rem;
 }
 
-/* Main content blocks */
 .contentContainer {
-  width: 90%;
-  max-width: 960px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 3rem;
+  width: 100%;
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  border-radius: 30px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  backdrop-filter: blur(9px);
 }
 
-/* Typography */
 .sectionHeader {
-  font-family: "Avenir", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 35px;
-  line-height: 55px;
-  color: #2f76b5;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
 }
 
-.subHeader {
-  font-family: "Avenir", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  margin: 0 0 8px 0;
-  color: #1f2933;
-}
-
+.subHeader,
 .subSectionTitle {
-  font-family: "Avenir", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  margin-top: 24px;
-  margin-bottom: 8px;
-  color: #1f2933;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .paragraph {
-  font-family: "Avenir", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #111827;
-  margin: 6px 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--muted-ink);
+  margin: 0.25rem 0;
 }
 
-/* Links */
-.link {
-  text-decoration: underline;
-  color: #111827;
-}
-
-.link:hover {
-  color: #2f76b5 !important;
-}
-
-/* Layout helpers */
 .columns {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  gap: 40px;
-  width: 100%;
-  margin-top: 12px;
+  gap: 2rem;
+  margin-top: 1rem;
 }
 
 .column {
-  flex: 1 1 260px;
-  min-width: 220px;
+  flex: 1 1 240px;
 }
 
-/* Lists & text */
 .list {
-  margin: 0;
-  padding-left: 1.2rem;
-  font-family: "Avenir", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  sans-serif;
-  font-size: 15px;
+  margin: 0.25rem 0 0.5rem 1.2rem;
+  color: var(--muted-ink);
   line-height: 1.6;
-  color: #111827;
 }
 
 .list li {
-  margin-bottom: 6px;
+  margin-bottom: 0.35rem;
 }
 
-/* Code blocks */
 .code {
   width: 100%;
-  margin-top: 12px;
-  padding: 14px 16px;
-  border-radius: 8px;
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 18px;
   background: #0b1020;
   color: #f9fafb;
-  font-family: "SF Mono", "Menlo", "Monaco", Consolas, "Liberation Mono",
-  "Courier New", monospace;
-  font-size: 14px;
+  font-family: "SF Mono", "Menlo", Consolas, "Liberation Mono", "Courier New",
+    monospace;
+  font-size: 0.95rem;
   line-height: 1.6;
   white-space: pre-wrap;
   word-break: break-word;
-  overflow-x: auto;
 }
 
-/* Tables */
 .table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 12px;
-  font-family: "Avenir", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  sans-serif;
-  font-size: 14px;
-  color: #111827;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--muted-ink);
 }
 
 .table thead {
-  background: #f7fafc;
+  background: rgba(104, 81, 255, 0.06);
 }
 
 .table th,
 .table td {
-  padding: 8px 10px;
-  border-bottom: 1px solid #e5e7eb;
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid rgba(17, 19, 34, 0.08);
   text-align: left;
-  vertical-align: top;
 }
 
 .table th {
   font-weight: 600;
-  color: #4b5563;
 }
 
-/* Inline code inside paragraphs */
 .paragraph code,
 .list code,
 .table code {
-  font-family: "SF Mono", "Menlo", "Monaco", Consolas, "Liberation Mono",
-  "Courier New", monospace;
+  font-family: "SF Mono", "Menlo", Consolas, "Liberation Mono", "Courier New",
+    monospace;
   font-size: 0.9em;
-  background: #f3f4f6;
-  padding: 2px 4px;
-  border-radius: 4px;
+  background: rgba(104, 81, 255, 0.1);
+  padding: 0.1rem 0.35rem;
+  border-radius: 6px;
 }
 
-/* Responsive tweaks */
 @media (max-width: 768px) {
-  .sectionHeader {
-    font-size: 1.8rem;
-    line-height: 2.3rem;
+  .columns {
+    flex-direction: column;
   }
 
   .contentContainer {
-    width: 94%;
-  }
-
-  .columns {
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .code {
-    font-size: 13px;
-  }
-
-  .table th,
-  .table td {
-    padding: 6px 8px;
+    padding: 1.5rem;
   }
 }

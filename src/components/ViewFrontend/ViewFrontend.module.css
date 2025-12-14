@@ -1,26 +1,20 @@
 .btn {
-  background-color: #1d2232;
-  color: white;
-  border-radius: 20px;
-  padding: 10px 25px;
   text-decoration: none;
-  margin-left: 20px;
-  margin-top: 10px;
-  flex: 1;
-  text-align: center;
-  width: auto;
-  display: flex;
+  background: linear-gradient(120deg, #3a23ff, #a15aff);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.85rem 2.5rem;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  box-shadow: 0 20px 40px rgba(81, 56, 255, 0.35);
+  transition: transform 200ms ease, box-shadow 200ms ease;
 }
 
-.btn a:hover {
-  color: #f9f3d6 !important;
-}
-
-@media (max-width: 768px) {
-  .btn {
-    margin-left: 0;
-    padding: 20px 25px;
-  }
+.btn:hover {
+  transform: translateY(-3px);
+  color: #fff;
+  box-shadow: 0 25px 45px rgba(81, 56, 255, 0.4);
 }

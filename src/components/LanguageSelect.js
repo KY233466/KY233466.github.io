@@ -24,32 +24,43 @@ export default function LanguageSelect({newStyle}) {
     <div
       title="Language Setting"
       style={{
-        padding: "8px",
+        padding: "4px",
         position: "absolute",
         right: "30px",
         top: "30px",
         display: "flex",
         flexDirection: "row",
-        backgroundColor: "#484A52",
-        borderRadius: "30px",
+        backgroundColor: "var(--surface-raised)",
+        borderRadius: "999px",
         alignItems: "center",
-        border: "none",
+        border: "1px solid var(--card-border)",
         cursor: "initial",
+        boxShadow: "0 15px 35px rgba(15, 23, 52, 0.25)",
+        backdropFilter: "blur(12px)",
         ...newStyle,
       }}
     >
       <button
         onClick={(e) => changeSelect("en")}
         style={{
-          margin: "0px 5px 0px 5px",
-          padding: "8px 15px",
-          borderRadius: "18px",
+          margin: "0px 3px",
+          padding: "10px 18px",
+          borderRadius: "999px",
           border: "none",
-          color: "white",
+          fontFamily: "\"Space Grotesk\", \"Inter\", sans-serif",
+          fontSize: "0.85rem",
+          fontWeight: 600,
           cursor: "pointer",
           ...(isEnglish
-            ? { backgroundColor: "#A88FD0", color: "black" }
-            : { backgroundColor: "transparent", color: "white" }),
+            ? {
+                backgroundColor: "var(--accent)",
+                color: "#fff",
+                boxShadow: "inset 0 1px 0 rgba(255,255,255,0.4)",
+              }
+            : {
+                backgroundColor: "transparent",
+                color: "var(--muted-ink)",
+              }),
         }}
       >
         English
@@ -57,15 +68,24 @@ export default function LanguageSelect({newStyle}) {
       <button
         onClick={(e) => changeSelect("cn")}
         style={{
-          margin: "0px 5px 0px 5px",
-          padding: "8px 15px",
-          borderRadius: "18px",
+          margin: "0px 3px",
+          padding: "10px 18px",
+          borderRadius: "999px",
           border: "none",
-          color: "white",
+          fontFamily: "\"Space Grotesk\", \"Inter\", sans-serif",
+          fontSize: "0.85rem",
+          fontWeight: 600,
           cursor: "pointer",
           ...(!isEnglish
-            ? { backgroundColor: "#A88FD0", color: "black" }
-            : { backgroundColor: "transparent", color: "white" }),
+            ? {
+                backgroundColor: "var(--accent)",
+                color: "#fff",
+                boxShadow: "inset 0 1px 0 rgba(255,255,255,0.4)",
+              }
+            : {
+                backgroundColor: "transparent",
+                color: "var(--muted-ink)",
+              }),
         }}
       >
         中文

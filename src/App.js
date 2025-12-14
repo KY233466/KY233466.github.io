@@ -1,6 +1,6 @@
 import Navbar from "./components/NavBar/Navbar";
 import Design from "./pages/Design";
-import About from "./pages/About";
+import Software from "./pages/Software";
 import Resume from "./pages/Resume";
 import Footer from "./components/Footer/Footer";
 import Jarney from "./pages/DesignProjects/Jarney";
@@ -32,9 +32,9 @@ function App() {
       <Suspense fallback={<Loading />}>
         <ScroolToTop />
         <Navbar />
-        <div className="container">
+        <div className="page-shell">
           <Routes>
-            <Route path="/SDE" element={<About />} />
+            <Route path="/SDE" element={<Software />} />
             <Route path="/Design" element={<Design />} />
             {/*<Route path="/resume" element={<Resume />} />*/}
             <Route path="/Design/Jarney" element={<Jarney />} />

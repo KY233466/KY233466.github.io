@@ -1,24 +1,42 @@
-import { Suspense, useState } from "react";
+import { useState } from "react";
 import styles from "./Project.module.css";
 import { Link } from "react-router-dom";
 import Skeleton from "@mui/material/Skeleton";
 
-const Project = ({ title, loading, index, path, content }) => {
+const Project = ({ title, path, content, timeframe, tags = [] }) => {
   const [loaded, setLoaded] = useState(false);
 
   return (
     <div className={styles.container}>
         <Link to={path}>
-          {loaded ? null : (
-            <Skeleton variant="rounded" width={'100%'} height={'15rem'} />
-          )}
+         <div className={styles.mediaWrapper}>
+          {!loaded && 
+            <Skeleton
+              variant="rounded"
+              className={styles.skeleton}
+            />}
+
           <img
-            className={loaded ? styles.window : styles.windowNone}
+            className={styles.image}
             src={content}
             alt={title}
             onLoad={() => setLoaded(true)}
           />
-          <div className={styles.title}>{title}</div>
+        </div>
+
+        <div className={styles.title}>{title}</div>
+        <div className={styles.meta}>
+          {timeframe && <span className={styles.timeframe}>{timeframe}</span>}
+          {tags?.length ? (
+            <div className={styles.tags}>
+              {tags.map((tag) => (
+                <span key={`${title}-${tag}`} className={styles.tag}>
+                  {tag}
+                </span>
+              ))}
+            </div>
+          ) : null}
+        </div>
         </Link>
     </div>
   );

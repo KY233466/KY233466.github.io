@@ -1,83 +1,62 @@
-import { useState, useEffect } from "react";
 import Project from "../components/Project/Project";
-import styles from "../components/Design.module.css";
+import styles from "./F&D.module.css";
 import JarneyRedesign from "../pic/JarneyRedesign.png";
 import ZOOX from "../pic/ZOOX.png";
-import KALEA from "../pic/KALEA.png";
-import Hobbees from "../pic/Hobbees.png";
 import Color from "../pic/Color.png";
 import research from "../pic/Instagram.png";
 import { useTranslation } from "react-i18next";
-// import Skeleton from "react-loading-skeleton";
-// import WhatColor from "../pic/Instagram.png";
 
 const content = [
   {
     title: "ZOOX",
     path: "/Design/ZOOX",
     content: ZOOX,
-  },
-  {
-    title: "WhatColor",
-    path: "/Design/WhatColor",
-    content: Color,
+    timeframe: "March 2022 · Class Project",
+    tags: ["Figma", "UI Systems", "UX"],
   },
   {
     title: "Jarney",
     path: "/Design/Jarney",
     content: JarneyRedesign,
+    timeframe: "Dec 2021 - July 2022 · Student Tool",
+    tags: ["Service Design", "Scheduling", "Prototyping"],
+  },
+  {
+    title: "WhatColor",
+    path: "/Design/WhatColor",
+    content: Color,
+    timeframe: "Nov 2021 · Class Project",
+    tags: ["3D Printing", "Accessibility"],
   },
   // {
   //   title: "Hobbees Hobbby Sharing APP Design",
   //   path: "/main/Design/Hobbees",
   //   content: Hobbees,
   // },
-  {
-    title: "ActivityStatus",
-    path: "/Design/ActivityStatus",
-    content: research,
-  },
+  // {
+  //   title: "ActivityStatus",
+  //   path: "/Design/ActivityStatus",
+  //   content: research,
+  //   timeframe: "2020 · Concept",
+  //   tags: ["Mobile", "Wellness", "Product Strategy"],
+  // },
 ];
 
 export default function Design() {
   const { t } = useTranslation();
-  const [loading, setLoading] = useState(false);
-
-    useEffect(() => {
-      setLoading(true);
-      const timer = setTimeout(() => {
-        // setVideos(dummyData);
-        setLoading(false);
-      }, 1000);
-      // Cancel the timer while unmounting
-      return () => clearTimeout(timer);
-    }, []);
-
 
   return (
     <div className={styles.container}>
-      {/* {loading &&
-        content.map((value, index) => (
-          <Project
-            title={t(value.title + ".HeaderContent.title")}
-            loading={true}
-            index={value.index}
-            key={value.title}
-            path={value.path}
-            content={value.content}
-          />
-        ))}
-      {!loading &&
-        content.map((value, index) => (
-          <Project
-            title={t(value.title + ".HeaderContent.title")}
-            loading={false}
-            index={value.index}
-            key={value.title}
-            path={value.path}
-            content={value.content}
-          />
-        ))} */}
+      {/* <header className={styles.pageIntro}>
+        <h2 className={styles.introTitle}>
+          Explorations that balance craft with systems thinking.
+        </h2>
+        <p className={styles.introBody}>
+          From speculative UX to shipped improvements, these studies are anchored in
+          research, accessibility, and motion—mirroring the calm, confident tone of Attio’s
+          studio.
+        </p>
+      </header> */}
       {content.map((value, index) => (
         <Project
           title={t(value.title + ".HeaderContent.title")}
@@ -85,6 +64,8 @@ export default function Design() {
           key={value.title}
           path={value.path}
           content={value.content}
+          timeframe={value.timeframe}
+          tags={value.tags}
         />
       ))}
     </div>
