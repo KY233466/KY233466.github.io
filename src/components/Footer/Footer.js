@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div>
-          <p className={styles.note}>Let&apos;s build thoughtful tools together.</p>
+          <p className={styles.note}>Let&apos;s build thoughtful tools together</p>
           <span className={styles.meta}>© {year} Katie Yang</span>
         </div>
         <div className={styles.iconGroup}>

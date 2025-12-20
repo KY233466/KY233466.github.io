@@ -23,19 +23,20 @@
 .innerGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: clamp(1.5rem, 3vw, 3rem);
-  align-items: stretch;
+  gap: 1.5rem;
+  align-items: center;
+  grid-template-areas: "text visual";
 }
 
 .textCol {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  grid-area: text;
 }
 
 .eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.35rem;
+  letter-spacing: 0.2rem;
   font-size: 0.8rem;
   color: var(--muted-ink);
   margin: 0;
@@ -124,14 +125,15 @@
   border-left: 1px solid rgba(17, 19, 34, 0.08);
   display: flex;
   align-items: stretch;
+  grid-area: visual;
 }
 
 .profileCard {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width: 100%;
-  padding: clamp(1.5rem, 2.5vw, 2.5rem);
+  width: 70%;
+  padding-left: 1.5rem;
 }
 
 .portrait {
@@ -184,11 +186,6 @@
   color: var(--muted-ink);
 }
 
-.photoCredit {
-  font-size: 0.85rem;
-  color: var(--muted-ink);
-}
-
 .photoCredit a {
   color: inherit;
   text-decoration: underline;
@@ -197,6 +194,18 @@
 @media (max-width: 720px) {
   .innerGrid {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "visual"
+      "text";
+  }
+
+  .profileCard {
+    padding: 0;
+    width: 90%;
+  }
+
+  .textCol {
+    gap: 1rem;
   }
 
   .languageToggle {

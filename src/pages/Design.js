@@ -11,7 +11,7 @@ const content = [
     title: "ZOOX",
     path: "/Design/ZOOX",
     content: ZOOX,
-    timeframe: "March 2022 · Class Project",
+    timeframe: "March 2022 · Computer Interface Design Class Project",
     tags: ["Figma", "UI Systems", "UX"],
   },
   {
@@ -25,7 +25,7 @@ const content = [
     title: "WhatColor",
     path: "/Design/WhatColor",
     content: Color,
-    timeframe: "Nov 2021 · Class Project",
+    timeframe: "Nov 2021 · Intro to Human Factors Engineering Class Project",
     tags: ["3D Printing", "Accessibility"],
   },
   // {
@@ -47,16 +47,17 @@ export default function Design() {
 
   return (
     <div className={styles.container}>
-      {/* <header className={styles.pageIntro}>
+      <header className={styles.pageIntro}>
         <h2 className={styles.introTitle}>
-          Explorations that balance craft with systems thinking.
+          Design explorations from my earlier training.
         </h2>
         <p className={styles.introBody}>
-          From speculative UX to shipped improvements, these studies are anchored in
-          research, accessibility, and motion—mirroring the calm, confident tone of Attio’s
-          studio.
+          These projects are from a while back, but I keep them here to show the design
+          background that helps me collaborate naturally with designers. I studied
+          topics like Intro to Human Factors Engineering and Computer Interface Design, so
+          I can speak the same language when we’re refining an experience together.
         </p>
-      </header> */}
+      </header>
       {content.map((value, index) => (
         <Project
           title={t(value.title + ".HeaderContent.title")}

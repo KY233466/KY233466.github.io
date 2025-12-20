@@ -13,11 +13,6 @@ export default function Navbar() {
           <Link to="/" className={styles.siteTitle}>
             {t("name")}
           </Link>
-          <span className={styles.tagline}>
-            {t("LandingPage.actionables.messageShort", {
-              defaultValue: "Engineering × Design Portfolio",
-            })}
-          </span>
         </div>
         <NavBarToggle/>
       </nav>
