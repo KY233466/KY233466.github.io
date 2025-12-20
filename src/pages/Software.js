@@ -30,7 +30,7 @@ const content = [
     tags: ["JavaScript", "opentype.js", "warp.js"],
   },
   {
-    title: "🏆 Tracker Winner: AI-Enhanced Academic Advising",
+    title: "🏆 Track Winner: AI-Enhanced Academic Advising",
     path: "/Advising",
     content: Advising,
     timeframe: "March 2025 - June 2025 · JumboHack",

@@ -21,18 +21,16 @@ const Icons = [
 ];
 
 const headerContent = {
-  title: "🏆 Tracker Winner: AI-Enhanced Academic Advising",
+  title: "🏆 Track Winner: AI-Enhanced Academic Advising",
   detail:
     "Track‑winning Outlook add‑in and advising chatbot that uses GenAI and RAG to help advisors answer repetitive policy questions faster and give students clearer, more consistent guidance.",
   projectType: "Hackathon -> Venture Competition -> Class Final Project",
   myRole: "Team Lead & Full‑Stack Developer",
-  // currentStatus: "Track Winner at JumboHack 2025; ongoing iteration beyond hackathon",
-  Btn: false,
   Icon: true,
   IconImage: Icons,
   Link: "https://devpost.com/software/tuftsadvisor",
   timeframe: "March 2025 - June 2025 · JumboHack",
-  tags: ["GenAI", "React", "Azure", "Python", "JavaScript", "Flask", "MongoDB Atlas", "OAuth 2.0"],
+  tags: ["GenAI", "RAG", "React", "Azure", "Python", "JavaScript", "Flask", "MongoDB Atlas", "OAuth 2.0"],
 };
 
 export default function Advising() {
