@@ -75,7 +75,7 @@ function IntroCard() {
                   alt="Katie Yang"
                   className={loaded ? styles.profileImage : styles.hiddenImg}
                   fill
-                  sizes="(max-width: 720px) 70vw, 40vw"
+                  // sizes="(max-width: 720px) 70vw, 40vw"
                   priority
                   onLoadingComplete={() => setLoaded(true)}
                 />
