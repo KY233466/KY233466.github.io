@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Skeleton from "@mui/material/Skeleton";
+import Image from "next/image";
+
 import Me from "../../pic/me.jpg";
 import LinkedIn from "../../pic/LinkedIn.png";
 import styles from "./IntroCard.module.css";
@@ -68,13 +70,22 @@ function IntroCard() {
                     className={styles.portraitSkeleton}
                   />
                 )}
-                <img
+                <Image
+                  src="/ky233466/me.jpg"
+                  alt="Katie Yang"
+                  className={loaded ? styles.profileImage : styles.hiddenImg}
+                  onLoad={() => setLoaded(true)}
+                  width={100}
+                  height={24}
+                  priority
+                />
+                {/* <img
                   className={loaded ? styles.profileImage : styles.hiddenImg}
                   src={resolveAsset(Me)}
                   alt="Katie Yang"
                   loading="eager"
                   onLoad={() => setLoaded(true)}
-                />
+                /> */}
               </div>
             </div>
           </aside>

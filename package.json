@@ -31,7 +31,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:pages": "next build && rm -rf docs && mv out docs"
+    "build:pages": "next build && rm -rf docs && mv out docs && cp public/.nojekyll docs/.nojekyll"
   },
   "eslintConfig": {
     "extends": [
