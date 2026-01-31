@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: "/ky233466",
   webpack: (config) => {
     config.module.rules.push({
       test: /\.(mp4|mov|webm|ogg)$/i,
