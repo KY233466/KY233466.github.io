@@ -50,7 +50,7 @@ export default function About() {
     <div className={styles.container}>
       <IntroCard/>
 
-      <header className={styles.pageIntro}>
+      {/* <header className={styles.pageIntro}>
         <h2 className={styles.introTitle}>Shaping resilient, human-centered tools.</h2>
         <p className={styles.introBody}>
           A snapshot of products and experiments where I obsess over polish, data, and quiet
@@ -67,7 +67,7 @@ export default function About() {
           timeframe={value.timeframe}
           tags={value.tags}
         />
-      ))}
+      ))} */}
     </div>
   );
 }
