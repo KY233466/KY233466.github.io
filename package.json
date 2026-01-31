@@ -27,11 +27,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "build:pages": "next build && rm -rf docs && mv out docs && cp public/.nojekyll docs/.nojekyll"
+    "export": "next export",
+    "deploy": "next build && next export && gh-pages -d out"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +50,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^9.39.2"
+    "eslint": "^9.39.2",
+    "gh-pages": "^6.3.0"
   }
 }
