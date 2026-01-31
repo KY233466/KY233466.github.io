@@ -70,7 +70,7 @@ function IntroCard() {
                   />
                 )}
                 <Image
-                  src="/ky233466/public/me.jpg"
+                  src="/public/me.jpg"
                   alt="Katie Yang"
                   className={loaded ? styles.profileImage : styles.hiddenImg}
                   onLoad={() => setLoaded(true)}
