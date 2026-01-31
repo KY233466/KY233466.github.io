@@ -5,7 +5,7 @@ import Skeleton from "@mui/material/Skeleton";
 import Me from "../../pic/me.jpg";
 import LinkedIn from "../../pic/LinkedIn.png";
 import styles from "./IntroCard.module.css";
-import GitHub from "../../pic/GitHub.png";
+import GitHub from "../../pic/Github.png";
 import { useTranslation } from "react-i18next";
 import LocaleContext from "../LocaleContext";
 import i18n from "../../i18n";

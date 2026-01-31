@@ -1,6 +1,6 @@
 import styles from "./Footer.module.css";
 import LinkedIn from "../../pic/LinkedIn.png";
-import GitHub from "../../pic/GitHub.png";
+import GitHub from "../../pic/Github.png";
 import resolveAsset from "../../lib/resolveAsset";
 
 const Footer = () => {
