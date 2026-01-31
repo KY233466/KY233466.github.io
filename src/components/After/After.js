@@ -1,5 +1,6 @@
 import styles from "./After.module.css";
 import JarneyAfter from "../../pic/JarneyRedesign.png";
+import resolveAsset from "../../lib/resolveAsset";
 
 export default function After({ index, summary, detail }) {
   return (
@@ -9,7 +10,11 @@ export default function After({ index, summary, detail }) {
         <div className={styles.summary}>{summary}</div>
         <div className={styles.detail}>{detail}</div>
       </div>
-      <img className={styles.img} src={JarneyAfter} alt="Redesign Result" />
+      <img
+        className={styles.img}
+        src={resolveAsset(JarneyAfter)}
+        alt="Redesign Result"
+      />
     </div>
   );
 }

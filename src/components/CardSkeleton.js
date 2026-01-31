@@ -1,4 +1,3 @@
-import React from "react";
 // import Skeleton from "react-loading-skeleton";
 
 const CardSkeleton = ({ title, loading, index, path, content }) => {

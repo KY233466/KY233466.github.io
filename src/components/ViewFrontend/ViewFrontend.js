@@ -1,10 +1,10 @@
+import Link from "next/link";
 import styles from "./ViewFrontend.module.css";
-import { Link } from "react-router-dom";
 
 const ViewFrontend = ({ path, content }) => {
   return (
-    <Link className={styles.btn} to={path}>
-      <div> {content} </div>
+    <Link className={styles.btn} href={path}>
+      <div>{content}</div>
     </Link>
   );
 };

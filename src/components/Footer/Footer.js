@@ -1,6 +1,7 @@
 import styles from "./Footer.module.css";
 import LinkedIn from "../../pic/LinkedIn.png";
 import GitHub from "../../pic/GitHub.png";
+import resolveAsset from "../../lib/resolveAsset";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -19,7 +20,11 @@ const Footer = () => {
             rel="noreferrer"
             title="LinkedIn"
           >
-            <img className={styles.icon} src={LinkedIn} alt="LinkedIn Icon" />
+            <img
+              className={styles.icon}
+              src={resolveAsset(LinkedIn)}
+              alt="LinkedIn Icon"
+            />
           </a>
           <a
             href="https://github.com/KY233466"
@@ -27,7 +32,11 @@ const Footer = () => {
             rel="noreferrer"
             title="GitHub"
           >
-            <img className={styles.icon} src={GitHub} alt="Github Icon" />
+            <img
+              className={styles.icon}
+              src={resolveAsset(GitHub)}
+              alt="Github Icon"
+            />
           </a>
         </div>
       </div>

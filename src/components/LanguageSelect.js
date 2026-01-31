@@ -1,3 +1,5 @@
+"use client";
+
 import { useContext } from "react";
 import LocaleContext from "./LocaleContext";
 import i18n from "../i18n";
@@ -47,7 +49,7 @@ export default function LanguageSelect({newStyle}) {
           padding: "10px 18px",
           borderRadius: "999px",
           border: "none",
-          fontFamily: "\"Space Grotesk\", \"Inter\", sans-serif",
+          fontFamily: ""Space Grotesk", "Inter", sans-serif",
           fontSize: "0.85rem",
           fontWeight: 600,
           cursor: "pointer",
@@ -72,7 +74,7 @@ export default function LanguageSelect({newStyle}) {
           padding: "10px 18px",
           borderRadius: "999px",
           border: "none",
-          fontFamily: "\"Space Grotesk\", \"Inter\", sans-serif",
+          fontFamily: ""Space Grotesk", "Inter", sans-serif",
           fontSize: "0.85rem",
           fontWeight: 600,
           cursor: "pointer",

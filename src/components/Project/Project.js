@@ -1,25 +1,27 @@
+"use client";
+
 import { useState } from "react";
-import styles from "./Project.module.css";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import Skeleton from "@mui/material/Skeleton";
+import styles from "./Project.module.css";
 import Meta from "../Meta/meta";
+import resolveAsset from "../../lib/resolveAsset";
 
 const Project = ({ title, path, content, timeframe, tags = [] }) => {
   const [loaded, setLoaded] = useState(false);
+  const imageSrc = resolveAsset(content);
 
   return (
     <div className={styles.container}>
-        <Link to={path}>
-         <div className={styles.mediaWrapper}>
-          {!loaded && 
-            <Skeleton
-              variant="rounded"
-              className={styles.skeleton}
-            />}
+      <Link href={path}>
+        <div className={styles.mediaWrapper}>
+          {!loaded && (
+            <Skeleton variant="rounded" className={styles.skeleton} />
+          )}
 
           <img
             className={styles.image}
-            src={content}
+            src={imageSrc}
             alt={title}
             onLoad={() => setLoaded(true)}
           />
@@ -27,7 +29,7 @@ const Project = ({ title, path, content, timeframe, tags = [] }) => {
 
         <div className={styles.title}>{title}</div>
         <Meta timeframe={timeframe} tags={tags} title={title} />
-        </Link>
+      </Link>
     </div>
   );
 };

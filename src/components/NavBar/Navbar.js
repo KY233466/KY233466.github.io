@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import NavBarToggle from "./NavBarToggle";
 import styles from "./NavBar.module.css";
@@ -10,11 +12,11 @@ export default function Navbar() {
     <header className={styles.wrapper}>
       <nav className={styles.nav}>
         <div className={styles.brandBlock}>
-          <Link to="/" className={styles.siteTitle}>
+          <Link href="/" className={styles.siteTitle}>
             {t("name")}
           </Link>
         </div>
-        <NavBarToggle/>
+        <NavBarToggle />
       </nav>
     </header>
   );
