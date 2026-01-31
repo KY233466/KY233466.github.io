@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Skeleton from "@mui/material/Skeleton";
 import Image from "next/image";
 
-import Me from "../../pic/me.jpg";
 import LinkedIn from "../../pic/LinkedIn.png";
 import styles from "./IntroCard.module.css";
 import GitHub from "../../pic/Github.png";
