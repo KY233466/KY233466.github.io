@@ -1,3 +1,4 @@
+import Script from "next/script";
 import "../styles/global.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "../components/NavBar/Navbar";
@@ -26,6 +27,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-BP3EBZ4HHL"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){window.dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-BP3EBZ4HHL');`}
+        </Script>
+      </head>
       <body>
         <ClientProviders>
           <Navbar />
