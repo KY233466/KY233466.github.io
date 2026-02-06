@@ -10,6 +10,11 @@ export const metadata = {
   description:
     "Portfolio of Katie Yang featuring software, product, and design projects.",
   metadataBase: new URL("https://ky233466.github.io"),
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/logo192.png",
+  },
   openGraph: {
     title: "Katie Yang – Portfolio",
     description:
