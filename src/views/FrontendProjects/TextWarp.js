@@ -70,7 +70,7 @@ export default function TextWarp() {
       <div className={styles.contentContainer}>
         <div className={styles.teamVideoWrap}>
           <div>
-            <div className={styles.sectionHeader}>Who Built This</div>
+            <h2 className={styles.sectionHeader}>Who Built This</h2>
             <div className={styles.teamSection}>
               {teamMembers.map((group) => (
                 <div key={group.role}>
@@ -114,7 +114,7 @@ export default function TextWarp() {
 
       {/* Inspiration */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>Inspiration</div>
+        <h2 className={styles.sectionHeader}>Inspiration</h2>
         <p className={styles.paragraph}>
           We wanted to make text feel as alive and expressive as imagery in
           digital design. While designers have endless options for editing
@@ -130,7 +130,7 @@ export default function TextWarp() {
 
       {/* What it does */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>What It Does</div>
+        <h2 className={styles.sectionHeader}>What It Does</h2>
         <p className={styles.paragraph}>
           TextWarp is an interactive tool that lets users twist, bend, and
           stylize text through a catalog of presets plus hands-on mesh and
@@ -146,7 +146,7 @@ export default function TextWarp() {
 
       {/* How we built it */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>How We Built It</div>
+        <h2 className={styles.sectionHeader}>How We Built It</h2>
         <p className={styles.paragraph}>
           We kept the stack lightweight but powerful so that every interaction
           feels responsive:
@@ -164,7 +164,7 @@ export default function TextWarp() {
 
       {/* Challenges */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>Challenges We Ran Into</div>
+        <h2 className={styles.sectionHeader}>Challenges We Ran Into</h2>
         <ul className={styles.list}>
           <li>
             Baseline alignment across multiple fonts and multiline blocks while
@@ -183,7 +183,7 @@ export default function TextWarp() {
 
       {/* What we learned */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>What We Learned</div>
+        <h2 className={styles.sectionHeader}>What We Learned</h2>
         <p className={styles.paragraph}>
           Coordinating across design, graphics engineering, and QA forced us to
           build a modular architecture that supports rapid iteration. Early user

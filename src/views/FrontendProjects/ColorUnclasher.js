@@ -40,7 +40,7 @@ export default function ColorUnclasher() {
 
       {/* Overview */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>What Color-Unclasher Does</div>
+        <h2 className={styles.sectionHeader}>What Color-Unclasher Does</h2>
         <p className={styles.paragraph}>
           Color-Unclasher is designed to help developers make their MapLibre
           styles more accessible to users with different types of color
@@ -62,7 +62,7 @@ export default function ColorUnclasher() {
 
       {/* Color perceptions table */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>Color Perceptions Considered</div>
+        <h2 className={styles.sectionHeader}>Color Perceptions Considered</h2>
         <p className={styles.paragraph}>
           Color-Unclasher simulates multiple types of color vision to ensure
           that map styles work for as many people as possible.
@@ -102,7 +102,7 @@ export default function ColorUnclasher() {
 
       {/* DeltaE section */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>Why DeltaE?</div>
+        <h2 className={styles.sectionHeader}>Why DeltaE?</h2>
         <p className={styles.paragraph}>
           DeltaE (CIE 2000) is a metric for how humans perceive color
           difference. A value of 0 means no difference, and 100 represents the
@@ -122,12 +122,12 @@ export default function ColorUnclasher() {
 
       {/* Supported expressions */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>
+        <h2 className={styles.sectionHeader}>
           Supported &amp; Unsupported Expressions
-        </div>
+        </h2>
         <div className={styles.columns}>
           <div className={styles.column}>
-            <h4 className={styles.subHeader}>Supports</h4>
+            <h3 className={styles.subHeader}>Supports</h3>
             <ul className={styles.list}>
               <li>
                 <code>steps</code>
@@ -148,7 +148,7 @@ export default function ColorUnclasher() {
             </ul>
           </div>
           <div className={styles.column}>
-            <h4 className={styles.subHeader}>Not Supported (Yet)</h4>
+            <h3 className={styles.subHeader}>Not Supported (Yet)</h3>
             <ul className={styles.list}>
               <li>Nested match expressions</li>
               <li>
@@ -162,7 +162,7 @@ export default function ColorUnclasher() {
 
       {/* Recommendations */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>Recommendations</div>
+        <h2 className={styles.sectionHeader}>Recommendations</h2>
         <ul className={styles.list}>
           <li>
             Use editor extensions that render inline color previews (e.g.,
@@ -202,7 +202,7 @@ export default function ColorUnclasher() {
 
       {/* Example workflow */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>Example Workflow</div>
+        <h2 className={styles.sectionHeader}>Example Workflow</h2>
         <p className={styles.paragraph}>
           A typical workflow is to run an analysis, export non-compliant pairs,
           curate which ones you care about, and then re-run the analysis with an
@@ -226,7 +226,7 @@ color-unclasher styles.json result.txt --pairs-to-ignore-path output.json`}
 
       {/* API usage for suggestions */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>API: Get Adjusted Colors</div>
+        <h2 className={styles.sectionHeader}>API: Get Adjusted Colors</h2>
         <p className={styles.paragraph}>
           Behind the scenes, Color-Unclasher can suggest alternative colors that
           meet your minimum DeltaE threshold using <code>adjustRGB</code> and{" "}

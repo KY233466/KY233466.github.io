@@ -53,7 +53,7 @@ export default function ZOOX() {
       <ContentHeader content={headerContent} />
       
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>{t(DOpath + "title")}</div>
+        <h2 className={styles.sectionHeader}>{t(DOpath + "title")}</h2>
         {/* <a
           className={styles.link}
           target="_blank"
@@ -85,10 +85,10 @@ export default function ZOOX() {
         </video>
       </div>
 
-      <div className={styles.sectionHeader}>{t(FRpath + "title")}</div>
+      <h2 className={styles.sectionHeader}>{t(FRpath + "title")}</h2>
       <NeedAnalysis path="ZOOX.FunctionalRequirements." />
 
-      <div className={styles.sectionHeader}>{t(IFpath + "title")}</div>
+      <h2 className={styles.sectionHeader}>{t(IFpath + "title")}</h2>
       <div style={{ display: "flex", flexDirection: "row", gap: "100px" }}>
         <div>
           <ul style={{ paddingTop: "20px" }}>
@@ -158,13 +158,13 @@ export default function ZOOX() {
         </div>
       </div>
 
-      <div className={styles.sectionHeader}>
+      <h2 className={styles.sectionHeader}>
         {t("ZOOX.FunctionChecklist.title")}
-      </div>
+      </h2>
       <NeedAnalysis path="ZOOX.FunctionChecklist." />
       {/* <div className={styles.contentContainer1}>
         <div className={styles.subSections2}>
-          <div className={styles.sectionHeader}>初始功能清单</div>
+          <h2 className={styles.sectionHeader}>初始功能清单</h2>
           <ul style={{ paddingTop: "20px" }}>
             <li style={{ paddingBottom: "10px" }}>
               安全类
@@ -220,18 +220,18 @@ export default function ZOOX() {
           </ul>
         </div>
         <div className={styles.subSections1}>
-          <div className={styles.sectionHeader}>流程图</div>
+          <h2 className={styles.sectionHeader}>流程图</h2>
           <img src={resolveAsset(ZOOXFlow)} alt="ZOOX flowchart" />
         </div>
       </div> */}
       {/* <div className={styles.contentContainer1}>
         <div className={styles.subSections1}>
-          <div className={styles.sectionHeader}>Flow chart</div>
-          <div className={styles.sectionHeader}>流程图</div>
+          <h2 className={styles.sectionHeader}>Flow chart</h2>
+          <h2 className={styles.sectionHeader}>流程图</h2>
           <img src={resolveAsset(ZOOXFlow)} alt="ZOOX flowchart" />
         </div>
         <div className={styles.subSections2}>
-          <div className={styles.sectionHeader}>Wireframes</div>
+          <h2 className={styles.sectionHeader}>Wireframes</h2>
           <div className={styles.wireframes}>
             <img src={resolveAsset(ZOOXW1)} alt="ZOOX Home page wireframe" />
             <img src={resolveAsset(ZOOXW2)} alt="ZOOX Home page wireframe" />
@@ -242,23 +242,23 @@ export default function ZOOX() {
         </div>
       </div> */}
       <div className={styles.contentContainer}>
-        {/* <div className={styles.sectionHeader}>Mood Boards</div> */}
-        <div className={styles.sectionHeader}>{t(Mpath + "title")}</div>
+        {/* <h2 className={styles.sectionHeader}>Mood Boards</h2> */}
+        <h2 className={styles.sectionHeader}>{t(Mpath + "title")}</h2>
         <div style={{ padding: "20px 0" }}>{t(Mpath + "detail")}</div>
         <div className={styles.MBgroup}>
           <div className={styles.MBgroupColumn}>
             <img src={resolveAsset(ZOOXMB1)} alt="ZOOX Light Mood Board" />
-            <h6>{t(Mpath + "description1")}</h6>
+            <p className={styles.moodCaption}>{t(Mpath + "description1")}</p>
           </div>
           <div className={styles.MBgroupColumn}>
             <img src={resolveAsset(ZOOXMB2)} alt="ZOOX Dard Mood Board" />
-            <h6>{t(Mpath + "description2")}</h6>
+            <p className={styles.moodCaption}>{t(Mpath + "description2")}</p>
           </div>
         </div>
       </div>
       <div className={styles.contentContainer}>
-        {/* <div className={styles.sectionHeader}>Wire Frames</div> */}
-        <div className={styles.sectionHeader}>{t("ZOOX.Wireframes.title")}</div>
+        {/* <h2 className={styles.sectionHeader}>Wire Frames</h2> */}
+        <h2 className={styles.sectionHeader}>{t("ZOOX.Wireframes.title")}</h2>
         <div className={styles.wireframes}>
           <img src={resolveAsset(ZOOXW1)} alt="ZOOX Home page wireframe" />
           <img src={resolveAsset(ZOOXW2)} alt="ZOOX Home page wireframe" />
@@ -267,14 +267,14 @@ export default function ZOOX() {
           <img src={resolveAsset(ZOOXW5)} alt="ZOOX Home page wireframe" />
         </div>
       </div>
-      {/* <div className={styles.sectionHeader}>Mockups</div> */}
-      <div className={styles.sectionHeader}>{t("ZOOX.Prototypes.title")}</div>
+      {/* <h2 className={styles.sectionHeader}>Mockups</h2> */}
+      <h2 className={styles.sectionHeader}>{t("ZOOX.Prototypes.title")}</h2>
       <img
         style={{ width: "100%", marginTop: "20px" }}
         src={resolveAsset(ZOOXMockups)}
         alt="ZOOX Mockups"
       />
-      <div className={styles.sectionHeader}>{t(Ipath + "title")}</div>
+      <h2 className={styles.sectionHeader}>{t(Ipath + "title")}</h2>
       <div style={{ fontWeight: "900", fontSize: "25px", color: "#2F76B5" }}>
         {t(Ipath + "changes.title")}
       </div>

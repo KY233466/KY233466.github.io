@@ -27,7 +27,7 @@ export default function Hobbees() {
     <div className={styles.container}>
       <ContentHeader content={headerContent} />
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>Design Overview</div>
+        <h2 className={styles.sectionHeader}>Design Overview</h2>
         <a
           className={styles.link}
           target="_blank"

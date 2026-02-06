@@ -21,7 +21,7 @@ export default function ContentHeader({ content }) {
 
   return (
     <div className={styles.container}>
-      <div className={styles.title}>{title}</div>
+      <h1 className={styles.title}>{title}</h1>
       <div className={styles.content}>
         <div>{detail}</div>
         {IconImage && (
@@ -40,23 +40,23 @@ export default function ContentHeader({ content }) {
       <div className={styles.moreInfo}>
         <div className={styles.subContentGroup}>
           <div className={styles.subContent1}>
-            <h5>
+            <p className={styles.metaLabel}>
               <strong>{t("HeaderContent.ProjectType")}</strong>
-            </h5>
+            </p>
             <div>{projectType}</div>
           </div>
           {myRole && (
             <div className={styles.subContent2}>
-              <h5>
+              <p className={styles.metaLabel}>
                 <strong>{t("HeaderContent.MyRole")}</strong>
-              </h5>
+              </p>
               <div>{myRole}</div>
             </div>
           )}
           <div className={styles.subContent3}>
-            <h5>
+            <p className={styles.metaLabel}>
               <strong>{t("HeaderContent.CurrentStatus")}</strong>
-            </h5>
+            </p>
             <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
               <span>{currentStatus}</span>
             </div>
@@ -64,9 +64,9 @@ export default function ContentHeader({ content }) {
 
           {currentStatusLink && (
             <div className={styles.subContent3}>
-              <h5>
+              <p className={styles.metaLabel}>
                 <strong>Link</strong>
-              </h5>
+              </p>
               <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
                 <a
                   href={currentStatusLink}

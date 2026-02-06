@@ -31,7 +31,7 @@ export default function Map() {
         <ContentHeader key={value.title} content={value} />
       ))}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>Design Overview</div>
+        <h2 className={styles.sectionHeader}>Design Overview</h2>
         <a
           className={styles.link}
           target="_blank"

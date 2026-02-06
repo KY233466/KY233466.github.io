@@ -37,7 +37,7 @@ export default function Flashcard() {
 
         {/* Inspiration */}
         <div className={styles.contentContainer}>
-          <div className={styles.sectionHeader}>Inspiration</div>
+          <h2 className={styles.sectionHeader}>Inspiration</h2>
           <p className={styles.paragraph}>
             For teachers, turning teaching materials into flashcards often means
             spending hours coming up with questions, formatting layouts, and
@@ -53,7 +53,7 @@ export default function Flashcard() {
 
         {/* What it does */}
         <div className={styles.contentContainer}>
-          <div className={styles.sectionHeader}>What It Does</div>
+          <h2 className={styles.sectionHeader}>What It Does</h2>
           <p className={styles.paragraph}>
             With automated text extraction, AI concept generation, and auto-layout,
             the add-on instantly transforms documents and notes into engaging,
@@ -71,7 +71,7 @@ export default function Flashcard() {
 
         {/* How we built it */}
         <div className={styles.contentContainer}>
-          <div className={styles.sectionHeader}>How We Built It</div>
+          <h2 className={styles.sectionHeader}>How We Built It</h2>
           <p className={styles.paragraph}>
             Using <code>pdfjs</code> and <code>tesseract</code>, the add-on
             extracts text from common teaching file formats such as PDF, PPTX,
@@ -89,7 +89,7 @@ export default function Flashcard() {
 
         {/* Challenges */}
         <div className={styles.contentContainer}>
-          <div className={styles.sectionHeader}>Challenges We Ran Into</div>
+          <h2 className={styles.sectionHeader}>Challenges We Ran Into</h2>
           <ul className={styles.list}>
             <li>Packaging and bundling the add-on for production deployment.</li>
             <li>Navigating unclear or incomplete Adobe Add-On API documentation.</li>
@@ -99,7 +99,7 @@ export default function Flashcard() {
 
         {/* Impact & accomplishments */}
         <div className={styles.contentContainer}>
-          <div className={styles.sectionHeader}>Impact & Accomplishments</div>
+          <h2 className={styles.sectionHeader}>Impact & Accomplishments</h2>
           <ul className={styles.list}>
             <li>
               Reduced educators’ manual flashcard preparation time by{" "}
@@ -130,7 +130,7 @@ export default function Flashcard() {
 
         {/* Special Thanks */}
         <div className={styles.contentContainer}>
-          <div className={styles.sectionHeader}>Special Thanks</div>
+          <h2 className={styles.sectionHeader}>Special Thanks</h2>
           <p className={styles.paragraph}>
             Thank you to the Networking at Tufts Lab for providing the LLMProxy,
             made possible by their research paper{" "}
@@ -140,7 +140,7 @@ export default function Flashcard() {
 
         {/* Tech stack */}
         <div className={styles.contentContainer}>
-          <div className={styles.sectionHeader}>Tech Stack</div>
+          <h2 className={styles.sectionHeader}>Tech Stack</h2>
           <ul className={styles.list}>
             <li>
               <strong>Frontend:</strong> React, JavaScript, CSS, Adobe Add-On SDK

@@ -37,7 +37,7 @@ export default function LinkedInNotion() {
 
             {/* Privacy Policy */}
             <div className={styles.contentContainer}>
-                <div className={styles.sectionHeader}>Privacy Policy</div>
+                <h2 className={styles.sectionHeader}>Privacy Policy</h2>
                 <p className={styles.paragraph}>
                     Save LinkedIn → Notion is built strictly for personal use and is designed with
                     privacy first. The extension does not use any backend server, does not
@@ -65,7 +65,7 @@ export default function LinkedInNotion() {
 
             {/* Inspiration */}
             <div className={styles.contentContainer}>
-                <div className={styles.sectionHeader}>Inspiration</div>
+                <h2 className={styles.sectionHeader}>Inspiration</h2>
                 <p className={styles.paragraph}>
                     Networking is already painful enough without a little automation. It
                     is hard to keep track of people I have met, want to talk to, or have
@@ -83,7 +83,7 @@ export default function LinkedInNotion() {
 
             {/* What It Does */}
             <div className={styles.contentContainer}>
-                <div className={styles.sectionHeader}>What It Does</div>
+                <h2 className={styles.sectionHeader}>What It Does</h2>
                 <p className={styles.paragraph}>
                     The extension detects when I&apos;m on a LinkedIn profile URL
                     (linkedin.com/in/...) and scrapes the visible profile fields into a
@@ -109,7 +109,7 @@ export default function LinkedInNotion() {
 
             {/* How It Works */}
             <div className={styles.contentContainer}>
-                <div className={styles.sectionHeader}>How It Works</div>
+                <h2 className={styles.sectionHeader}>How It Works</h2>
                 <p className={styles.paragraph}>
                     LinkedIn renders much of its profile UI inside a same-origin iframe
                     at <code>/preload/</code>, so naïve scraping from the top-level
@@ -133,7 +133,7 @@ export default function LinkedInNotion() {
 
             {/* Challenges */}
             <div className={styles.contentContainer}>
-                <div className={styles.sectionHeader}>Challenges</div>
+                <h2 className={styles.sectionHeader}>Challenges</h2>
                 <ul className={styles.list}>
                     <li>
                         Handling LinkedIn&apos;s dynamic DOM, nested iframes, and
@@ -156,7 +156,7 @@ export default function LinkedInNotion() {
 
             {/* Impact & What I Learned */}
             <div className={styles.contentContainer}>
-                <div className={styles.sectionHeader}>Impact & What I Learned</div>
+                <h2 className={styles.sectionHeader}>Impact & What I Learned</h2>
                 <ul className={styles.list}>
                     <li>
                         Turned a repetitive manual workflow into a one-click action,
@@ -183,7 +183,7 @@ export default function LinkedInNotion() {
 
             {/* Tech Stack */}
             <div className={styles.contentContainer}>
-                <div className={styles.sectionHeader}>Tech Stack</div>
+                <h2 className={styles.sectionHeader}>Tech Stack</h2>
                 <ul className={styles.list}>
                     <li>
                         <strong>Extension:</strong> Chrome Manifest V3, background service

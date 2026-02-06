@@ -37,9 +37,9 @@ export default function Design() {
   return (
     <div className={styles.container}>
       <header className={styles.pageIntro}>
-        <h2 className={styles.introTitle}>
+        <h1 className={styles.introTitle}>
           Design explorations from my earlier training.
-        </h2>
+        </h1>
         <p className={styles.introBody}>
           These projects are from a while back, but I keep them here to show the
           design background that helps me collaborate naturally with designers.

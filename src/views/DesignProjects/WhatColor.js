@@ -39,7 +39,7 @@ export default function WhatColor() {
     <div className={styles.container}>
       <ContentHeader content={headerContent} />
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>{t(Ipath + "title")}</div>
+        <h2 className={styles.sectionHeader}>{t(Ipath + "title")}</h2>
         <div
           style={{
             display: "flex",
@@ -103,7 +103,7 @@ export default function WhatColor() {
             </div>
           </div>
         </div>
-        <div className={styles.sectionHeader}>{t(InitDpath + "title")}</div>
+        <h2 className={styles.sectionHeader}>{t(InitDpath + "title")}</h2>
         <div
           style={{
             alignItems: "center",
@@ -185,7 +185,7 @@ export default function WhatColor() {
         <div style={{ paddingBottom: "30px" }}>
           小孩把感兴趣的物品放置在玩具上，喇叭会说出物品颜色的色彩组成，同时显示屏上会显示出红黄蓝的占比
         </div>
-        <div className={styles.sectionHeader}>迭代后的设计</div>
+        <h2 className={styles.sectionHeader}>迭代后的设计</h2>
         <div
           style={{
             display: "flex",
@@ -232,9 +232,9 @@ export default function WhatColor() {
         <div style={{ paddingTop: "20px", paddingBottom: "30px" }}>
           {t(IDpath + "thoughts.detail2")}
         </div>
-        <div className={styles.sectionHeader}>
+        <h2 className={styles.sectionHeader}>
           {t(IDpath + "modeling.title")}
-        </div>
+        </h2>
         <div
           style={{
             display: "flex",
@@ -263,7 +263,7 @@ export default function WhatColor() {
             </li>
           </ul>
         </div>
-        <div className={styles.sectionHeader}>{t(FPpath + "title")}</div>
+        <h2 className={styles.sectionHeader}>{t(FPpath + "title")}</h2>
         <div
           style={{
             display: "flex",
@@ -312,7 +312,7 @@ export default function WhatColor() {
           style={{ width: "100vw", paddingBottom: "15px", paddingTop: "10px" }}
         />
 
-        <div className={styles.sectionHeader}>{t(FWpath + "title")}</div>
+        <h2 className={styles.sectionHeader}>{t(FWpath + "title")}</h2>
         <div>{t(FWpath + "summary.detail1")}</div>
         <div>{t(FWpath + "summary.detail2")}</div>
         <div style={{ paddingBottom: "30px" }}>
@@ -328,7 +328,7 @@ export default function WhatColor() {
             [2]
           </a>
         </div>
-        <div className={styles.sectionHeader}>{t("References")}</div>
+        <h2 className={styles.sectionHeader}>{t("References")}</h2>
         <div style={{ width: "60%", textIndent: "-36px", paddingLeft: "36px" }}>
           <div>
             Centers for Disease Control and Prevention. (2022, March 31).

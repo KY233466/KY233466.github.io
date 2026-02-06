@@ -39,7 +39,7 @@ export default function Advising() {
 
       {/* Inspiration */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>Inspiration</div>
+        <h2 className={styles.sectionHeader}>Inspiration</h2>
         <p className={styles.paragraph}>
           From lengthy, confusing degree audits to long lists of major
           requirements, staying on track to graduate can be stressful.
@@ -57,7 +57,7 @@ export default function Advising() {
 
       {/* What it does */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>What TuftsAdvisor Does</div>
+        <h2 className={styles.sectionHeader}>What TuftsAdvisor Does</h2>
         <p className={styles.paragraph}>
           TuftsAdvisor is a two‑part solution designed to modernize academic
           advising:
@@ -84,7 +84,7 @@ export default function Advising() {
 
       {/* How we built it */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>How We Built It</div>
+        <h2 className={styles.sectionHeader}>How We Built It</h2>
         <p className={styles.paragraph}>
           On the backend, we built a Flask API that orchestrates a retrieval‑
           augmented generation (RAG) workflow with GPT‑4o‑mini. Academic rules,
@@ -109,7 +109,7 @@ export default function Advising() {
 
       {/* Challenges */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>Challenges We Ran Into</div>
+        <h2 className={styles.sectionHeader}>Challenges We Ran Into</h2>
         <ul className={styles.list}>
           <li>
             <strong>New concepts and tools:</strong> Many of the techniques we
@@ -134,7 +134,7 @@ export default function Advising() {
 
       {/* Impact & accomplishments */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>Impact &amp; Accomplishments</div>
+        <h2 className={styles.sectionHeader}>Impact &amp; Accomplishments</h2>
         <ul className={styles.list}>
           <li>
             Led a team of six to deliver a working Outlook plugin and web
@@ -158,7 +158,7 @@ export default function Advising() {
 
       {/* What we learned */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>What We Learned</div>
+        <h2 className={styles.sectionHeader}>What We Learned</h2>
         <p className={styles.paragraph}>
           We learned how to build and ship a Microsoft Office add‑in end to
           end—from manifest configuration and sideloading to integrating with
@@ -177,7 +177,7 @@ export default function Advising() {
 
       {/* Tech stack */}
       <div className={styles.contentContainer}>
-        <div className={styles.sectionHeader}>Tech Stack</div>
+        <h2 className={styles.sectionHeader}>Tech Stack</h2>
         <ul className={styles.list}>
           <li>
             <strong>Frontend:</strong> React, Vite, CSS

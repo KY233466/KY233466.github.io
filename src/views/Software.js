@@ -51,7 +51,7 @@ export default function About() {
       <IntroCard/>
 
       <header className={styles.pageIntro}>
-        <h2 className={styles.introTitle}>Shaping resilient, human-centered tools.</h2>
+        <h1 className={styles.introTitle}>Shaping resilient, human-centered tools.</h1>
         <p className={styles.introBody}>
           A snapshot of products and experiments where I obsess over polish, data, and quiet
           utility. Each build is a chance to pair rigorous engineering with a designer’s

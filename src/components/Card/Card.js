@@ -14,15 +14,15 @@ function Card() {
       <div className={styles.glass1}>
         <div className={styles.header}>
           <h1>{t(LPIpath + "Intro.header1")}</h1>
-          <h3>{t(LPIpath + "Intro.header2")}</h3>
+          <h2>{t(LPIpath + "Intro.header2")}</h2>
         </div>
         <div className={styles.bodyText}>
-          <h4>{t(LPIpath + "Intro.slogan")}</h4>
+          <h3>{t(LPIpath + "Intro.slogan")}</h3>
         </div>
       </div>
       <div className={matches ? styles.glass2 : styles.glass2}>
         <div className={styles.bodyText}>
-          <h5>{t(LPIpath + "Intro.message1")}</h5>
+          <h4>{t(LPIpath + "Intro.message1")}</h4>
         </div>
       </div>
     </div>

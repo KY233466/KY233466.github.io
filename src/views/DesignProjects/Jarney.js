@@ -71,7 +71,7 @@ export default function Jarney() {
 
       <div className={styles.contentContainer}>
         <div className={styles.section}>
-          <div className={styles.sectionHeader}>Result Overview</div>
+          <h2 className={styles.sectionHeader}>Result Overview</h2>
           <div>Hover or Click to see change</div>
           {showButton && (
             <div className={styles.hmmm}>
@@ -123,7 +123,7 @@ export default function Jarney() {
         </div>
 
         <div className={styles.section}>
-          <div className={styles.sectionHeader}>Analysis</div>
+          <h2 className={styles.sectionHeader}>Analysis</h2>
           <div className={styles.Annotation}>
             <div>
               <img
@@ -175,7 +175,7 @@ export default function Jarney() {
         </div>
 
         <div className={styles.wideSection}>
-          <div className={styles.sectionHeader}>Goals & Solutions</div>
+          <h2 className={styles.sectionHeader}>Goals & Solutions</h2>
           <img
             className={styles.GoalsImg}
             src={resolveAsset(Goals)}
