@@ -1,24 +1,27 @@
+"use client";
+
 import styles from "./ContentHeader.module.css";
-// import ViewFrontend from "../ViewFrontend/ViewFrontend";
-// import Figma from "../../pic/Figma.png";
 import Meta from "../Meta/meta";
 import { useTranslation } from "react-i18next";
+import resolveAsset from "../../lib/resolveAsset";
 
-export default function ContentHeader({content}) {
-  const {title,
-  detail,
-  projectType,
-  myRole,
-  currentStatus,
-  currentStatusLink,
-  IconImage,
-  timeframe,
-  tags = []} = content;
+export default function ContentHeader({ content }) {
+  const {
+    title,
+    detail,
+    projectType,
+    myRole,
+    currentStatus,
+    currentStatusLink,
+    IconImage,
+    timeframe,
+    tags = [],
+  } = content;
   const { t } = useTranslation();
 
   return (
     <div className={styles.container}>
-      <div className={styles.title}>{title}</div>
+      <h1 className={styles.title}>{title}</h1>
       <div className={styles.content}>
         <div>{detail}</div>
         {IconImage && (
@@ -27,7 +30,7 @@ export default function ContentHeader({content}) {
               <img
                 key={index}
                 className={styles.icon}
-                src={value.images}
+                src={resolveAsset(value.images)}
                 alt={value.name}
               />
             ))}
@@ -37,42 +40,45 @@ export default function ContentHeader({content}) {
       <div className={styles.moreInfo}>
         <div className={styles.subContentGroup}>
           <div className={styles.subContent1}>
-            <h5>
+            <p className={styles.metaLabel}>
               <strong>{t("HeaderContent.ProjectType")}</strong>
-            </h5>
+            </p>
             <div>{projectType}</div>
           </div>
-          {myRole &&           
+          {myRole && (
             <div className={styles.subContent2}>
-              <h5>
+              <p className={styles.metaLabel}>
                 <strong>{t("HeaderContent.MyRole")}</strong>
-              </h5>
+              </p>
               <div>{myRole}</div>
-            </div>}
+            </div>
+          )}
           <div className={styles.subContent3}>
-            <h5>
+            <p className={styles.metaLabel}>
               <strong>{t("HeaderContent.CurrentStatus")}</strong>
-            </h5>
-            <div style={{display: "flex", gap: "8px", alignItems: "center"}}>
+            </p>
+            <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
               <span>{currentStatus}</span>
             </div>
           </div>
 
-          { currentStatusLink && <div className={styles.subContent3}>
-            <h5>
-              <strong>Link</strong>
-            </h5>
-            <div style={{display: "flex", gap: "8px", alignItems: "center"}}>
-              <a
+          {currentStatusLink && (
+            <div className={styles.subContent3}>
+              <p className={styles.metaLabel}>
+                <strong>Link</strong>
+              </p>
+              <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+                <a
                   href={currentStatusLink}
                   target="_blank"
                   rel="noreferrer"
                   className={styles.statusLink}
-              >
-                {currentStatusLink}
-              </a>
+                >
+                  {currentStatusLink}
+                </a>
+              </div>
             </div>
-          </div>}
+          )}
         </div>
       </div>
       <Meta timeframe={timeframe} tags={tags} title={title} />
