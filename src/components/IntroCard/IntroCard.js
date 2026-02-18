@@ -33,6 +33,7 @@ function IntroCard() {
           <article className={styles.textCol}>
             <p className={styles.eyebrow}>{t(Lpath + "Intro.header1")}</p>
             <p className={styles.description}>{t(Lpath + "Intro.message1")}</p>
+            <p className={styles.description}>{t(Lpath + "Intro.message2")}</p>
             <div className={styles.socialRow}>
               <a
                 href="https://www.linkedin.com/in/katie-yang-ky/"
