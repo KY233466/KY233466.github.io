@@ -8,6 +8,7 @@ import Me from "../../../public/me.jpg";
 import LinkedIn from "../../pic/LinkedIn.png";
 import styles from "./IntroCard.module.css";
 import GitHub from "../../pic/Github.png";
+import Devpost from "../../pic/devpost.png";
 import { useTranslation } from "react-i18next";
 import LocaleContext from "../LocaleContext";
 import i18n from "../../i18n";
@@ -57,6 +58,18 @@ function IntroCard() {
                   className={styles.icon}
                   src={resolveAsset(GitHub)}
                   alt="Github Icon"
+                />
+              </a>
+              <a
+                href="https://devpost.com/KY233466"
+                target="_blank"
+                rel="noreferrer"
+                title="Devpost"
+              >
+                <img
+                  className={styles.icon}
+                  src={resolveAsset(Devpost)}
+                  alt="Devpost Icon"
                 />
               </a>
             </div>
