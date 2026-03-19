@@ -12,7 +12,7 @@ const content = [
     title: "Save LinkedIn → Notion: Zero-Backend CRM Helper",
     path: "/LinkedIn-to-Notion",
     content: LinkedInNotion,
-    timeframe: "Nov 2025 · Published Chrome Extension",
+    timeframe: "V1.0.1 Mar 2025 · Published Chrome Extension",
     tags: ["React", "Chrome Extension", "Notion API"],
   },
   {
