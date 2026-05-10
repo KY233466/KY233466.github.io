@@ -30,13 +30,13 @@ const headerContent = {
   Btn: false,
   Icon: true,
   IconImage: Icons,
-  Link: 'https://www.npmjs.com/package/@americana/color-unclasher',
+  currentStatusLink: 'https://www.npmjs.com/package/@americana/color-unclasher',
 };
 
 export default function ColorUnclasher() {
   return (
     <div className={styles.container}>
-      <ContentHeader content={headerContent}/>
+      <ContentHeader content={headerContent} />
 
       {/* Overview */}
       <div className={styles.contentContainer}>
@@ -209,7 +209,7 @@ export default function ColorUnclasher() {
           ignore list.
         </p>
         <pre className={styles.code}>
-{`# 1. Export non-compliant pairs
+          {`# 1. Export non-compliant pairs
 color-unclasher styles.json result.txt --export-pairs-path output.json
 
 # 2. Manually edit output.json to keep only the pairs you want to ignore,
@@ -235,7 +235,7 @@ color-unclasher styles.json result.txt --pairs-to-ignore-path output.json`}
           candidates.
         </p>
         <pre className={styles.code}>
-{`import ColorUnclasher from "color-unclasher";
+          {`import ColorUnclasher from "color-unclasher";
 
 const color1 = "#a4a95b"; // fixed
 const color2 = "#ff8375"; // to be adjusted
