@@ -13,7 +13,7 @@ export default function LeaseBreakPrivacyPolicyPage() {
       <article className={styles.policyCard}>
         <p className={styles.eyebrow}>Privacy Policy</p>
         <h1>LeaseBreak Listing Hider - Chrome Extension</h1>
-        <a style={{color: "grey"}} href="https://chromewebstore.google.com/detail/aojecddfdpaoceopebpmfiebidbjbime">aojecddfdpaoceopebpmfiebidbjbime</a>
+        <a style={{ color: "grey" }} href="https://chromewebstore.google.com/detail/aojecddfdpaoceopebpmfiebidbjbime">aojecddfdpaoceopebpmfiebidbjbime</a>
         <p className={styles.meta}>Last Update: {effectiveDate}</p>
 
         <p>
@@ -25,7 +25,7 @@ export default function LeaseBreakPrivacyPolicyPage() {
 
         <h2>PERSONAL INFORMATION WE COLLECT AND HOW IT IS HANDLED</h2>
         <p>
-          Your hidden listings, saved listings, commute destination, arrival
+          Your hidden listings, commute destination, arrival
           time and other settings are stored locally in your browser using
           browser-managed extension storage. There is no account, no tracking
           or analytics, and no server of ours. We do not set cookies or
